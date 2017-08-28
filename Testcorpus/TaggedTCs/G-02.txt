@@ -1,0 +1,441 @@
+1 Reg let start with context view and so to describe the surroundings mostly of the system what will the system interact with, you have a pen?
+1 Reg so like a just do as we did with the other one.
+1 Reg we draw the system in the middle i guess?
+2 Reg i think i have it here  
+1 Reg you know like maybe we can try to draw it on the paper first and then if it looks good  
+1 Reg we have students right, they are the primary user of this systems, right?
+3 Reg yeah, i think we can a.
+1 Reg and we have the system, we have the students, uses the system, but a .
+Instructor Reg hello, just wanna ask do you have everything, do you understand everything,  
+1 Reg we think so.
+Instructor Reg don't forget to the discussion in english.
+1 Reg of course, that was you coming in.
+2 Reg but honestly, lets just think about, so we have the system.
+2 Claim we have some, we need to find out who are, i mean, who are what interact with the systems, what surround the systems and not the stuff that inside the system  
+3 Reg some kind of a   
+1 Reg you know, how would you make, i mean just a simple config.
+2 Reg put something there, professor, just professor have anything to do with this?
+3 Reg no, i don’t think so  
+1 Reg i guess you would have some, you know like  
+3 Reg i thought i read there were some kind of algorithm or something  
+1 Reg that's right, i think so, here it is, you will be able to reuse an existing software packages that provides relevant in mathematical functionality   
+3 Claim so that gonna be there, i think  
+2 Reg sure, that external systems  
+2 Reg what do we call it  
+3 Reg statistical distribution random generators  
+1 Reg so that’s to make like this, external packages with different kind of functionality in it, and the system interacts with it, would you say that would you wanna like    
+2 Reg how do you, do you wanna save your, do we need some kind of data storage, database or   
+1 ClaimPrem i don't think so, because it's only use for, they're just gonna play around with it, according to requirements, they don’t wanna or maybe you wanna be able to store, to save your, like save your map that you've build, save your settings    
+3 Claim i'm thinking about, if the map is fix, we would only one map where you can changes map and stuff  
+1 ClaimPrem i understand that you build your own like in simcity, so you can create exactly how long you wanna road to be and  
+3 Reg yeah, the students must be able to create artificial map  
+1 ClaimPrem but the requirements doesn’t say anything about, that you can save your map or anything, you could have that functionality because it's nice   
+2 Claim it could be nice, to like continue what we do tomorrow or something  
+1 Reg yeah, i guess.
+1 Reg but if we include like data storage would it be like effect any other   
+2 Reg no, i don’t think so  
+1 Claim we should do it, we should have a database  
+1 Prem so the system interact with this, what do we call this, mathematical software packages, that external, and database, and students, and all the users   
+1 Reg but, is there any other, like i don’t know.
+1 Reg what do you think?
+3 Claim i think it's a, i think that's it actually  
+1 ClaimPrem yeah, because you don’t wanna  
+1 Reg sure, do you wanna have an admin?
+2 Reg this is, do we have to have an admin, like administrator  
+2 Claim i don’t know actually, maybe some kind of learning thing to help out, to help in the beginning with how you use it  
+1 Reg you mean like help guide or manual  
+2 Reg like some kind of manual  
+1 ClaimPrem but that could just be paper, that doesn’t have to be connected to the system  
+2 Reg yeah, but i haven't read anything else about any other like parties involve for external surrounding  
+1 Claim so i guess that this is sufficient  
+3 Claim yeah, i think that's it actually  
+1 Claim maybe we should check the website, to look at template.
+1 Reg he upload like a template that we should use, here you go  
+2 Reg wow really, that's cool  
+1 Reg so but i guess this is, well this is  
+3 Reg we gonna do that last i think   
+1 Reg yeah, but i would, i feel pretty comfortable with this context view  
+1 Reg when did we start by the way?
+2 Reg oh it said 12 minutes  
+1 Reg should we go ahead with the functional view and do this in visio later  
+3 Reg ok, if we come out with some changes and stuff  
+1 Reg yeah, so what i, talking about functional view.
+1 Reg i had some, where was that  
+3 Reg what do you looking for  
+1 Reg we just talk about three different kind of modules that we identified, wasn't it  
+1 Claim so first of all we need to have some sort of map, map creation, map design like builder you know, but what they call that exactly  
+2 Reg where the hell was it  
+2 Reg some kind of design  
+3 Reg ok lets call it map designer  
+3 Claim some kind of traffic density management ok, that what they need to have, when they render the program right  
+3 Claim here, so we have map design, and we need traffic timing management, you know  
+2 Reg and third one there was a traffic simulation  
+1 Reg exactly, the simulator, that basically the interface or not the interface it self, that what you gonna see when you    
+2 Reg simulator, where you can see the problems,  
+2 Reg and then also see the results of the changes that they might made make.
+1 Reg so, i imagine it's like a game pretty much, you have, you simulate, you do some settings, like clicking in the menu and then you   
+1 Reg it simulates what happen, then you get the results  
+2 Reg we're like task is eliminate all the crash it and stuff like that   
+3 Reg yeah, and basically have the minimal waiting time for the cars in line like that  
+1 Reg so you do, you see the cars running on the screen like in the game, and then you get statistics all the time on the time and the risk and crash    
+1 ClaimPrem but the interface it self, that’s not included in the functional view in any sense, so it just no really specified  
+3 Reg so i'm thinking about additional tools  
+3 Reg yeah, with the mathematical stuff  
+2 Reg oh yeah, that's right  
+1 Reg that's, oh yeah, so the mathematical software packages, where does that come in, statistical distributions, what does that do in  
+1 Reg that, you got to have some  
+3 Reg do we need like, i don’t know, like game engine, like the engine.
+3 Reg so that kind of  
+2 Reg but the game engine isn't that the traffic simulator  
+1 Claim i would say no  
+1 Claim i would say that like this, we have the game engine to support, so this game engine talks to software packages with this out here, the mathematical, so you design your map   
+1 Reg you design the density of the game, and you design the timing of the intersections, game engine render or kind does the calculation and logic, which then simulated so that it becomes visible to.
+1 Reg i would say that probably   
+3 ClaimPrem could be the way, because like this all four have to be included to do the traffic simulation  
+1 Prem yeah, and pretty much game engine would be replace where all the algorithm and all the logic is really located.
+1 Prem because this is more really like 3d like visual rendering, is that much code in here  
+2 Reg i'm thinking about visual result afterwards is to like some kind of thing  
+1 Claim i would say this all happens here  
+1 Claim that is not be a bad deal anyway.
+1 Reg so if we look at this  
+1 Reg the flow, and what data flows.
+1 Reg in the map designer, we kind of.
+1 Reg we design the map, but that also   
+2 Reg design map, it comes to game engine.
+2 Reg and then you choose timing, traffic timing, and then that comes to the engine, and then you choose the traffic density, and then you simulate it  
+1 ClaimPrem yeah, because the requirement doesn’t say anything about real time you can change density like real time, and i'm thinking you could do all the settings and then hit run   
+2 Reg yeah, that what i've think  
+1 Reg and then it simulates it, and it takes 10 seconds then it's (inaudible), and then you can changes the settings and do it again.
+2 ClaimPrem yeah, exactly, so you don’t do in real time  
+3 Reg i just though about it  
+1 Claim that's gonna complicate things a little bit more  
+1 Reg but, a you know   
+1 ClaimPrem if i have to make this work, i think this is a nice functional view, we should cross like check the requirements again to make sure we haven't forgotten any like important features which are not included   
+2 Claim yeah, students must be able to create a visual map of an area, so that happen there  
+3 Reg so the traffic labels must be visual to the user in real time in the simulation  
+3 Reg like that doesn't matter,  
+1 Reg well it's just that.
+3 ClaimPrem it doesn't matter because they cannot changes anything during the simulation anyway.
+1 Claim so the, to be kind a sequence, so in which order would we do this, first we design the map, that is first, then you wanna set the timing before you start simulating  
+3 Claim right, that pretty right when you design the map, so like on the map you put the traffic signal and stuff and then you changes the time right over there, so those two just happening of to each other    
+1 Reg and what about this stuff, the density you have to set it.
+3 Reg that could be probably be a, you know.
+1 Claim you wanna draw the map, you wanna set the timing, you wanna pass that data to game engine, and then you wanna set the density  
+3 Reg that like, those two you make to have the map and then you send it to game engine and then when you see the map you can use the traffic density management to choose which roads is almost abandon and which one is beasty.
+1 Reg so here do decide how many cars gonna run over road, and then you so.
+2 Reg maybe like this (drawing).
+1 Claim that look good, and those two will go into that, and that one will go back, and this one will trigger, the game engine will trigger the simulator.
+1 Reg and this one will, it's external.
+2 Claim so i don’t wanna really have it, to close, lets just put it here and   
+2 Prem because the game engine probably request some kind of random number simulator, and they get that from the packages  
+2 ClaimPrem that is probably, the user or the students probably decide that in the traffic timing management if they want to have like 100 cars or with the one that auto generate a number or something 
+1 Claim so i guess this is good enough.
+1 Reg now we want to draw what data that goes in and out  
+1 Reg from the map designer to the game engine you would have some of   
+2 Reg map designer, and  so you pass the map designer, you pas the designed map, that what it send  
+1 Reg and you said that traffic timing settings  
+2 Reg yeah, for the map  
+2 Claim but i've thinking like the map designer should probably send the map to the game engine, the game engine should probably send the map to the traffic timing management.
+1 Claim but they should be like map designer goes to traffic timing management then down.     
+2 Reg isn't those two probably need to interact  
+1 Reg yeah, if they gonna be able to put the traffic lights  
+2 Reg yeah, that is right.
+2 Reg that what i've thinking  
+1 Reg the timing schemes, intersection timing scheme   
+1 Reg but do you really need to know, do you really need to   
+3 Prem because it's hard to set traffic timing if you don't know if it's like 8 or 9 traffic lights  
+1 Reg let connect this, alright  
+3 Reg that is good, and just like a, if you don’t want to changes the map just the timings  
+1 Reg what do you mean  
+3 Claim i mean like if you wanna changes the, that is like i'm thinking if you wanna to changes, if you did the simulation but you wanna changes the map or the timing, then you probably have to have some kind of arrow back to timing and map designer   
+1 ClaimPrem but then again if you wanna changes, you just restart, so you wouldn't have to like send anything from here from traffic, from the end, back to the start, you wouldn't have to send any data.
+1 Claim you just have to, ok this isn't work out.
+2 Reg ok and the map and the traffic is already save in the database.
+2 Reg so can just choose that and then   
+1 Reg some thing like that,  
+3 Claim i think that sound fair  
+1 Reg but here, what i guess just send up here   
+3 ClaimPrem but then what this arrow then, will is this necessary, because you never just send a map  
+1 Claim but i'm thinking maybe you wanna just changes the traffic timing and you wanna keep the map as it is.
+2 Reg so you’re thinking like in the database you can have both the map saved and the map plus the traffic timing saved, ok then it make sense  
+1 Claim i don’t know it could be a good  
+3 Reg yeah, then it make sense  
+3 Prem because maybe it's even easier to just sometime have the map and then we do all the traffic timing instead of changing  
+2 Reg ok, lets go for it.
+1 ClaimPrem so the game engine would probably, so this one here would have to go like this, do you agree,  i mean the traffic density gonna come to the engine again.
+1 Reg traffic density setting (typing), and so the game engine will has all of this to the traffic simulator, which will then render everything, to be surely,  
+1 Reg what do we call that, what that flows to traffic simulator.
+3 Reg probably all like everything, all the information and stuff   
+1 Reg but i don’t know, what do you call that.
+2 Reg like the finish, it doesn't really mater though but  
+1 Reg game logic, is that even a thing, like they send instruction the game we want to be  
+2 Reg or like user input  
+1 Reg yeah, is more like the finish, this is, so here is the game, here we go, here is all the logic and the algorithm just a make it artificial, that what happen here, but   
+3 Claim i'm thinking logic could be good.
+2 Reg and the mathematical software packages it has to be a, it provides finished algorithm and stuff like that.
+2 Prem help canna be helper like the request.
+2 Claim so should be like double arrow or single arrow.
+1 Reg single arrow but the other way, and the   
+1 Reg yeah, are you happy.
+2 Reg i'm happy, are you happy  
+3 ClaimPrem i'm just thinking about this, about this, i agree with you, it doesn't, but if you do have, you do all the, let say you have a map designer and you draw a map  
+1 Reg you save the map  
+1 ClaimPrem you know, and then you kind of, i don't think we need this, that what i'm saying, then you just, you don’t send the map directly from the map designer to the timing management you just save it and then you open this part of the program then you hit like open map, you open it from the database, so it's like inside here.
+2 Reg yeah, i understand what you mean  
+1 ClaimPrem i don’t think we need to have that connection , because it could be like confusing, i'm thinking about when we're doing the information view, then you  would be really confuse about.
+1 Claim you know lets save this and we probably have to change something anyway, when we have all the views completed, do you think we need to do like break this down, deeper   
+3 ClaimPrem yeah, maybe map designer, because like there we have to choose between like number of roads and stuff like that.
+2 Claim yeah, that pretty complicated module, i would say.
+2 Reg but we don’t have all the time in the world.
+1 Claim and we can continue, so we break down if we have the time for it.
+1 Reg do we just quickly do the context diagram  
+2 Claim that probably good decision  
+2 Reg do you wanna do some chit-chat,    
+1 Reg what do you mean by that.
+3 Reg no, i don’t think so.
+1 Reg this the way you did it right   
+2 Reg yeah, and what the system called  
+2 Reg traffic simulation, traffic signal simulator  
+1 Reg maybe we want, should we break down.
+3 Reg yeah, but you have that under   
+1 Reg oh yeah, that is right, you can write those  
+3 Prem because that how we did it last time  
+2 Reg but we haven't got our feed back on that one yet.
+1 Reg let see whether it was good  
+1 Reg not much to do  
+2 Reg let just (typing), it's statistical distributions, random number generator.
+1 Reg what kind of arrow do we use here  
+2 Reg we use the dash one,  
+2 Prem because it's like for instance, mathematical software packages contains of these three different ones  
+1 Reg kind like this, or maybe like this  
+1 Reg do you know who the user are.
+2 Reg it's probably just if something happen in the future to make this changes module, what do you think   
+2 Reg it just line up.
+1 Reg so this is context view.
+3 Reg i just reinstall this and the, is not the same.
+3 Claim we should find the database.
+3 Reg where is my uml.
+2 Reg here we have the database.
+1 Reg great context view done.
+2 Reg how about five minutes break.
+1 Reg okay, back after break, so we were finish with the context view and the functional view, moving on to the information view where we will try to illustrate the flow of information between modules and the user selection and all and we do it with bpmn notation.
+1 Reg so let just, map designer, traffic timing management, game engine, and the traffic density management, and the traffic simulator   
+1 Reg this one is oranges, and (drawing some thing) this kind a complicated one.
+1 Reg so first of all, as a user, here is the start.
+1 Reg as a user you.
+1 Reg was the first step you take.
+1 Reg you going to the map designer right,  
+2 Reg right, or maybe you choose if you want to .
+2 Reg if you want to take the map from database or you wanna create a new one,  
+1 Reg that is right  
+1 Claim and i would say, lets draw this database, right.
+1 Reg so the first thing you actually do is you make a choice.
+1 Reg new or existing map.
+1 Reg and then you say, and we can use one of this, this is a collapse sub process, which means that we simplified.
+1 Claim so the plus sign means a lot of stuff going on but we are not going into detail.
+3 Reg ok that is true 
+1 Prem because i don’t think should we draw exactly how you design a map    
+1 Reg that is too much.
+1 Reg and then you .
+1 Reg so if it's a new one, then you go to design map, right.
+1 Reg lets do it like this, and here you have the report existing map  
+1 Reg this some thing that provided from the database with this kind a   
+2 Reg yeah, i remember like this  
+1 Reg there we go and there we go  
+1 Reg so what happen, so either you import map from the database or you design a new map.
+2 Reg and then that map comes down to traffic timing management.
+2 Claim maybe we should do this one so that the map goes to that  
+1 Reg i think that looks good.
+1 Reg okay for the record we just changes the original functional view so that the map goes from the map designer to the traffic timing management and then from there the traffic timing settings goes to the game engine.
+1 Reg but we do have to send the map as well to the game engine.
+1 Reg no but the map goes to the traffic timing management.
+1 Reg and then you just add the traffic timing to map and then you send the whole thing to the game engine.
+1 Reg or like this with two.
+2 Reg or we just called it like the map with the traffic timing  
+2 Reg like a map with traffic timing  
+1 Reg map with traffic timing settings.
+1 Reg so back to the information view.
+1 Reg what you do is you send it to the traffic timing management and there you do your settings what exactly done in the traffic timing management.
+1 Reg that is this one right.
+3 Reg you set the behavior of the traffic light in each of intersections.
+2 Reg if you have left hand turns,  
+1 Reg but i guess this is also pretty detail stuff just do wanna this.
+1 Reg so you do this thing.
+1 Reg import map or design map.
+1 Reg either way the output is a map.
+1 Reg and here you figure traffic timing settings.
+1 Reg so we have to do this sequential.
+1 Reg they all go to the thing  
+1 ClaimPrem and or maybe we should draw this better because the map is   
+1 Reg and okay, so we have set the timing settings and alright.
+1 Reg then we wanna send this to the game engine.
+1 Reg is there any choice made here like   
+3 Claim intersections light behavior should be able to change input from whether or not they choose to have sensors or not.
+2 Reg but that is a that is made .
+3 Reg that is in this.
+1 Reg but do we need to like include that in our view at all.
+3 Claim is it to is it important.
+1 Claim no i think it's a .
+1 Reg no i don’t think so.
+3 Reg that leave us with a different.
+3 Reg like a different level on the whole things.
+3 Reg i didn't think of some thing at all.
+3 Claim i guess we need to save the map here.
+1 Reg so the map if it's new map we have to save it immediately.
+1 Reg to the map database.
+1 Reg so how would i   
+3 Reg where is the yellow one.
+1 Reg yellow one is the label  
+1 Reg that message send .
+1 Reg lets go with this and so we configure the settings and we send the map to the game engine, what is the game engine really do, it takes the map .
+1 Reg it's analyze the map, and analyze the timming settings,  
+2 Reg it send the map back to the user.
+2 Reg and the user change.
+2 Reg but choose traffic density.
+2 Reg user has to set first.
+3 Reg so it load the density management also to the game engine.
+2 ClaimPrem the map with the traffic timing goes to the traffic engine and then to the traffic density management and then the user sets the density then back to the game engine into the simulator because if you want to change the density.
+2 Reg you want to do that.
+1 Reg here we have data.
+1 Reg which is map with .
+2 Reg so the game engine almost only send it back to the user.
+1 Reg hold on maybe we just, let me, i'm gonna, i have an idea.
+1 Reg this is the traffic timming settings.i'm
+1 Reg and here the game engine.
+1 Reg what is name for.
+1 Reg what ever done in game engine.
+1 Reg do we need some key words.
+1 Reg so the rendering happens in the.
+1 Reg that what i was talking about, in the visualizing, what is called.
+1 Reg you know the other one.
+1 Reg this is the rendering.
+1 Reg it just kind a create a game.
+1 Reg like create the game engine it self    
+1 Reg i'm gonna call it generates game.
+1 Reg and that is    
+1 Reg because i was thinking, what i was thinking was.
+1 ClaimPrem we do it like this instead, we don’t have to like send the entire map.
+1 Claim we don’t really have to send both the map and the traffic timing settings.
+1 Prem as a package since it can just .the
+1 ClaimPrem game engine could might use the map that object here and the settings, and then merge them you know so we don’t have to make the map and the settings into one.
+1 Claim it could be better to have separated.
+3 Reg maybe you know for a .
+3 Claim it could be a good idea.
+1 Reg so lets try to make this understandable.
+1 Reg and i'm thinking like .
+1 Reg some thing like this.
+1 Reg it doesn’t have to be.
+1 Reg so you generate the game.
+1 Reg and then you .
+2 Reg here the user choose if they want to.
+2 Reg how to the random number or choose number of car and stuff.
+1 Reg you mean from the mathematical packages.
+1 Reg i mean i don’t understand what it is.
+1 Reg so if you see automatic.
+2 Reg i mean like if you don’t want to choose if its gonna be 50 car an hour on the road.
+2 Reg you can auto generate into random number.
+2 Reg but not a million car a minute.  
+1 Reg would say that .
+1 Claim this is basically what's happening, that shouldn't be very complicate process.
+1 Reg and this is what happen.
+1 Claim and somehow it sends back to the user or to the.
+1 Prem because this is the user doing this.
+1 Prem and it generates game and then it sends.
+2 Claim this probably an addition to the gerenated game.
+1 Claim so it something more has to happen here.
+1 Reg so first generates the game and then it kind a reply traffic density settings.
+1 Reg i mean to the game .
+1 Reg you know what i mean.
+3 Prem because that is probably like when they generates the game  generate the basic logic of the game.
+1 Reg this is suppose to be sequence flow.
+3 Reg is the can do multiple thing a the same time time.
+1 Claim it has to be like this.
+1 Prem because you talking about sequences.
+1 Prem which order stuff happens.
+1 Claim so its automatically like this.
+1 Claim you can't change that.
+3 Reg i'm thinking like using traffic density setting.
+3 Reg like a data object.
+1 Reg and we using the same word,  
+3 Reg so are consistent, that is important.
+1 Reg so this connected to this.
+1 Reg some thing like that.
+1 Reg then we have the.
+1 Reg that make sense right.
+2 Reg but how do you know is the user that does the.
+2 Reg you have some formal connection to the user there.
+1 Reg then again i mean.
+1 Reg you have (inaudible) in here  
+1 Claim so would be just really really annoying to have a lot of arrow .i
+1 Reg guess you kind a have to understand  
+3 Reg so then it applies the setting the game is pretty much ready to be render by the simulator.
+1 Reg or we could have another one here that is.
+1 Reg what the hell happen.
+2 Reg do you copy the whole thing.
+1 Reg i kind a did   
+1 Reg what is the time.
+2 Reg we have 25 minutes.
+2 Reg but that is okay.
+1 Reg if i'm not so.
+2 Reg you like an artist.
+1 Claim and then we could just make this a little bit larger and we could have render game.
+1 Reg i'm not a game engineer, but and then it goes down to traffic simulator right ?
+1 Reg what happen here is simulates game   
+3 Reg yup, and visualize it.
+1 Reg simulate game and yeah.
+2 Reg i wondering if those two happens at the same time.
+1 Claim maybe we should have the one  
+2 Claim and called it simulates and visualizes game.
+2 Prem because it doesn’t make sense to first simulate it and then you show it .
+1 Reg that is right.
+2 Prem because it like really big simulation.
+3 Reg it's gonna be awkward.
+1 Claim so then i guess that is done.
+1 Reg what it sent here.
+1 Reg what data that we write .
+1 Claim we have to change this.
+1 Reg in map is kind a, you know how.
+3 Reg i think that is understandable.
+1 Reg or we could let see.
+1 ClaimPrem it could be both you know to be consistent.
+1 Reg great, so now it's consistent with generate game.
+1 Reg render game, and what been send here is the game logic.
+1 Reg what we get is game logic.
+Instructor Reg just wanna remind you guys, that at two our mark the discussion session is end, and you have to document your rationale the whole template.
+1 Reg we have 20 minutes.
+Instructor Reg alright that is good.
+Instructor Reg after that you should go to professor the office is 584.
+1 Reg there you show up again.
+1 Claim and i guess that is the end.
+1 Claim that should be the end.
+1 Reg you wanna called it done.
+3 Reg and this is updated.
+1 Reg do we have to include the mathematical software packages in our information view.
+2 Reg i'm not sure actually.
+3 Reg i'm not sure either.
+3 Reg like we have the database here in the conceptual and the mathematical software packages.
+3 Reg but then we could just.
+3 Reg (in audible) i don’t know.
+3 Claim i mean more like on the (inaudible) model maybe we should complete the packages.
+1 Reg you think maybe we should just screw the packages  
+2 Reg and have it like not .
+1 Reg you mean only in the context.
+2 Claim or just like we have a database in this model we could have the mathematical software product in the model as well.
+1 Claim maybe we just leave it out from the functional view.
+1 ClaimPrem do you hear that we taking away the software package from the functional view because we think it is included in the game engine module.
+1 Reg so sorry we don’t have enough time to do any the break down on the functional view.         
+1 Reg so we have have context view.
+3 Reg still look the same.
+1 Claim this right map the database here.
+1 Prem because we don’t want to save anything else but the map.
+2 Reg i guess we are so far .
+1 Reg create more generic and write database in both places.
+2 Claim it  could be good.
+2 Prem it gonna be easy to change in the future.
+2 Prem if the developer decide to include the ability to save the timing also.
+1 Reg i guess move on to the documentation.
+1 Reg do we stop recording.
+3 Claim i think we stop.
+3 Prem because 45 minutes documentation is a different thing.
+1 Reg yeah, thank you for that.
+1 Reg good luck with your research.

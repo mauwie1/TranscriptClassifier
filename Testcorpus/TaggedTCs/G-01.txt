@@ -1,0 +1,1351 @@
+1 Reg test, alright it’s working i guess  
+1 Reg so we have to speak clearly 
+2 Reg we are group 1 by the way, we are yeah, [person 2]- 
+1 Reg for the assignment we have a list of three views to make, viewpoints.
+1 Reg the context, functional and information, which can all consist of multiple views.
+1 Reg and the system is traffic simulation system.
+1 Reg [person 3], you marked some of the-  
+1 Reg things from the assignment
+3 Reg so the students should be able to create a visual map of an area and they can make the- should be able to lay out roads in a pattern of their choosing.
+3 Reg they should be able to make at least six different-
+2 Reg are they cross linked together?
+1 Prem they are all related so-
+1 Claim the simulation should simulate all the intersections and their-
+3 Claim and additionally, the program should allow students to describe the behavior of traffic lights at each of the intersections.
+1 Claim and also the busyness of the roads.
+1 Claim should be defined yeah.
+1 Reg for cars, it’s also just crossroads, so not the intersections and other- 
+2 Reg so one car can go left, right and goes straight forward
+2 Reg and cannot change- pass to-
+1 Claim yes i think they should- yes
+1 Claim or maybe that’s a choice 
+2 Reg yeah, a design choice 
+1 Reg right that’s an assumption- well let’s- do we wanna play cards-
+2 Reg we’ll wait for two, three more minutes
+1 Reg and it would be confusing, but are we going to start with the context maybe?
+2 Reg yeah, that’s a good point- 
+1 ClaimPrem we can start writing down stakeholders just to, to- because i think the context is the most abstract-
+1 Prem so if we start with the context we can get an idea of-
+2 Reg later we can focus on the information view for example
+1 Reg so are we going to make a stakeholder view or something?
+2 Reg the external view
+1 Reg so what should be included.
+3 Reg well it’s a program for students, so maybe the students.
+2 Reg students, professor, or senior, editors?
+1 Reg [person 3] is going to write on the whiteboard.
+2 Reg that’s for the context view
+1 Reg for the context view yes
+3 Reg context view, stakeholders, you have students
+2 Reg the teacher, or the professor
+1 Reg professor, is professor e.
+2 Reg so for engineers, 
+1 Reg developers that’s not complicated 
+3 Reg well maybe people in traffic
+1 ClaimPrem well i think it’s just a learning tool, so it’s not actually involved in the creation of roads.
+1 Prem it’s just to understand the interaction of traffic lights and-
+2 Reg yeah, i don’t know.
+2 Reg now we have stakeholders, and what’s the second, students.
+2 Reg professor e and developers 
+3 Reg professor e and developers.
+1 Reg are there other elements besides stakeholders which you want to include in this model?
+2 Reg and are the roads, on lane or two lanes, three lanes, four lanes
+1 Prem yes but i think that’s a mechanic inside of the program 
+1 Claim so the traffic rules are an external entity.
+1 Claim so that’s good, and maybe- 
+3 Reg how yeah, how the, what’s it called, traffic light work.
+1 Reg but that’s also figurable within the-
+1 Reg within the software itself.
+2 Reg yeah, sensors, measures, how much- 
+2 Reg cars are on one lane
+1 Reg optimal sensor, but that’s all inside the package so-
+1 Reg so if you look outside-
+1 Reg yeah, maybe behaviours, i’m not sure that’s, or- 
+1 Reg i guess that’s also, that’s programmed inside the software so-
+1 Reg maybe you can put that between brackets
+2 Reg so now we have traffic view, or traffic rules and car behaviour
+3 Reg maybe the requirements, for the systems.
+3 Reg yeah, they’ve got a context view 
+1 Reg so, students must be able to describe the behaviours.
+1 Reg i’m not sure if that’s an external- 
+1 Reg are we going to use external software packages maybe?
+3 Reg it says like, you can use a mathematical software program if you want- 
+3 Reg calculate all the sequencing 
+1 Reg we don’t know what-
+1 Reg we don’t know what we’re gonna use yet so-
+1 Reg i guess we can just say external-
+1 Reg and we can fill that in later
+1 Reg i think that’s almost all for now, for the external stakeholders.
+2 Reg ah no, maybe, what’s software developers, what do they need
+3 Reg the need to receive an architecture and the models 
+2 Reg they can code directly in, yeah, one of the programs 
+1 Reg so let’s just start with brainstorming for each model  
+1 Reg you can leave that up there, you can look at it later.
+1 Reg so for functional, maybe we can just continue brainstorming what functionality the program needs.
+2 Reg how much traffic can one road handle, or can one crossroad
+3 Reg you can write down some things- 
+1 Claim so, for functionality you need the road mechanics 
+2 Claim if all the lights are green how much traffic can pass the light
+1 Reg yeah, the capacity of the road?
+1 Claim also, students need to be able to configure the busyness of the roads.
+1 Reg those are separate entities i think 
+1 Reg you can have a few cars on a big road or a lot of cars on a small road.
+1 Reg so road down, create visual map and choose pattern?
+1 Reg and also determine size of the road 
+3 Reg maybe type, but, more lanes or less lanes 
+2 Reg yeah, how much lane are-
+2 Reg appropriate, i don’t know 
+1 Reg and every lane has a capacity.
+1 Reg well, appropriate, it’s about playing around with different-
+2 Prem if one car wants to go straight and one car in front of the car wants to go right or left, and must wait for a signal to go on green lights.
+2 Prem then the car that wants to go to the next traffic light must wait for the car in front of him.
+2 Reg now, if it’s one lane.
+1 Claim so yeah, you should also be able to configure on that crossroad
+1 Claim you should be able to configure the type of each lane, so for example if you have a road with four lanes you should be able to configure that the left most lane of left only.
+1 Claim and the outer most lane is right only
+1 Reg not have a traffic light 
+2 Reg or turn the car, 100, 360 degrees.
+1 Reg but i think in dutch traffic-
+1 Reg rules the, for a turn you just go to the left lane.
+1 Reg and you make a full eh-
+2 Reg but it must be, yeah- 
+1 Reg configure lanes and crossroads.
+2 Claim so, at minimum you need three lanes, one for go forward, one-
+1 Claim wait a sec, that’s not true.
+1 Claim you can have, if you have one lane, you can have one traffic light for all the- students should be able to do that.
+1 Claim just have an intersection with one lane on both sides, for left, right and- 
+2 Reg oh, so the other light need to go on red at that moment
+2 Reg oh ok, it’s possible
+3 Reg must work with sensors or without sensors, that detect-
+1 Reg i think these all fall under the bigger function, which is crossroad behaviour, or crossroad configuration  
+2 Reg but all the intersections have sensors right.
+1 Claim can choose whether or not they have car sensors or not and that should in turn- or act behaviour of the traffic lights.
+1 Prem that’s requirement three i think 
+2 Reg but why would we choose to use roads without sensors.
+1 Prem it’s not a choice by us.
+1 Prem it’s a choice by the student
+1 Claim you should just give them the sandbox and they should be able to play, so that’s one functionality.
+1 Reg let’s see, so we have for the roads, the capacity and the busyness.
+1 Reg we all already have that.
+1 Reg for the crossroads we have the lanes, the sensors, the light behaviour and the light, maybe light direction.
+2 Reg so, light behaviour is how long each light- 
+2 Reg is on or off, or red, orange and green
+1 ClaimPrem yeah, i think because the program should be simple that the students should only have a couple of parameters to configure.
+3 Reg this depends on the sensors or on other-
+1 Reg yes and also it says as a requirement, combinations of individual signals that would result in crashes should not be allowed.
+1 Claim so for example, a student cannot say, this traffic light straight on is green, while the opposite side left is green.
+1 Prem because that would result in crashes.
+1 Reg that’s a constraint yeah.
+1 Claim so i think we should limit the light behaviour in a-
+2 Reg yeah, in such a way that-
+1 Claim exactly, and they should definitely be bale to play with the timing of-
+1 Prem of green, yellow and red lights.
+1 Claim so timing configuration is definitely a function
+1 Claim so the sensors affect the traffic light behaviour
+3 Reg does it also, maybe the busyness will also influence the light behaviour.
+2 Reg or the time at that moment, so at night other group, the most busy roads are in green.
+2 Reg al the time, except if some car  
+1 Reg well, do we want to integrate time, maybe we-
+1 Claim we would just say the student can determine the busyness by himself for every road and just leave timing out-
+1 Prem because that would complicate the system i think 
+2 Reg we have fifty seconds left before we start with the game 
+3 Reg i’m gonna write down time question 
+2 Reg so what we have for this moment, we have the context view
+3 Reg and this is functional 
+2 Reg and the functional view 
+1 Reg so let’s play the card game for these views we have now
+1 Reg [person 3] if you’ll join us
+1 Reg right so, we’re now playing the card game in the first section.
+1 Reg it’s fifteen minutes in.
+2 Reg yeah, and a maximum of five minutes 
+1 Reg yes, so we have five minutes to play the card game.
+3 Reg let’s see, what do i want to play.
+2 Reg yeah, just take your time.
+2 Reg yeah, it’s difficult to choose which card is appropriate
+1 Reg do you see any problems, or maybe, any contextual things?
+3 Reg i mean, we have to make a lot of assumptions.
+1 Reg ok, [person 3] just played the context card, and the assumption card
+3 Claim determine how the student wants to control the system.
+3 Prem since we have not spoken to any students that are gonna use it.
+3 Prem we have investigated what is the best way to determine who – how to set up a traffic light 
+1 Claim so that’s basically also a problem.
+1 Prem because we don’t know what-
+1 Reg what kind of interface, is that what you mean?
+3 Claim i think we might have to-
+1 Reg it’s also a risk [laugh]
+3 Reg a risk that
+1 Reg since, yeah, we don’t really know, we’re just guessing what requirements they want.
+1 Reg well, there are a few requirements, but those are just by the professor,  i think.
+3 Claim so i think we’re gonna have to be very abstract in our solution.
+3 Prem because we don’t really know enough to go-
+1 Prem but on the other hand we should define the system for the architects to create it.
+1 Claim so we can’t be too abstract
+1 Claim we should at least get an understanding, but as for these views, is there anything that we need resolved or how are we going to resolve these issues.
+1 Reg are we going to specify the requirements more by ourselves, or-
+2 Reg yeah, how much traffic at maximum each crossroad, what is the maximum car capacity
+3 Reg yes, well that should.
+1 Reg i’m not sure, that’s not really related to these requirements right?
+2 Reg i don’t know for sure.
+3 Claim well the students should be able to the traffic density themselves.
+3 Reg but we will have to determine how they’re gonna do that.
+3 Reg how do they declare, well, i suppose a simple slider will do.
+1 ClaimPrem exactly, i don’t think that’s really a problem for the students to define this, because you can simply say, every lane has a maximum capacity of, i don’t know, sixty cars per minute- 
+1 Prem it also has a certain length, and, which you can simply divide by car length to determine busyness of the road.
+1 Prem and also you can add additional lanes, and you can determine the busyness yourself  
+2 Reg or other cars on the road.
+2 Reg we have not thought about that so it’s-
+2 Reg maybe a constraint or a problem?
+1 ClaimPrem i don’t think it’s a problem, we can just, if we want we can add that, it’s not mentioned in the requirements.
+1 Reg so do we want to add busses and other vehicles?
+3 Claim i would say no.
+1 Reg to keep it simple-
+1 Reg we could, maybe we can put it with a question mark, but i’m not sure if it’s- 
+2 Reg it’s a good thing to,  
+1 ClaimPrem i don’t think it would be hard to implement because it’s basically a car with a different size
+3 Reg different turning ratio maybe and eh-
+3 Reg we have to, yeah.
+3 Claim might have to make bus stops
+1 Claim well bus stops i don’t think is within the scope.
+2 Reg it’s about the traffic-
+3 Reg what’s the advantage of adding busses or-
+2 Prem well, the mean of the length of the cars will increase, so standard cars are four meters long and if busses can also join-
+1 Reg i don’t think
+2 Prem on the roads the mean will be much larger, maybe twenty meters.
+2 Reg if a lot of busses and longer cars are part of
+1 Claim but that would also complicate the-
+2 Reg yeah, the design of- 
+1 ClaimPrem well not really, the configuration by a student, they would also have to specify how much busses are in the- 
+2 Reg does someone have any cards.
+1 Reg well i still have problem and-
+2 Reg i see we’re now past the five minutes, by now
+1 Reg well we can continue for a bit if we think i’s useful but i’m not sure-
+3 Reg we had a problem that we don’t really understand how this, adjusting this timing scheme is going to work and how-
+3 Reg how are we gonna set a light behaviour
+2 Reg but is it more easy to draw one of the crossroads and then decide which, what kind of risks are involved in every crossroad.
+2 Reg is that a good thing 
+1 Reg wait, what do you mean what type of risks?
+2 Reg before, for example, if one car wants to go to the left, or wants to turn and the other light will also go on-
+2 Reg wait a moment 
+2 Reg so one car is here, he wants to go, he wants to turn here
+2 Reg so this is, wants to turn this way.
+2 Reg but the light here is also on green so there will be a crash here with two cars
+1 Reg yes that’s true, so u-turns should maybe be illegal per definition, do a simple-
+2 Claim for example a bus cannot turn on this intersection
+2 Prem because it’s too long 
+1 Claim so we, i guess we should just say in the traffic rules as well, if you create an intersection it’s possible by default u-turns are allowed but we can make it so that on the intersections they have little signs that say, no u-turns.
+1 Reg which would simplify the mechanics of the-
+3 Reg but is that going to be a question, i don’t really-
+1 Reg if there is one lane there’s going to be a crash
+2 Reg and maybe also if there are two lanes
+2 Reg car wants to go to the left, one lane
+2 Reg for example, and this car wants to go also to the left, or to the right, and then there will be a car crash.
+1 Reg but this can also be solved with, you need traffic lights 
+3 Reg what if you still want to go that way, then he’s gonna have a red light, this guy 
+2 Reg no, if both are on green so-
+3 Claim if i, well, both shouldn’t be on green then, right?
+3 Prem if it wants to go that way and he’s on green, you’re gonna have a crash anyway.
+3 Reg if one goes straight   
+2 Reg no it’s only for the lights on the right, for
+3 Reg so this light has green light
+3 Reg and he wants to go-
+2 Reg to the right and also the light is green 
+3 Reg you want to go this way?
+2 Reg he wants to go, this car wants to go this way, and this car wants to go that way.
+2 Reg so the same direction.
+2 Reg they’re all this, this way, all to the left.
+2 Reg and if this green, this light, the left on is on green and also this one for the right is on green then you will have car crash.
+2 Reg so that’s, yeah, a risk 
+1 ClaimPrem but i think this is not really important now, because it’s a very implementation detail.
+1 Prem you can just say to the developers, just program it so that all traffic light combinations that collide are illegal.
+1 Prem that’s also one of the requirements.
+1 Prem it’s not really an architectural issue.
+1 Reg so, should we continue with the-
+1 Reg maybe with the information view?
+2 Reg so the card game 
+1 Reg let’s leave it for now
+1 Reg i find it confusing 
+2 Reg so, the timestamp of removal is, yeah, i’ll write down, twenty-four minutes.
+2 Reg for all of your cards.
+1 Reg alright, so the information view.
+1 Claim we should really look at what types of information-
+1 Claim flows and what entities do you have
+1 Reg i think the main entities are the area, and the crossroads, and the roads.
+1 Reg the area is basically the playing field where you put the roads
+3 Reg and also, yeah, roads do have properties like, whether they have sensors or not 
+3 Reg i’m gonna write that down
+2 Reg but do the -
+1 Reg that’s a property of the crossroads
+2 Reg yeah, not the -
+2 Reg not of the road in itself.
+3 Reg so you can say it’s, well give intersections  
+1 Reg i would say intersections
+1 Reg [person 3] is writing on the whiteboard, intersection
+2 Reg for the information view
+3 Reg and we have the roads
+3 Reg intersection has, this, actually the traffic lights, and it has sensors, could have sensors  
+1 Reg yeah, sensors optional, traffic lights, it has four roads connected.
+1 Reg and all those roads also have the road sizes which affect the amount of traffic lights
+3 Reg so, roads have, connect intersections, size 
+1 Reg and maybe a type, if we want to- do we want to integrate maybe, merging lanes, for example if you have a four lane road and you want to go to a two-way road, or the other way around, or we just want to say if you make a road with four lanes it’s like that all across the board.
+3 Reg i don’t know, do we want that?
+1 Reg maybe put it between brackets again?
+3 Reg so these are linked
+2 Reg and that are connected roads?
+2 Reg and the type of-  
+1 Reg we also have actual input from students 
+1 Reg who set the timing schemes for the traffic lights.
+1 Claim and maybe, so, i think traffic lights should be separate objects, right
+3 Reg yeah, intersection on traffic lights yes, which could also be
+1 Prem because you should be able to configure per traffic light- 
+3 Reg traffic lights have a timing scheme.
+2 Reg yeah, or have sensors, so they automatically do that
+3 Reg yes but, part of the timing scheme-
+3 Reg and they also have an intersection.
+1 Claim and they connect with all the other traffic lights on the intersection, right?
+1 Prem because they should be able to communicate 
+1 Reg yeah, and the area maybe has some general settings like, busyness or are we going to set the busyness per road  
+3 Reg well if you have a traffic flow, you can start in the left area and come- might move to the right, but that seems more efficient then just selecting one road with busyness.
+3 Reg the flow of traffic  
+1 Reg yeah, the point is if you, for example, if you have a map with all roads, are you going to say, a lot of cars start here?
+1 Reg on this road, and they just randomly scatter across the board
+1 Reg or are you going to say, for the entire area it’s, for example, high noon and everyone’s leaving for work, so the busyness is high.
+1 Reg and on all the roads, from all sides are a lot of cars-    
+3 Reg can’t we do both?
+2 Reg yeah, it depends on the simulation 
+1 Claim well maybe you could say the only variable for a road is the size so how much lanes it is, and that also determines the amount of cars that spawn on it, depending on the time of day.
+1 Reg so for example if you have a six lane-
+1 Reg with low busyness there are still a couple of cars going through every second
+3 Reg sure though, we have busyness for an area, but the busyness on the road depends on the size of the road
+1 Claim the size yes, i think that’s a good design decision.
+3 Reg do you agree with it?
+3 Reg if you can’t read, just say it
+1 Reg the busyness for the area
+2 Reg ok, for the information view  
+1 Reg also a road has a length, you can have different road lengths.
+1 Reg or do we want to make the road in sections.
+2 Reg what do you mean by sections?
+1 Claim we could make it so, for example, the area is a grid.
+1 Claim and every road is either a horizontal tile or a vertical tile, and every intersection is just, well an intersection tile 
+1 Prem that would make it easy for the programmers to create the program.
+2 Reg but do we just have to decide if it’s horizontal, or a box with six intersections combined?
+1 Reg what do you mean?
+2 Reg if you can see it like this.
+2 Reg one, two, three, four, five, six, it’s possible that you can also make it like this.
+2 Reg and then coupled with another-
+1 Reg yes but we do not design the map
+1 Prem we, the point of the program is that the user designs the map.
+1 Reg so all we have to create is the
+3 Reg i would say, this is road one, two, three, four  
+1 Reg but is that really important?
+1 Reg either this, that’s basically the map design.
+3 Reg we’re just talking about it so
+2 Reg ok, forget that point 
+1 Reg let’s shut up about it 
+3 Reg so that’s a road, one length  
+1 Reg yeah, or are we going with the tile approach?
+1 Reg so for example if i can demonstrate.
+1 Reg so if you create the map like a grid, so for example, you just have a basic grid.
+1 Reg and all the squares are tiles.
+1 Claim you could say you have a toolbox window with like, you have a vertical road.
+1 Claim a horizontal road and an intersection.
+1 Claim and maybe a large intersection as well which is for tile, and you can simply drag and drop it to be, for example, here we have an intersection and then you can connect the roads like this.
+1 Reg you can connect another road.
+1 Claim so you basically drag and drop the map.
+1 Prem i think this would create a very intuitive way to-
+2 Reg it makes sense.
+3 Reg for the user.
+1 Reg yeah, also for the user.
+1 Claim i think if we choose and approach like this it really defines the way you work with the objects.
+1 Reg so for example, in this case a road wouldn’t have a length but it would just be a tile 
+1 Reg and also in the information view all these objects are tiles.
+1 Reg and just in an intersection it would have traffic lights, and maybe you can zoom in on the intersection-
+1 Reg to see the individual cars go.
+1 Reg is that a good idea?
+3 Reg and the system will be able to determine how long-  
+3 Reg how far it is from the- intersections are separated from each other 
+1 Reg for example, if we just say, it would create and simplify that a bit.
+1 Reg limited view of the road.
+1 ClaimPrem but i don’t think that’s a problem because, we’re not going to-
+3 Reg one [inaudible ] roads so just-
+1 ClaimPrem exactly so, the point is that you can see, there are two intersections here and these are busy roads, or whatever, so you can see this road is an issue, and also these intersections are causing trouble.
+1 Reg you can just zoom in and you can see the individual cars go to check where the problem is.
+1 Reg where the bottleneck is.
+1 Claim i think this would create a good viewpoint.
+1 Reg so- so we’re doing that?
+1 Reg ok, so we’re going with the tile based approach.
+3 Reg and then we’re gonna have tiles
+1 Reg so, all these, the road is a tile.
+3 Reg traffic lights are part of a tile.
+1 Reg but they’re part of a road right?
+3 Reg they’re all part of an intersection.
+1 Reg traffic lights are part of a oh intersections sorry yeah, you’re right.
+1 Reg alright, you already have that so, this is a tile and intersection is a tile as well.
+1 Reg and the area is basically a bunch of tiles.
+1 Reg you can place tiles on the area so, like that
+2 Reg so area is a tile, a road is a tile
+1 Reg no area is not a tile, area is basically the board for tiles
+2 Reg and in area there are intersections, and yeah, roads.
+3 Reg and i suppose we have to do some uml modelling in a minute
+1 Reg so i think we have the-
+3 Claim we should make a petri net [laugh]
+1 Reg well we could for the information view [laugh] but this, yeah, let’s carry on with that.
+1 Reg we have the basics of each model down.
+1 Reg so, we have, we are at-
+1 Reg thirty-six minutes, in ten minutes we’re going to start with the card game-
+1 Reg so before that time let’s decide on what types of models we want to make.
+1 Reg or views i mean.
+2 Reg i have the book with me, for software architecture, so maybe that’s a good way to decide which model 
+2 Reg or which is appropriate, for example, to begin with for the context view.
+3 Reg maybe we could
+3 Reg well the external software packages are really something different from traffic rules and car behaviours so, and- 
+1 Reg so context view
+3 Reg how do we include that in one view
+1 Reg should i just create a new uml io?
+1 Prem because i think the context is really just showing in what context the system exists
+1 Reg so we have a- 
+2 Reg now we’re talking about the context view right?
+1 Reg so that’s the traffic simulation system.
+1 Reg so you have a few stakeholders-
+3 Claim maybe we should include like, the cars who prefer to be driving on the right, the most right lane.
+1 Reg that’s a traffic rule
+2 Prem yeah, not on the left side if there are more than two lanes.
+1 Reg but those are behaviours right?
+1 Reg so maybe we can include those-
+2 Reg and if it’s busy then a car-
+2 Reg can go to the second lane, or maybe the third lane
+3 Claim and then we should make, have an assumption that we wanted it to be the most efficient.
+3 Claim that we want the car behaviour to be the most efficient as possible, or maybe with random like in the real world, but
+1 Reg i think it’s not-
+2 Reg what about pollution for example, what do we
+2 Reg you want the maximum performance 
+2 Reg you know that one car from one intersection to the latest, the six for example-
+2 Reg which is the fastest-
+1 Reg i think we have like, a choice between, do we just want to introduce some randomness in it.
+3 Reg yeah, i think we should-
+1 Reg or do we want to go for the maximum, most efficient-
+1 Reg you’re gonna use the system to try to design something that is theoretically the most efficient way
+2 Reg that’s our goals
+1 Prem well it’s, i’m not sure if that’s a goal.
+1 Prem the goal is to show students what effect the system has on traffic flow.
+1 Claim so i think it should definitely be a representation of the real world.
+1 Claim and not a perfect system- 
+3 ClaimPrem that’s the goal, i does not really matter 
+1 Reg it says here, she wants to provide them with software that they can use to play with different traffic signal timing schemes in different scenarios.
+1 Prem she anticipates that this will allow her students to learn from practice by seeing first-hand some of the patterns that govern the subject.
+1 Claim so it definitely shouldn’t be a perfect system i think.
+3 ClaimPrem i don’t think it really matters and it just- about seeing the effects because it might not be necessary to to have a really very good representation of the real world.
+3 ClaimPrem maybe we can just see, say to the developers, try making an algorithm that looks like the real world, but don’t spend too much time on it because it’s not absolutely necessary to have a real-life simulator game
+3 Claim so we want some realistic car behaviour, but it’s not a priority if you ask me.
+2 Reg no it will be a- a mathematical-
+3 Reg but will it be easier to just have perfect flow for a mathematician.
+3 Reg than to create some kind of algorithm  
+2 Reg what is the of the road by the way
+2 Reg is it always at fifty kilometres, and how is the, eh the breaking distance.
+2 Reg if the light goes on yellow, can a car can pass by or must it stop if it’s-
+1 Claim i think the speed is-
+1 Claim a property of the road
+3 Reg and it’s also configurable 
+3 Reg breaking that’s eh
+3 Reg that’s a good point 
+1 Claim actually i think that’s related to the speed, you can set 
+3 Reg and also car behaviour
+2 Reg so two more minutes before we start with the card game
+3 Reg and how are we gonna draw a model with these cards, i don’t really 
+2 Reg no it’s, yeah, a way of thinking about different, yeah, context, problems, solution for each view
+2 Reg or views that we’re gonna make.
+2 Reg but for the context view we have to decide which information or data every stakeholder needs.
+2 Reg you know, the professor is the editor so to speak.
+2 Reg so yes, and the users of the system 
+3 Reg professor wants the students to be able to experience-
+2 Prem no i mean the professor is the supervisor
+2 Claim so he has all the rights to change patterns or limits, traffic lights for example
+2 Reg and the other stakeholders have the same permissions
+3 Reg may- what do you mean with-
+3 Claim i think that’s a really interesting view to focus on 
+2 Reg yeah, and for in the context view.
+2 Reg if we look here for example in the book, page 257, you can see here, well multiple databases and they’re all-
+1 Reg this is what i have right now
+2 Reg ok and that’s the-
+3 Claim i would say, what in the context influences our car behaviour perhaps, it’s a context view
+1 Reg yes but i
+1 Reg i’ll make a screenshot as well, i’ll save it in a bit
+2 Reg for the context view 
+1 Reg basically it only shows the stakeholders and traffic rules right now but, let me see, let me save the screenshot.
+2 Reg do we have to make a limitations for each stakeholder?
+2 Reg what are the limitations for the users, and are there any limitation for the professor?
+3 Reg we are- we only are allowed to play our cards right now 
+2 Reg so let’s start-
+1 Reg i so, oh yeah, so we’re gonna do the card game again
+3 Claim so i would say about the solution for our context problem to have car behaviour central in the view.
+3 Claim and to basically see what in the context is going to influence the way our car behaves.
+3 Reg what would you think about that.
+2 Reg can you repeat it?
+3 Reg so, we have car behaviour in the middle and we look at our context and see what are we going to have to take into account
+1 Reg you want to make a special context view for the car behaviour?
+2 Reg for the traffic rules maybe
+1 Reg is that really context though, isn’t that internal system behaviour 
+3 Reg well it is the rules of the real world that we’re going to have to transform 
+2 Reg now we assume it’s-
+2 ClaimPrem it’s a mathematical calculation, you can calculate and change the parameters of car length and waiting time and also the traffic rules.
+2 Reg in the simulation software
+1 Reg but i think there’s basically a fixed set of rules-
+1 ClaimPrem in the real world, the traffic rules and those influence the system so that’s basically what happens in the context view.
+1 Prem because those rules have an effect on the system and for the behaviour itself we can have some of our own rules.
+1 Reg but i think those are inside the system.
+3 Claim but i just think that we’re not gonna have a very interesting context view.
+1 Reg no that’s true but that’s-
+1 ClaimPrem that’s not really a problem because if it’s- if there’s nothing there, then it isn’t there
+3 Reg we can’t change anything about it
+2 Reg so i withdraw my card assumption
+1 Reg play my trap card [laugh]
+3 Reg [laugh] me too
+1 Reg ok so, for the other views
+2 Reg well functional view and information view.
+3 Reg shall we start with our functional view?
+2 Reg fine by me 
+3 Claim i think it’s easiest to just use uml or something 
+1 Claim i think the biggest problem we have right now, playing my problem card-
+1 Claim is that we don’t really know- we have a pretty good idea of how we want the application to work
+1 Reg but we don’t know how we’re going to visualize the architecture which i our main concern at this point.
+1 Reg we’re almost halfway through our time
+1 Claim so we really should start visualizing our- 
+3 Claim i think we should have a module like the builder module, that allows you to place roads, intersections and-
+1 Claim you should write that down, maybe functional modules.
+1 Prem if you make a special section modules, we can start dividing the functions.
+3 Claim we have- need to have the timing 
+3 Reg a nice name for it, timing configure, timer?
+2 Reg is that for each crossroad or-
+3 Claim i think you’re going to want to adjust your timing scheme on a specific crossroad.
+2 Reg so every crossroad-
+2 Reg has its own timing scheme
+3 Reg maybe there is an overall timing scheme and you can use
+1 Reg what do you mean by that?
+2 Reg to travel from crossroad one to crossroad six.
+2 Reg or intersection one to six-
+2 Reg how long does it take to get there.
+3 Claim maybe you want an option to say, everything green or i want everything red.
+1 ClaimPrem well i don’t think they should be able to configure in such depth because that would really mess up the entire logic of all the traffic lights which i think is the point of the application.
+1 Reg that they can just play with the timings-
+1 Reg and how long is the stoplight on red, how long is it on green, and yellow.
+1 Reg and that they can simply observe what happens.
+1 Claim so i don’t think they should be able to override the existing algorithms
+3 Reg i say each intersection or each eh-
+1 Claim i think each intersection should have its separate logic
+3 Reg so it’s separate timing scheme
+2 ClaimPrem so for at least six times, in our case, because we have six-
+1 ClaimPrem the number six isn’t really important because the way we build it, it can be one or it can be one-thousand.
+1 Prem depending on the size of the area.
+1 Reg but the requirement is at least six- 
+1 Reg we’re easily fitting that
+2 Reg shall i stop the game by the way?
+2 Reg or do you have-
+1 Reg we can continue from here it’s- that’s-
+3 Claim we’re gonna want to have a module to spawn cars, or-
+2 Reg just by a neighbourhood.
+2 Reg or a shopping center for example
+1 Claim i think, maybe, just to get back to the timing scheme.
+1 Claim there shouldn’t be too much else, which is one is the intersection logic and timing scheme is a part of that.
+1 Reg and timing scheme i the part the student can change and the logic is the overall algorithm-  
+2 Reg that’s the base 
+1 Reg so those are two separate modules i think.
+2 Reg so intersection logic, timing scheme, and builder-
+1 Reg yeah, the user interface.
+1 Reg the area interface, the builder interface maybe
+3 Reg we have the builder
+1 Reg oh you have the builder, ok.
+1 Reg excuse me [laugh] oops.
+2 Reg that was [person 1] by the way
+1 Reg no no it was [person 2].
+3 Reg does car logic in the- do the spawn maybe.
+1 Claim no i think every road should have, maybe separate road logic module, and if it’s a road at the edge of the world it’s a spawning road, or something.
+1 Reg and in- you can- for every spawner road you can configure how much car is spawned there.
+1 Reg is that an idea?
+3 Reg you said i think it would be best to have it only at sites.
+1 Reg cars can’t go
+3 ClaimPrem so you can observe the flow a bit better i guess, because if you’re gonna car spawn in the middle of your map then it’s gonna be difficult to track the flow of traffic and see how your actions influence the flow.
+3 Reg does that make sense?
+1 Reg so you only configure the busyness of the roads at the sides
+1 Reg road logic, car logic
+3 Reg some- if or without sensors, that’s part of the intersection logic.
+1 ClaimPrem i think we can cross out time of day, because we covered that with the road busyness.
+3 Reg and students can choose to have, like, when you at night.
+3 Reg and if it is not very busy they can say, i want orange light.
+2 Reg but then there will be a car crash.
+2 Reg came along at the same time
+1 Reg well, i’m not sure if that’s within our scope
+3 Reg that would be a feature of that night mode perhaps.
+2 Reg but then the rules change.
+2 Prem because cars can crash at night.
+2 Reg that’s the problem i-
+3 Reg yeah, it’s just an example of course
+2 Reg it’s only an example but- 
+2 Reg we have to think about, yeah, that as well.
+3 Reg cars are not allowed to crash  
+2 Reg [laugh] cars are not allowed to drive at night
+3 Reg is a student limited in his options?
+1 ClaimPrem i think we should forget night mode for now because it’s-
+1 Reg let’s leave it out for a minute
+3 Reg has a minor effect on the-
+3 Reg the purpose of this application.
+3 Reg now we have six modules.
+3 Reg how abstract are we gonna make this model  
+2 Reg so which do we have?
+3 Reg we have the builder module-
+3 Reg we have intersection logic with the timing scheme.
+3 Reg we have the user interface, we have car logic and road logic.
+2 Reg and that are the five-
+2 Reg points, yeah, in the functional view.
+3 Reg how abstract are we going to do this.
+1 Claim i think we should keep  it quite abstract.
+1 Claim if we just have the modules and the main functions as we specified there, of each module.
+1 Claim and their interrelations, that’s fine for the functional view, and the same for the information view
+3 Reg like a game manager that allows you to save your area and load in new areas?
+1 Reg definitely a game manager
+3 Reg game manager is that a good name?
+1 Reg game manager or main, maybe.
+1 Claim i think manager is fine, game manager
+2 Reg i’m going to read the assignment for now.
+1 Reg i’m going to create a picture of the whiteboard for the record.
+3 Reg may the record show that we did a very good job
+2 Reg i can make also photos at the end, so, i know recording is-
+3 Reg if you- then we can wipe this and we can start-
+2 Reg alright yeah, maybe i can use my-
+3 Reg let’s use [person 1]’s crappy camera
+1 Reg so this is another is readable
+3 Reg [laugh] i can’t see whether it says blue or not
+2 Reg maybe we can set up the rules for how long the lights can go on green, yellow and red.
+2 Reg that’s for the functional view
+3 Reg i’m gonna wipe this.
+2 Reg do you have the picture [person 1]?
+1 Reg yeah, you can wipe it.
+3 Reg well, i’ll keep our modules on it
+1 Reg just keep the main things.
+2 Reg so, for example, the orange light is always like-
+2 Reg fewer than three seconds?
+1 Claim maybe you can start with modelling the functional, if you’re going to-
+1 Prem because we need to provide real-
+2 Reg that’s for the timing scheme
+1 Reg we are at the first hour now so-
+2 Reg for example, the lights, how long does orange stay on, and red, and green?
+3 ClaimPrem how does architecture look like, because we have all this of the game and how are they connected.
+2 Reg oh all those five [inaudible]?
+2 Reg so what is the last one?
+2 Reg so that’s the one-
+3 Reg the game manager can create, like, a blank area.
+3 Reg or can just load, like a, an area that you have done before.
+3 Reg so basically the game manager just creates an instance to play in.
+2 Reg or with a map
+3 Reg should be module, the map.
+3 Reg current game or something
+2 Reg or current simulation or multiple simulations at the same time.
+2 Reg but what do they mean with, to allow cars in to flow through the intersection from each direction in a fluid manner.
+2 Reg what is a fluid manner?
+2 Reg we have to drive along each light or-
+1 Reg no, i guess that just means that they- when they can they drive and when they have to they stop.
+2 Reg of course but-
+3 Reg or- are- we reach performance from the program
+2 Reg i don’t know what-
+3 Reg almost like laying them.
+3 Reg so we write from constraint, view with performance
+2 Reg yeah, view with performance, yeah, what is view with performance.
+2 Reg it depends form which direction a car-  
+3 Reg i mean, are we going to- more into just our modules?
+2 Reg oh, here is it, it says in an ideal case the amount of time people spend waiting is minimalized by the chosen settings for each- for a given intersection’s traffic light.
+1 ClaimPrem so, but the students should also be able to play with the timing so they can create a less than ideal situation 
+2 Reg but the goal, the ideal case is, yeah, minimum waiting time.
+2 Prem they can use to play with the different traffic signal time schemes in different scenarios.
+2 Claim so the students can decide by themselves what kind of signal or timing schemes they will use in their models.
+2 Reg and it depends on, yeah, the different scenarios.
+2 Reg if you’re a city or outside of the neighbourhood
+1 Reg wait what was the question again?
+2 Reg oh, it was not really a question but, yeah, it says here that the students should play by themselves with different traffic timing schemes-
+1 Claim well, i think that’s intrinsic in our method of using tiles.
+1 Reg so they can basically create their own cities or whatever
+3 Reg how do i fit the logic things in this?
+3 Reg i just- we have the game manager, game manager can create a new instance from the game and it can be a new and fresh one, or one that was just saved in the game manager.
+3 Reg the builder is connected to that, can place things in the area.
+3 Reg the user interface has influence on everything.
+3 Reg how are we gonna get the logic things?
+3 Reg it’s all connected to the instance?
+2 Reg it’s a slider, i suppose.
+2 Reg each student can choose by themselves orange, red, green, how long it must be
+3 Reg but how do we model it.
+3 Reg i don’t know if this is a good way but-
+2 Reg what’s in the middle?
+1 Reg the instance is basically the current game
+1 Reg so they place objects in the world
+3 Reg you can load and save things in the game manager
+3 Reg is the builder connected to the other logic things?
+1 Claim i think that the logic is connected to the pieces you place.
+2 Reg yeah, each intersection and each traffic light  
+3 Reg but, does the logic become active-
+2 Reg the simulation and then add a new intersection and then change the parameters of those intersections and then you can play again with the simulation
+2 Reg just like, not sims but the other game where you can make your own city.
+2 Reg is it sim city?
+3 Reg or should we have like-
+2 Reg is dependent on the road logic, the intersection logic.
+2 Reg if the road logic can handle only four cars, for example, per minute, then the intersection logic
+3 Reg should we have like a logic manager module that-
+3 Reg basically sees how everything
+2 Reg what do you think [person 1]?
+2 Reg an overall logic manager for intersection logic and road logic.
+1 ClaimPrem yeah, i think that’s good because-
+1 Prem the logics are all connected so
+2 Reg if the students change one of the three logics then it can be a mess-
+2 Reg in the simulation but we don’t know
+1 Claim i think some of the logics are unchangeable, but there are obviously settings which can be changed.
+2 Reg yeah, especially car logic.
+2 Reg if you know that-
+1 Reg car logic is fixed
+1 Reg intersection logic is tweakable and-
+1 Reg road logic is- has a couple of parameters
+2 Reg you can tweak it as well.
+2 Reg so, the logic manager is in the middle and then intersection logic, car logic and- 
+3 Reg logic manager is connected to the instance.
+3 Reg what do we miss.
+2 Reg game manager yeah, road logic, user interface
+3 Reg if you were to see an architecture of a game what would you expect to be done down here.
+3 Reg like maybe graphics or something, or just like performance 
+1 Claim i think timing is important-
+1 Prem important, because you also need to be able to start and stop the simulation
+2 Reg and is it real time, how, or is it post play
+1 Reg or maybe you can fast forward it.
+2 Reg a of motion
+3 Reg a timing scheme  we have encapsuled in interaction logic
+2 Reg maybe we can make an element like, yeah, play [inaudible].
+2 Reg i don’t know, some timing- 
+3 Reg the actual game time can’t really direct any game manager or-
+3 Reg or just have
+2 Reg maybe you need the user interface itself.
+3 Reg what do we-
+1 Claim well i think the user interface is- 
+2 Reg it’s only a graphical
+3 Reg you have this instance element, what does that do?
+3 Reg is it just our game or is that where you would starting game 
+2 Reg i think in the game manager
+1 Claim i think the instance is where you save the data and the actual area, or the map.
+1 ClaimPrem so that basically holds information on the current session, so i don’t think that should handle the timing or 
+1 Claim i think the game manager-
+1 Claim should handle the timing
+3 Claim instance should be connected to like, input.
+2 Claim and a hard drive of course, to save the stimulation, eh the simulation of course.
+3 Reg should the hard drive be in the functional model?
+2 Claim it’s appropriate to use it, maybe also in the functional one.
+3 ClaimPrem well, i’m not really convinced because we can just say our game manager, if you save the file the game manager sends it to the hard drive, that would be a function
+2 Reg and of course you can open pre-existing simulations
+2 Reg and a game manager
+2 Reg via the instance, that’s a- 
+3 Reg instance is actually just like-
+3 Reg and that was the game.
+3 Reg but do we- we have a user interface.
+2 Reg shall i make a copy if this in visio?
+2 Reg or would you like to draw it in-
+1 Reg i can- let’s just-
+1 ClaimPrem we have the basics here so we can- when this is finished we can draft it in
+3 Claim yes well, these have graphics generation should be outside of the user interface zone.
+3 Claim and we could have this, graphics gen.
+3 Reg graphic generation, connected to the instance
+2 Reg what i the purpose of graphic gen?
+3 Reg actually, it’s playing opposite of the stuff.
+2 Reg and the user face, that’s the, how do you call it 
+2 Reg the windows at the top
+3 Reg you can [inaudible]-
+3 Reg so still something that we miss?
+3 Reg we say that the timing thing is saved by the instance itself.
+2 Reg the less settings that they have used for every intersection
+2 Reg by the logic manager
+3 Reg well, all of the game, starting game, will be handled by the instance.
+3 Reg yeah, do we need a separate thing for that?
+3 Reg or could it be done by the game manager.
+2 Reg i really don’t know
+1 Claim i propose we take a break now for five minutes and we’ll think with fresh minds again at-
+1 Reg does this have a pause button?
+2 Reg oh, i don’t know if it’s pause or-
+2 Reg so, let’s continue with our discussion.
+1 Reg ok, that was our five minute break
+3 Reg so we are almost finished with functional view i think
+3 Reg there is an issue-
+1 Reg we’re gonna have to talk about, that is, how are we going to include the external software package 
+2 Reg which provides the functionalities such as mathematical, ehm- 
+3 Reg shouldn’t that just be part of the interaction logic?
+3 Reg in combination with the timing scheme, that- which are already mid module.
+3 Reg so we just say, that package is integrated into the interaction module
+1 Reg i can put it- i have the context model opened here so i can put it in there, but what external packages are going to use?
+3 Reg i’m not gonna research-
+2 Reg random number generator, what it says here is statistical distributions and mathematical functionality
+1 Reg i’ll just put external packages
+3 Reg i think it’s the idea that we’re going to go on a research- desk research-
+1 Reg no we don’t have the time
+3 Reg about the best packages
+2 Reg no it’s out of our scope
+3 Reg so and then one thing i was thinking.
+3 Reg like that graphics generation is that the proper way to model it?
+3 Reg with a line to the instance.
+2 Reg depends on how it’s written, in which code i suppose 
+3 Reg we have the graphics generation-
+3 Reg module, straight to the instance
+2 Reg so that you can see, if there’s a crash for example, you can see an animation or something like that.
+2 Reg or if there is a traffic jam that the road-
+2 Reg will be drawn in red, for example.
+1 ClaimPrem well i think you should just draw very small cars on the map, i think that’s the easiest
+3 Reg i’m sure, but that’s-
+3 Reg we’ve gotten on a side track.
+3 Reg here’s the instance, that’s fine.
+1 ClaimPrem if that’s the best graphics- because the instance is the current board and the graphic generator-
+1 Prem is basically refreshing the board and drawing everything so
+3 Reg do we need, like, and input manager or something.
+3 Reg like a mouse or controller
+1 Reg i – that’s in the game manager right?
+2 Reg that’s game manager.
+1 Reg it’s really low level
+2 Reg with your mouse and a keyboard
+2 Reg maybe with keyboard shortcuts as well
+3 Reg do you guys have any other suggestions or.
+2 Reg for the functional view?
+1 Reg i can start modelling it here and we can see if it’s alright 
+2 Reg yeah, let’s start to the information view
+3 Reg we were thinking to do a petri net, is that still an option for you?
+2 Reg then we have to decide,
+3 ClaimPrem we have trade off, towards petri net, because i had some other work.
+2 Reg so yeah, we have petri net talented [person 1] and [person 2] and [person 3] here.
+2 Reg let’s see, how would you write this down then?
+3 Claim i think if you use your petri net it should be some kind of scenario.
+3 Claim but isn’t- is that really valuable.
+3 Prem because we can only do so much scenarios.
+2 Reg so what do we have in the information view
+2 Reg we have area that’s-
+3 Reg we have setup, like, you basically just upgrade our tile based thing.
+3 Reg like, we have tiles that can contain roads, intersections and traffic lights.
+2 Reg an intersection has sensors, connected roads and the first one i don’t [laugh] i can’t read
+3 Reg it’s also misspelled but-
+2 Reg the roads itself, connected and
+3 Reg that’s- we have a solution for this problem you know.
+3 Reg are you gonna throw your solution card?
+2 Reg oh not yet, not yet
+2 Reg only in half an hour [laugh] information view
+1 Reg what does the bottom one say there the-
+3 Reg and that one is user interface
+3 Reg include module like what kind of
+2 Reg i really don’t know yet
+1 Claim i think the information view is tricky
+2 Reg the definition of information viewpoint, describes the way that the system stores, manipulates, manages-
+2 Reg so if we have this, these topics then 
+3 Claim well we could do our information view as an overlay on our functional model.
+3 Reg like, we could say-
+2 Reg yeah, just like a fam 
+2 Reg but with lines and arrows
+Instructor Reg hello, just to remind you that at the two hour mark the design session is over and you have to start on the rationale-
+Instructor Reg alright, and at the end you have to come to [professor], and you guys also have to do a questionnaire.
+Instructor Reg the office is at [number]
+2 Reg that was [instructor] by the way 
+2 Reg now back to our problem with the information view.
+2 Reg its, yeah, which model is good 
+3 Reg we could select a scenario, like 
+2 Reg make a map
+3 Reg yeah, like scenario plus i’m going to make- add an intersection to my-
+2 Claim but if you had only an intersection that’s not enough.
+2 Prem a car, and you need the behaviour of the cars, and you want to select it with the slider or with-
+3 Reg well you can-
+2 Reg an even number or something
+2 Reg so, you have to do it all to make it work
+3 Reg and that’s the problem
+2 Claim the simulation, so you need to choose if it’s in a city and how much cars are there in that neighbourhood for example.
+2 Claim and then how the logic- isn’t the traffic lights and the cars and 
+2 Claim the speed as well and you have to make sure that every road has a maximum capacity assigned to it.
+2 Reg also with the traffic lights and with the seconds-
+3 Reg like a scenario change where setup game logic or-
+2 Reg and you have to do everything so
+3 Reg for instance what we have there really helps
+2 Prem but if you translate it back to the functional view you use all the elements in there.
+2 Claim so it’s not really convenient for us to use a graphical overlay.
+2 Prem you know when you want to use the intersection logic, car logic, road logic so you use the logic manager.
+2 Prem and the instance you use to save and open a recently- a project for example.
+2 Reg of course you may use the user interface to, yeah, to select stuff or chance settings in the program and, yeah, use the builder to build your city-
+2 Reg and of course you use the gm as well
+3 Reg well the instance has information about the game state.
+3 Reg the logic manager basically has, like, an aggregation of all the different logic that is gonna be applied on the game state.
+2 Reg maybe we can zoom in on the logic manager, for example.
+2 Reg and select the things the user would like to change.
+2 Reg the intersection logic, car eh
+3 Reg we need the whiteboard, let’s just 
+2 Reg maybe you can use this one but i don’t.
+2 Reg you just, test it out-
+2 Reg we have whiteboard
+3 Claim i think it’s close enough
+3 Reg right so, is it ok to just write down what kind of information each of these things has.
+2 Reg open, save that sort of kind of things, right?
+3 Reg information about the game state
+3 Reg all logic has the game manager
+2 Reg it’s also connected to logic manager
+3 Reg that’s probably something for the functional model does
+2 Reg for later on, for the builder
+3 Reg should the builder be connected to the, like the
+2 Reg yeah, to the logic manager.
+2 Reg so they’re not connected right now, but the builder-
+1 ClaimPrem i don’t think so because-
+3 Reg builder builds an element, how-
+1 Reg the builder is basically just drag and drop-
+1 Reg and then it’s to the board, to the instance.
+1 Reg and the instance passes the current board to the logic manager
+3 Reg so the instance has an element list.
+1 Reg instance is basically the current map
+2 Reg ok, that’s also a possibility
+3 Reg ok but- so that’s the point for the information view.
+2 Reg yeah, what is builder.
+2 Reg so the builder has also all the elements to place in a map
+3 Reg what happens is you’re gonna start where we were.
+3 Reg instance to logic manager is basically just-[inaudible] builder.
+1 Reg so this is what i have for the functional architecture model now.
+2 Reg it’s the same copy as we-
+1 Reg it’s basically the same, so what did you add just now?
+3 Reg oh nothing, this is for the information 
+1 Reg ok so i can ignore that
+1 Reg so i’ll leave this like this for now
+3 Reg i have started for the information flow.
+3 Reg the builder sends the element list to the instance 
+1 Reg the builder adds the element list to the instance
+3 Reg basically by adding elements to- with lists
+1 Reg but it doesn’t-
+1 Reg persee add a list of elements, it just adds elements is what i want-
+1 Reg simply by dragging and dropping 
+3 Reg and our next question is who does the instance and the elements.
+3 Reg to the logic manager?
+3 Reg and the logic manager disperses it around our different logic things to-
+1 Reg the logic manager
+1 Reg the logic manager is the overall- well is the manager obviously.
+1 Reg and it also passes things like borders between different tiles
+1 Reg and then the separate logic managers manage the individual parts 
+3 Reg but these arrows, shouldn’t they be the other way around then?
+1 Reg that’s a good question 
+3 Reg i’m gonna turn my problem card
+1 Reg oh there’s a problem card being thrown
+3 Reg how does this whole logic thing work is basically our problem.
+2 Reg maybe you can write down like an information flow.
+2 Reg where does the user start
+3 Reg i’m trying to do it- to draw it here
+3 Claim but that, basically we get the same problem.
+3 Prem you build something and the builder basically sends the elements to the instance.
+3 Prem the instance is basically a list of the elements.
+3 Reg but how do we get the logic attached to it.
+3 Reg does the instance then send element list to the logic manager?
+3 Claim or is he gonna go- nah i think to the logic manager would then consult all these things.
+2 Prem it’s a sort of library
+3 Reg like, how do you call it, like a server-bus or something
+3 Reg and then we- or a broker- and then it all gets put together.
+3 Reg and then it sends it back with logic.
+1 Reg so these arrows are fine, this way
+3 Reg or should the-
+1 Reg i labelled them as interactions by the way.
+1 Reg do you have a better term for that?
+3 Reg always a bit vague with the functional thing.
+3 Claim but we could also have, like, the interaction manager in between the builder and the instance.
+3 Prem so that the builder- you place it, logic manager adds the logic-
+2 Prem but the logic manager is sort of like a back office.
+2 Claim you know, it’s rendered at the back of the system.
+2 Reg and intersection, car and road are clickable items.
+2 Reg so that’s the main difference
+3 Prem no, i imagined it like the user can have some options to change some logic.
+3 Claim so he can change something, the logic manager then basically talks to all the set pieces of logic and creates, like the 
+2 Reg but now you’re saying that the road is already placed in the map right?
+2 Reg oh not yet, ok.
+2 Reg it could also with- like, yeah, sim city you know, where you can select first some roads, and then you connect it via an intersection and then you can place different types of cars-
+2 Reg and now you randomly select those or 
+3 Reg well the thing is, like half of this direction logic is already set.
+3 Reg and the other half is not set 
+2 Reg you could have a user interface
+3 Reg so the logic manager basically serves as the way to connect the user with the things logic
+1 Reg i have a question, the logic manager, shouldn’t it communicate with the game manager rather than the instance.
+2 Reg yeah, but it’s the same thing via the instance.
+3 Reg in this situation it’s because the instance is basically a list of elements, who then need logic.
+1 Reg so it communicates through the
+3 Reg that was the logic
+2 Reg ok that makes sense.
+3 Reg so in regard to information we will
+2 Reg [burp] that’s [person 1] again
+3 Claim it doesn’t really make sense to me
+1 Reg builder as elements to-
+3 Claim but, these instance need logic so, it will have to talk to the logic manager.
+1 Claim i think this is the- this is not really an information view, i think.
+3 Reg it can get- it’s one of the most difficult views, the information view
+2 Reg yeah, we have half an hour so-
+2 Reg it will be tight.
+3 Reg let’s start our
+2 Reg i thought information flow was the easiest one to-
+1 Reg well, we have to-
+1 Reg clearly define what we want to picture.
+1 Reg do we want information flow?
+2 Reg process, which comes first, which option you choose you choose first
+1 Reg [laugh] how to fail with whiteboard cleaner
+3 Reg how to make your clean whiteboard
+2 Claim i thought the user starts the program, and then he selects a sort- kind of map.
+2 Reg if it’s in a village, city or somewhere else, then a map will be displayed.
+2 Reg and then he selects first of all different kind of roads and it’s connected via the intersections and then the intersections are imported, and then you can alter or change the parameters.
+1 Claim well i envisioned more that they just start with an empty map-
+1 Claim and they draw their own roads.
+1 Prem because otherwise it’s going to be more complicated
+2 Reg that’s just like sim city
+2 Reg you select one road and then you can- 
+2 Reg select how long it must be and what the kilometres per hour is and how much traffic
+3 Reg so how do we do that in an information flow about the architecture
+2 Reg that all begins with the gm, the game manager
+2 Reg asks do you wanna start over with a new simulation or you want to 
+3 Reg is that the information flow?
+2 Reg the user gets a message where he selects which option- 
+3 Reg ok let’s say
+3 Reg let’s say the game is created 
+3 Reg then the game manager-
+3 Reg there’s an instance created
+3 Reg and what is the next information flow
+2 Claim from the instance to the logic manager.
+2 Prem because the base of the system is to connect the road with-
+2 Prem each other then select different cars, with different car lengths and kilometres per hours for example.
+2 Reg yeah, to complete the simulation
+2 Reg but first of all you-
+3 Reg shouldn’t the builder be-
+2 Reg yeah, of course via the builder
+3 Reg yeah, that’s my problem-
+3 Reg how do we fit the builder and the logic manager in this process?
+2 Reg and also what about those topics in the information view
+3 Reg do the information view of like, our blocks
+1 Reg what do you mean?
+3 Reg what logic is attached to what thing 
+2 Reg yeah, or sort like a database model 
+1 Claim nah i think we should stick with the information model
+2 Reg no of course but sort like approach where logic manager one  logic of- no.
+2 Claim every intersection can have multiple road logics.
+2 Reg and also multiple intersection logic.
+2 Prem because every light has different logics
+1 ClaimPrem but that’s not really an information view, i think it’s more like a technical view or 
+2 Prem because in the book here it says like, yeah, sort of like database yeah.
+1 Reg for our assignment we made the overlay
+1 Reg so, maybe we can make a functional overlay
+3 Reg then we have to pick a scenario and i’m not sure
+3 Reg this is not a really a 
+2 Reg i don’t know how to draw it,
+3 ClaimPrem i mean in this case we haven’t really because in the assignment we were like, thinking how did the system work.
+3 Prem and now we got to- we can decide how the system works.
+3 Reg so we can choose
+1 Claim so maybe we can make a uml with not just the class names, but also the information properties-
+1 Reg a double block, so you just make an- information entities and the flows between them.
+1 Reg that’s done, so you don’t have a specific scenario
+3 Claim i do think that we need like, an element, something that gets the logic
+2 Claim yeah, and also the properties that we have written down on the board
+1 ClaimPrem exactly, because then the relations between-
+3 Reg basically we have the element list moving around and-
+3 Reg and each element is like, a part of this list that we made with our roads and our dials, and has attached logic.
+3 Reg how do you get the logic or element, is basically the information flow that we should have.
+1 Reg how do you get the logic on an element
+3 Reg we build it, we create an instance with our element list, and then, it’s like magic.
+3 Reg we have our instance manager and then we have our logic manager, and the  we have our different kinds of logic 
+1 Reg oh so you want to show how that logic manager and the instance communicate.
+3 ClaimPrem for in our architecture, because otherwise
+1 Reg that’s true, the developers need that to
+2 Reg i thought, the area is the upper- the most important thing here in an information view.
+2 Reg and then you select ok, i uses the roads and intersections and those two combined are in the area map so to speak.
+2 Reg and the traffic, what does it say there, traffic lights?
+2 Reg are used in the intersection, intersection has multiple traffic lights and if an intersection consists of, for example-
+3 Reg where is the information flow in this?
+2 Reg it doesn’t have to be an information flow.
+2 Reg yeah, if you look here, this is the flow where it stores-
+2 Reg the information, so the sensor information is stored in the intersection
+3 Reg so basically our element list would have all this
+2 Claim parts, and then maybe you can display it with a sort of fam overlay where the information starts or comes from
+3 Reg we have our instance, and that has like, the element list to start
+2 Claim but now you want to draw the logic manager as well?
+2 Prem because there’s all the logic
+2 Claim i thought it was not really, yeah, appropriate to use
+1 Claim well, i guess you could do this and just have the logic manager as the single box.
+1 Prem but then you have to define the information flow between them
+3 Reg the logic manager, shouldn’t that receive like, the settings of the user interface?
+2 Claim but why don’t you draw it like this?
+2 Claim like a sort of database.
+2 ClaimPrem it’s- i thought it- much easier, it’s not related to the functional view, not yet in my opinion.
+2 Reg but maybe later on we can draw something like that.
+1 Reg we have about twenty minutes left-
+1 Reg and we have to do the game again in five minutes so
+2 Reg yeah, because i don’t understand, yeah, how will this be, yeah, how would you draw this.
+3 Reg that’s a problem
+2 Reg i don’t know, because i can draw this 
+3 Reg and how would you do it that way
+2 Reg to begin with the area, you-
+1 ClaimPrem i think we should limit to this, that’s maybe the best option for now.
+1 Reg the entity we’re making
+2 Reg we’re making we have papers, maybe it’s easier to read
+2 Reg just wait and see.
+3 Reg do you actually use any of those design patterns for a functional model?
+3 Claim you should split your user interface with your controller layer and your application layer or data layer
+1 Reg oh, oh we did 
+3 Prem we have user interface which influences everything.
+3 Claim you want to change to
+1 Reg yes so, that’s true.
+1 ClaimPrem we could- it’s only a two hour session [person 3].
+3 Claim but it- it doesn’t have to influence the logic part, user interface.
+3 Reg couldn’t you just make it go to, yeah.
+3 Reg how do we draw that
+1 Reg actually the user interface only affect the-
+1 Reg instance and the builder right?
+3 Reg yeah, you’re game manager is not really a thing.
+3 Reg this is the functions, yeah.
+3 Claim i would do it that way,
+1 Reg alright so, change the
+2 Reg those are related in a road can- so if for example you have the area-
+2 Reg and then one area can have one or multiple roads, and one area can have one or multiple intersections.
+2 Claim and then there must be a relation between one road and an intersection, for example
+2 Reg one road [inaudible], if one road doesn’t have an intersection- it is possible in our model.
+2 Reg you know, it can be the first road-
+3 Reg it can mean like, you have but one road
+2 Reg yeah, it’s the ending road, you know?
+3 Reg yes well this, this is an intersection
+2 Reg every road has an intersection
+3 Reg but if you- let’s say you have like your grid here.
+3 Reg and you have like a road going here.
+2 Claim yeah, there must be always an intersection in a road
+2 Prem every road is connected to another road
+2 Claim so one road, have one or more intersections
+3 Claim how do you propose to constraint?
+3 Prem because if you draw your first road, and you don’t have an intersection
+2 Reg not to begin with, but later on you can add some intersection
+3 Claim so it should not be a concrete constraint.
+3 Prem every road should have an intersection
+2 Reg yeah, but how to draw this like this.
+2 Claim then you have to draw also a line between road and intersection.
+2 Reg one road can have, multiple, have one or more-
+3 Reg one to many
+2 Reg and then here you can assign the properties of the road.
+3 Reg but we also make like, our tile thing.
+3 Reg i think that’s an-
+2 Reg that’s the, with the structure of-
+3 Claim i want to include with- i would say like and area as multiple tiles.
+3 Reg consists of roads and intersections
+2 Reg so you can select here that the-
+2 Reg is a tile
+3 Reg i would maybe have like a tile here, and then those lines to that and so like this.
+2 Reg yeah, and ok, then this is the tile.
+2 Reg it’s a bit difficult to 
+2 Reg why a tile is there, in the first place?
+2 Reg if you draw it like, a sort like database right now
+3 Reg tile is like, the block on our-
+2 ClaimPrem but is it not obsolete, because area can have one road, one intersection and- one intersection can have one or more traffic light.
+2 Reg so that’s the last one
+2 Reg with sensors and included, so, for example let’s look at- 
+3 Claim like all these requirements that we have, like, traffic label should be conveyed visually to the user in real-time.
+3 Claim the current state of intersections, traffic lights should also be depicted visually, and depict when they change.
+3 Reg how can we say that we have those requirements
+1 Reg yeah, that’s a good question
+2 Reg if one or more.
+2 Reg so it would be like this is i suppose.
+2 Reg one intersection can have one or more traffic lights, with a maximum of four.
+2 Reg and [even kijken hoor] one-
+2 Reg area can have one or more intersections.
+2 Reg and one road can have also one or more intersections-
+2 Reg with also a maximum of four.
+3 Reg and you have the sensors that we 
+2 Reg yeah, so the sensors and-
+3 Reg one intersection could have, how many sensors?
+3 Reg i imagine if it’s four- 
+3 Reg i mean it’s say
+2 Reg four does- traffic lights have sensors, that was also a thing to point out.
+2 Reg and the sensors, oh are at the traffic lights, have sensors or?
+3 Reg we said the intersection had sensors
+2 Reg but with all intersections, with all the lights, with all the four lights.
+3 Reg like you have a sensor on each lane in an intersection.
+2 Reg but is it maybe possible to say that one traffic light is- has a sensor.
+2 Reg and that all the other-
+3 Reg like, it’s not a requirement.
+3 Claim it’s not required that they have a sensor but they can have a sensor so they should be-
+2 Reg but they have-one intersection has sensors, then all the four lights are automatically controlled.
+2 Reg so to speak, in that case
+1 Reg oh, we should start the-
+2 Reg let’s start with, yeah, solution maybe, or what.
+2 Reg yeah, problem, not really, assumption, risk, trade-off.
+2 Reg find a solution for the sensors
+2 Reg have traffic light sensors or have intersections
+3 Reg problem, we have our problem and do we want to put sensors at the intersection or at traffic lights.
+3 Claim and really, we want to find out if there is a risk or a trade-off to do this.
+1 Reg the cards play the cards
+3 Reg is there a trade-off.
+3 Claim we want to say in our information model, like, sensors
+3 Claim either an intersection could have sensors or the traffic lights should have sensors
+2 Reg have to think about them- 
+1 Claim i think an intersection should have
+3 Reg i have also two
+1 Prem because there is not really a trade-off.
+1 Prem because you can still influence each other’s logic, [hick] but [laugh]
+2 Reg that was also [person 1] again [laugh] 
+1 Reg but they just affect the traffic light of that intersection.
+1 Reg but it also affects the other traffic lights at an intersection, if you get what i mean.
+1 Reg it doesn’t just affect the traffic light in that lane it effects all-
+1 Reg the traffic lights in the intersection.
+3 Reg ok, that’s an assumption
+3 Reg we’re gonna assume that’s the case
+1 Reg yeah, and eh,  
+3 Reg do we want to assume this?
+1 Reg don’t forget to note the cards-
+3 ClaimPrem i don’t really think there’s a risk in assuming this, because
+1 Claim no, i think that’s a solution, that’s really the question you have [laugh] so, do you agree person 2?
+2 Reg sorry, just doing my administration [laugh]
+1 ClaimPrem so we have about ten minutes left so we should-
+1 Claim really start wrapping up.
+2 Reg i only have to make sure roads
+3 Reg you’ve changed the functional model
+1 Reg it looks like this now.
+1 Reg this is the functional model, i’m now showing the second version of our functional model.
+1 Reg and the context is just, is still this.
+1 Reg it’s quite simple but we don’t really have anything else
+2 Reg at the moment, yeah, in more than ten minutes
+1 Reg so we have to start on the-
+2 Reg the information view
+1 Reg i can start modelling in-
+2 Reg yeah, i only have- roads can- users can select the size, how long it will be?
+2 Reg select and then on the map and then, so long it gets
+3 Reg no, they add tiles.
+3 Reg so you will add like, a road tile
+2 Reg yeah, but for the property, it’s in a sort of database, road.
+2 Reg it’s a property of a road.
+2 Reg so [kijk] so the-
+2 Reg so the type of road can be selected?
+3 Reg road is a property of tile.
+3 Reg a tile can be a road.
+2 Reg and an intersection, and a tile can also be an intersection
+3 Reg can also be an intersection yes, yes
+2 Claim but for the roads you want to address how much lanes a road has.
+2 Reg that’s also in the tiles then.
+2 Reg so everything is in the tiles
+3 Reg everything is in the tile, but a road can have a type,
+2 Reg and decided how long it will be and also how much lanes a road has
+2 Reg full size, size if the length of the road
+1 Reg no but, we have tiles, so
+1 Reg the length is always the same for one piece of road
+3 Reg but what’s the difference between type, what do you mean with that
+2 Reg yeah, it’s so i don’t
+3 Reg yeah, we’ll leave it question mark but
+2 Reg so, that is also
+3 Claim i think lanes is all you need for the types
+2 Reg yeah, or maybe another slider like throughout or output of the road.
+2 Reg so students can say-
+2 Reg i don’t know how, what of my sizes we could-
+3 Reg we could have like-
+2 Reg it must handle two hundred cars each minute
+3 Claim i would propose to remove type and add capacity
+2 Reg yeah, capacity is a better option 
+3 Reg or should we, maybe, add like, something, a road has lanes, and a lane has a capacity, maybe
+2 Reg yeah, but that depends on the speed of the road-
+3 Reg yeah, the information model
+2 Reg eh, speed also, speed is not really mentioned in the model right now.
+2 Reg it depends on the speed of the cars.
+2 Reg if the cars can go hundred miles on that road then the capacity can be tripled.
+3 Reg well, not capacity but, like output.
+2 Reg yeah, but that depends on the speed as well
+3 Reg if you have a road like a kilometer and you can go a hundred miles, and everybody is going a hundred miles, you won’t have the same amount of cars on- will be driving further from each other
+2 Reg but, the capacity will be higher if the speed is
+3 Claim the capacity will be lower i think, or the same
+2 Reg [person 1] what’s your opinion
+3 Reg if you’re standing in traffic
+2 Reg if the speed is increased on a road then capacity will automatically also increase?
+3 Claim you won’t be able to fit more cars on the same road, if you’re going faster
+1 Claim the capacity is always the same.
+1 Claim i guess cars go through faster but they have to keep more distance
+3 Claim i would propose to have a separate thing for lanes
+2 Reg wow wow, what i understand-
+3 Reg you just have lanes, or does that not add anything?
+1 Reg so, five minutes left on the-
+2 Reg this is sort of like database view, so one area can have one or more roads.
+2 Reg and also the other way around, like an area can have one or more intersections.
+2 Reg and one road can have also multiple intersections, if it’s a long road.
+1 Reg but that’s the point
+3 Reg a tile, you just have a tile
+2 Reg yeah, i mean tiles
+3 Reg so a tile can be a-
+2 Reg so tile’s here in the middle
+3 Reg a tile can be a road or intersection
+1 Reg yeah, not an area as well, this is-
+2 Reg no, this is what we have drawn on the board
+3 Reg an area consists of tiles
+2 Reg yeah, and a tile is a road and intersection 
+1 Reg oh yeah, i guess you can have empty tiles, but i’ll start on the- can you have empty tiles?
+3 Reg yeah, alright but- or we just say, like, a tile is created and but is it valuable to add a separate thing for lanes?
+1 Reg how do you call this, is this uml or?
+3 Reg i have no idea
+2 Reg what’s it say here, entity relationship diagram
+3 Reg oh yeah, that’s something
+3 Reg i think that’s uml right?
+2 Reg it looks like uml 
+2 Reg did we miss something
+3 Reg well, we only have, like, what’s this?
+2 Reg oh, traffic lights, you know
+2 Reg one intersection can have one or more traffic lights.
+2 Reg and a traffic light can have sensors or not, but we have chosen to-
+2 Reg to select an intersection
+3 Reg a lane can also have a traffic light.
+3 ClaimPrem and that’s relevant because if you want to go left-
+3 Prem then there should be a specific traffic light signal 
+3 Prem like an arrow, like going left
+3 Prem it’s one of the requirements.
+3 Claim so i think lane should also be connected to traffic lights
+2 Reg so lane is separate
+3 Reg so that you know, so that you can-
+2 Reg but what is the relationship between the road and the lane
+3 Reg the road has lanes
+2 Reg yeah, multiple lanes, or one more
+1 Claim a lane is separate i thought
+M Reg yeah, roads can have more or, yeah, one or more lanes
+3 Reg in this situation are the lanes connected to the traffic lights.
+3 Reg roads are connected to the intersections
+2 Reg and intersections are connected to the traffic lights
+3 Reg connected to the traffic lights.
+2 Reg one road can have one or more lanes.
+2 Reg yeah, and there’s no maximum for lane, maybe-
+2 Prem a property of a lane is capacity
+2 Claim so we can add that
+1 Reg in speed maybe?
+2 Reg yeah, speed was not-
+3 Reg speed is not a road
+3 Claim every- i think that it’s a road thing here
+2 Reg ok, so add speed there
+3 Reg but, shouldn’t a lane also be connected to the traffic lights?
+2 Claim yeah, i thought it was the roads
+2 Prem because one road can have one or more intersections and consists of one or more
+3 Reg so in this situation the traffic lights
+3 Reg to the lanes also, because-
+2 Reg yeah, the other way around
+3 ClaimPrem you need to know what lane you are on for the traffic light where it- because if you want to go left you need a special thing 
+2 Reg what are the properties of a traffic light
+3 Reg the red, green, orange
+3 Reg and your timing scheme.
+2 Reg yeah, and if it has a sensor
+2 Reg yeah, that’s the only property it has
+3 Reg i think timing scheme 
+3 Reg and yeah, output, the colour
+2 Reg is that good, or light condition or something
+3 Reg colour, the colour of the-
+2 Reg yeah, it’s a good- colour
+3 Reg yeah, i think so
+2 Reg and then intersections have- [person 3] what is the first one again?
+1 Reg so we have one minute left.
+1 Reg let’s wrap up the-
+2 Reg yeah, so we have finished our context view, and then we completed our functional view.
+2 Reg and now we have almost completed our information view.
+2 Reg and the information view consists of an area, that’s sort to speak of like a map, and a map can have one or more roads.
+2 Reg one road can have one or more lanes, with no maximum value.
+3 Reg well, should there be a maximum value?
+2 Reg yeah, i don’t know if it’s a high way
+2 Reg yeah, i don’t know really.
+2 Reg maybe four, maybe five, i don’t know.
+2 Reg and then one road can have one or more intersections.
+2 Reg especially if it’s a long road
+3 Reg couldn’t a lane also have a direction.
+3 Reg i guess, on a road
+3 Reg lanes going in directions
+2 Reg but then, is the database still valid?
+3 Reg what do you mean?
+2 Reg is it not connected with the intersection.
+3 Reg you mean it should be,
+3 Reg i mean, a road does have a lane
+2 Reg yeah, one or more lanes
+3 Claim yeah, it should be.
+3 Prem if road is connected to the traffic light, the lanes would also be connected 
+2 Reg oh, we’re over two hours now
+2 Reg shall we stop or continue
+3 Reg we’ll just wrap up the information model as we have it now and then-
+1 Reg start from the documentation
+1 Reg so i guess we can end the audio recording now?
+2 Reg yes, wait a minute, right now.

@@ -1,0 +1,771 @@
+2 Reg right, so we've read the assignment and we not sure about how to begin,  
+1 ClaimPrem it looks a bit strange because we have to design like a gui and we haven't done that before.
+1 Reg let start from the top i guess   
+2 Claim we can start with the context view, open my book to see what it said,  
+1 Reg do it in paper right.
+1 ClaimPrem okay, describe the relationship, dependency and interaction between the system and it's environment, people, system (inaudible) which interact, so i guess the context model will mainly focus on the people.
+1 Reg and we have some external existing software packages providing relevant mathematical functionality       
+1 Claim so that's the external party i guess.
+3 Reg is the teacher of the course somehow involve or relevant?
+1 Reg i did not read that but perhaps.
+3 Reg it just she .
+1 Reg so the teacher has no influence.
+2 Reg shall we use visio or i just.
+1 ClaimPrem just scratch it because we will have to adapt it many times because visio kind a annoy.
+2 Prem it also easy easy to change without starting over.
+1 Reg or we can or  i can start visio up.
+3 Reg so that is the one in the middle or something like that.
+2 Reg i'm gonna make an new uml.
+1 Claim i guess so for the context model.
+1 Reg we gonna name it student right so not students.
+2 Reg i'm taking look at the example.
+3 Reg it says in the example.
+3 Reg and how is that existing software package, is that like a package like a whole or should we like split it up in something like little things .
+1 Reg let see how they mentioned it.
+1 Prem they say reuse existing software package provides relevant mathematical functionality such as.
+3 Claim so it basically just only mathematical.
+1 Claim so we could call it mathematical software packages.
+3 Reg something like that.
+2 Claim so that’s kind a how they do it.
+1 Reg the external system is that.
+1 Reg the mathematical software packages is an existing software package     
+2 ClaimPrem but they are reusing it in they system i wouldn’t call it external.
+2 Reg it's kind a like this.
+2 ClaimPrem so these are external and these are internal kind a system so maybe we would like that.
+3 Reg so that internal more.
+1 Reg so they included in their code.
+1 Prem they won't make a call to an external system to validate it.
+1 Claim so we will make it internal.
+2 Reg we call that the mathematical software package.
+1 Reg try to make it here.
+3 Claim maybe we should also have something like the students database.
+3 Prem might be useful for example if the student can like log in log out to see what kind a simulation he did.
+2 ClaimPrem well maybe not tied to an account but more to like a file so he can save his file.
+2 Claim so he can save his file.
+2 Prem he doesn't have to log in and see his (inaudible).
+3 Claim so at least something like a database storage.
+1 Reg what do you said.
+3 Reg basically some sort of database that storage like the previous simulation.
+2 Reg well not really setting but just when he made simulation he can store simulation .
+2 Reg kind a visio drawing you can save it to file.
+3 Reg or maybe even the setting as well.
+2 Reg but what kind a setting. 
+2 Claim the thing you said are the traffic light, the density and stuff they are really specific from the actual.
+1 Reg i cannot find uml.
+3 Reg node is just isn't explanation or something.
+2 Reg so is the thing we just talk about it .
+2 Reg is it really a database or ?.
+3 Claim maybe not the real database but at least some kind of file system  
+3 ClaimPrem maybe functionality because calculation sound more like calculating something   
+1 Reg okay so we also have the database.
+3 Claim maybe not name it database.
+3 Claim but maybe name it something like file system or file storage or whatever   
+1 Reg it's not really a database.it
+1 Reg is it a file system?.
+1 ClaimPrem we have to determine how we wanna save the data then i guess, because that is also relevant for the information viewpoint  later on.
+1 Reg so how would you like to save it.
+1 Claim perhaps some sort of xml or something.
+3 Claim that would be fine.
+3 Claim that would be the best.
+1 Prem i guess it also the easiest form to implement.
+1 Reg if you are talking to what was it.
+1 Reg students who just complete basic computer science degree.
+1 Prem so xml that's a file system.
+1 Claim so we gonna have a file system.
+1 Reg and i would place a comment there also i guess.
+1 Reg which state that it was for xml files with save data.
+3 Prem and another part of the context are those software developers which have to implement it.
+3 Claim i think because it should be clear for them.
+3 Prem they don't really use the system.
+3 Prem but they have to implement it.
+1 Claim perhaps some kind of account system.
+1 Claim that students can see other .
+1 Reg students can log in.
+2 Claim i think they would've made it unnecessary complex.
+3 Claim i think so as well.
+3 Prem it doesn't add that much interesting functionality.
+1 Claim so we won't make it an online software.
+1 Prem it just computer software.
+3 Prem it also easier to implement.
+1 Claim there is not so much functionality going on.
+2 Claim there is about this i think.
+2 Reg but another thing of the context view point is the scenarios, interaction scenarios i'm looking at up right now.
+2 Reg it's kind a uml sequence diagram for that.
+2 Claim and maybe we can use this.
+2 Reg and that also part of the assignment.
+1 Reg the interaction between the students and the the system.
+1 Reg but see where it's state so.
+1 Claim you must design the interaction that is one.
+3 Claim so that basically the line between students and this the essence of context.
+1 Claim ok so this is about it i guess.
+1 Reg try to make it pretty.
+1 Reg i guess this pretty enough.
+3 Claim maybe a little bit smaller.
+1 Claim so i guess that is the nice idea to do the scenario this way.
+Instructor Reg i was just (inaudible).
+1 Claim but the scenario i guess that is the way we do.
+2 Reg and there four kind a requirements.
+2 Reg so they must be able to create a visual map.
+2 Reg they must describe behavior of the traffic lights.
+2 Reg and simulate traffic flows, and change traffic density.
+2 Reg so this are the four scenarios.
+2 Reg but maybe make an interaction scenario four of them.
+1 Claim so you wanna create four individual interaction scenario.
+1 Prem it might be the best.
+1 Reg let start with the first one.
+2 Reg this between the system elements.
+3 Reg isn't there example that less specific.
+1 Reg okay let just think through that.
+2 Reg is the uml notation include notation.
+1 Reg because during the lecture there was notation explained.
+1 Reg lets look it up.
+3 Reg was that the example with the doctor and the.
+2 Reg the log in stuff.
+1 Reg so we can just do that the message sequence chart.
+3 Reg that is more like log in, created map.
+3 Reg run simulation something like that.
+3 Reg but if the state diagram basically cover in basically in one state diagram we can cover like all those four functionalities.
+2 Reg draw back of the state diagram also explained.
+3 ClaimPrem but maybe with this time constraints would be better to make a state diagram with the four main functionalities, instead four sequences.
+1 Reg okay lets do that.
+1 Reg this is i guess.
+1 Reg so the initial state.
+3 Reg do you have to name that.
+1 Claim no i don’t think so.
+3 Reg something like the initial state always something like required before you can basically make the first transition.
+3 Reg so that something like.
+3 Claim the students must have it download before.
+3 Reg like we perquisite before we can basically make first transition.
+3 Reg the state after the initial state.
+1 Reg okay so we just say.
+3 Claim the students must download the software.
+3 Claim the software must have been downloaded.
+2 ClaimPrem i'm rethinking this is the interaction between the system and the users it really best way to show that in the state diagram, because we are now describing state of the system.
+2 Prem they can change but they might not be change due the interaction.
+2 Reg doesn't really follow that well from the notation.
+2 Reg so that can be state transition but it's up to the user and the reader i guess.
+2 Reg what kind a .
+1 Reg that is right.
+1 Reg so what model you propose ?
+3 Reg sequence chart more useful for that but now we have to make it like four.
+2 Reg who kind a do like.
+1 Claim i guess this is the right way.
+1 Reg so this is uml do we intentionally has it to do.
+3 Reg that covers like all the functionality basically, sort of.
+2 Claim we could do that yeah.
+2 Prem because there is kind are some sequence.
+3 Reg of course first of all like you create a map,  
+2 Reg then the road and setting of the road and then traffic density.
+3 Reg so it come basically included all in one.
+2 Reg so created visual map, describe the behavior of the traffic lights, start a simulation and then during the simulation change traffic density.
+1 Reg i guess that's it.
+3 Reg nice      
+2 Reg so the first is there (inaudible).
+2 Reg we only have two maybe three for the pretty mathematical.
+1 Reg so i just msp, the user, and this the system.
+1 Reg and this is user.
+1 Reg what this students do, send some message.
+3 Claim well the basic first functionality was he has to be create a visual map of the area,  
+1 Reg start map editor ,  
+1 Reg ok and then you get return message .
+2 Reg then you can create a road.
+1 Reg that is one option you could also say road is not created.
+3 Reg why, it could be  
+2 Reg this isn't interaction right, this is scenario.
+1 Reg we can say indicate whether road is created.
+3 Claim i think you should do it like road created.
+1 Reg so we just gonna do road created, okay,  
+3 Reg and probably the msp only involve when there was simulation it self and road density and stuff like that i guess.
+2 Claim i think so, queuing the random number generation.
+1 Reg you can say create road and then the system might response, identify road length.
+2 Claim but  i was thinking maybe even more abstract like create object.
+3 Reg and i like traffic light place automatically when there is basically an intersection created.
+2 Reg that a choice we can make.
+2 Claim i think there were something about.
+1 ClaimPrem no we have our own choices, because it said so, the traffic lights will only have four road connected.
+3 Reg every intersection on the map want have traffic light.
+3 Reg four way basically means like just.
+2 Reg there is no t.
+3:s Claim than it would be the best thing that when the road is place and then automatically it's basically made an intersection.
+3:s Claim if it's like overlap or something.
+3:s Claim and then immediately some traffic light are place         
+2 Reg but, object like cross road.
+2 Reg but those are thing that we have to give more specific about in the information.
+3 Reg so basically identify object property basically covers that.
+2 Reg is identify is right word?
+1 Reg i would say indicate.
+1 Reg indicate object properties, and then the user responds with the object's properties.
+2 Reg if there is road creation then you could really graphical like in visio extend the road you just dragging.
+2 Reg property of the stop lights which time it stays green or what ever, those are not very easy to do graphically.
+2 Claim but this is more straight than i think.
+1 Reg that's back to the system and then we respond i guess.
+1 Reg and that's the entire.
+1 Reg that's all i think.
+3 Reg so you make like four of those.
+1 Reg but the object properties is already behavior of traffic lights.
+1 Reg that's already an object property.
+1 Reg so perhaps we're moving a bit.
+2 Reg into requirements two and three.
+2 Reg might not be necessary (inaudible).
+3 Claim i think it would be best to.
+2 Claim it might be best to do in one but .
+3 Prem because when you split them out into four like the first it wouldn't use the msp so.
+1 Reg so we can do this for road or object creator and the traffic lights what would we do, what we would automatically replace them ?
+1 Reg when road is a.
+1 Reg we can,           
+1 Reg perhaps we can't do that,  
+3 Reg i would like at functionality two and then like a not the (inaudible) stuff.
+2 Reg this one does not cover.
+1 Claim i think this is enough.
+3 Reg but don't do add like functionality two and four.
+2 Reg this does not cover the .
+2 Reg so maybe this is about requirement one and two and then (inaudible) which is more about traffic flow.
+3 Reg maybe we should remove the msp from the other one?
+1 Reg no would just leave it.
+2 Prem because it show that it consistency with the.
+2 Reg so we have student.
+3 Claim i would like from where we start now.
+1 Reg base on the simulate traffic flow on the map.
+3 Reg so basically you have some settle.
+3 Reg all those object are basically properties are define and there.
+2 Reg or maybe we can start again open map.
+3 Reg we called it map ?.
+1 Reg i don't think map opens.
+2 Reg traffic simulation, that's that already use some functionality of msp,  i think so right, random number generation.
+1 Reg what do you use random number generation.
+2 Reg so i think the amount of car that come out of road.
+3 Reg but that is not like really random.
+2 Claim is not really random but you should use random probability.
+3 ClaimPrem true, because that happen in real life.
+2 Claim so if he say there is like five cars per minute than it shouldn't be like every five seconds car .
+2 Claim should be five car in a minutes more or less then distribute they are not equally (inaudible).
+3 Claim we should like call this a call for certain calculation or functionality or just indicate more generic like call for statistical functionality like that.
+3 Prem because it's basically is part of the context.
+3 Reg no wait msp is part of the internal.
+3 Claim i think we should describe more specific then.
+3 Prem if it was external i think we just would call it more ambiguous.
+3 Prem don't have to know like how external things exactly work.
+2 ClaimPrem we have in context view something else because then maybe all we need something ().
+1 Reg it's look like in the object scenario it would also communicate with the msp because when you create an object.
+1 Claim after altering the map's timing scheme they should immediately see the changes in the traffic pattern.
+3 Reg is it like the simulation should we like on and off or there always real time changes.
+2 Reg timing scheme is not really mathematical stuff it just they really (inaudible).
+2 Reg doesn't really depends on the mathematical.
+3 Reg its more like simple property.
+1 Claim so we'll use in the object let just use this one, create object or roads and no traffic light.
+1 Prem because traffic lights we create different scenario in which we create traffic light.
+1 Reg we indicate the traffic light properties and immediately we will send the call to the msp the packages to check whether or not this works.
+2 Prem because there is dependency between traffic lights.
+1 Reg so if we do that.
+1 Reg and then the msp can also immediately show whether changes in the pattern.
+1 Reg or no that something else.
+1 Reg and the msp will do the call functionality.
+1 Claim we can't make it too difficult.
+1 Prem because we will use a lot of functionality.
+3 Reg there some sort of real time visualization.
+1 Reg so with the response, the students can know what it can do.
+1 Reg it can then changes .
+3 Reg but isn't like that property of object,  
+1 Claim yeah, i would say changes object properties.
+1 Prem because traffic density was an object of road.
+1 Reg after changing the object property it will call again to the msp.
+1 Reg if it response, and this time the systems will not give real time response.
+1 Reg let say real time response.
+2 Reg it would also mentioned the difference between () all say.
+3 Reg so could have done something like visualize road density for example.
+3 Reg green road is like really low density red for example really high.
+3 Reg for example the color of the road might changes.
+2 Reg they see the result do to the in the simulation.
+1 Reg so again there is no real time response.
+2 Reg the simulation will keep on going like take this input amount car come in on the road.
+2 Reg with the kind of random distribution and then it just run see what happen.
+2 Reg there's a lot of split.
+1 Reg ok so this is it.
+2 Reg i think i'll ever call functionality respond to this, yeah.
+2 Reg really generic maybe mathematical functionality.
+3 Claim it's more like crystal mathematical functionality.
+1 Reg good luck transcribing that.
+1 Reg because respond still the respond.
+2 Claim i think it could like parameters that the system uses to create the visualization.
+2 Reg so the system .
+2 Reg real time graphic visualization.
+1 Reg so do we keep it this way.
+3 Reg we have it like real time response or visualization.
+1 Claim i think it's pretty complete.
+1 Reg and looking at the time.
+1 Reg i would also say.
+1 Reg how do we call this.
+1 Reg so we'll have object scenario now and simulation scenario.
+1 Reg i think this it.
+1 Reg this the context.
+1 Reg and this is also correct.
+2 Reg the file system maybe we can use for later.
+2 Reg the file system also included in interaction scenario.
+1 Claim i don't think we have the time for that.
+1 Claim okay, but i like where are we going at the moment.
+1 Reg ok so that's the context view.
+1 Reg context view is pretty broad.
+3 Claim within in the documentation basically we have to add rationale, description, and stuff like that.
+2 Reg so the next thing is we do the functional architecture.
+1 Reg what kind of, architecture that do we wanna create.
+2 Reg we can try to make the functional architecture module from the one that we learn from the lecture or functional structure model that is in the book.
+1 Reg the book is uml focus for everything.
+1 Claim so if we go for the uml.
+1 Claim we will have more of box and line diagram.
+2 Reg box and line are different.
+2 Reg this are uml .
+2 Reg and box and line less formal.
+2 Claim but that custom then we should have to define for each.
+2 Reg find the meaning of the notation.
+2 Reg if you use this.
+1 Claim is no problem uml i think it's okay.
+1 Reg so lets just do this.
+3 Reg isn't that more like word flow.
+2 Reg it might be the one that (inaudible).
+2 Reg do we need it ?
+3 Reg what does indicate ?
+2 Reg i think this are interface.
+1 Reg it just a functionality called the green the different subjects.
+1 Reg which component do we have.
+2 Reg the activities shown in book you can identify (reading).
+3 Reg so you've basically maybe msp for all the mathematical functionality.
+3 Reg maybe some sort of component or .
+2 Reg is it be good to use the model view controller.
+1 Reg could you see if not model view controller.
+1 Reg i'm just say what is the msp is, 
+1 Reg in the model we will make all the a.
+1 Reg can we do .
+2 Reg there a chapter on      
+1:ci Reg the model we can also mentioned the transformation to an xml file.
+1:ci Reg the file system we will put there.
+1:ci Claim i don't think this is a bad view.
+1:ci Claim you can use it.
+1:ci Prem is not so much database stuff going on there.
+2 Reg although is there any database in the object, their position.
+1 Reg but that the xml file right.
+3 Claim but i think the functional view isn't that large in this case any way so.
+1 Reg so you wanna do the model view controller?
+2 Claim but maybe the functional architecture model is better option if we (inaudible).
+1 Claim let just do that.
+1 Prem because that is no use in the fixed.
+1 Reg just name it i will created classes and will the ordered.
+3 Reg is the way do it like.
+3 Reg creating a road or creating object.
+2 ClaimPrem i'm not sure because the thing that i'm getting from the requirement is that you can only create road and the system makes the traffic light in intersection but that maybe also.
+3 Reg maybe that's some kind of module.
+3 Reg well seeing from the perspective of the students they can only create the road, its seems from the perspective more of the system.
+3 Reg and the functional view is more like seeing from the systems right.
+1 Reg so we will create object.
+2 Reg which is kind a class of road, intersection, traffic light.
+1 Reg we make two separate classes for it.
+2 Reg like a road and a road intersection.
+3 Claim i guess that is correct.
+3 Prem because you have like the road where the cross end of course .
+2 Reg so there is traffic light behavior.
+2 Reg and traffic light behavior which is traffic light sequence.
+2 Claim i think there are distinction we made there the sequence.
+2 Prem traffic light on most road is more about the object of the cross road which sequence that the traffic light will go on and off.
+2 Prem and there is object for each individual traffic light which time is uses the.
+2 Reg that what i think .and
+3 Reg no it sound fine.
+1 Reg i'm little bit lost and little bit puzzled.
+1 Reg what do you trying to say.
+2 Reg i'm trying to say that there's property of an individual stop light.
+2 Reg there is also the property of the sequence stop light that goes on and off.
+2 Reg on the cross road.
+3 Reg so more the dependency between the individual object.
+2 Reg the sequence and light which are different.
+2 Reg the sequence is about (inaudible),  
+3 Reg just like the flow of the traffic.
+1 Reg so there is .
+1 Reg we have some kind of traffic light module.
+1 Reg traffic light, create object, that's more a functional view point and .
+1 Reg what you can do is.
+1 Reg after assigning the property it will automatically calculate whether the traffic lights correctly settle.
+1 Reg so we can put it under here.
+1 Reg how do you called it.
+2 Claim the system should not allowed.
+2 Reg so when you added property (inaudible).
+3 Reg is that only for like traffic light or.
+1 Claim also for the road i guess.
+1 Reg and the road intersection.
+1 Reg no the road is always fine.
+2 Claim we might be thinking to much in the information view.
+3 Claim i think that as well.
+3 ClaimPrem because it might be in information view is more like the distinction between modules that sort of functionality so maybe we should even like leave out like thing like road, traffic lights.
+1 Reg okay so we have here object module,  
+1 Reg but do we have gui.
+3 Reg is the validation module is the one you just talking about.
+1 Reg that we just talking about.
+2 Claim i think it's better to have coffee break.
+2 Reg okay so break for 5 minutes.
+1 Reg okay so welcome back.
+1 Reg we have a nice break.
+3 Reg so now we have the module validation, on check mathematical and gui, what else should we have.
+3 Reg not really sure    
+3 Claim you know this might be it already.
+1 Reg so we have the gui.
+1 Reg everything start from the gui.
+1 Reg from the gui you can create an object.
+3 Reg and then module uses the validation module and mathematical module.
+1 Reg does it use the mathematical module.
+1 Reg it uses the validation module, to check whether everything is correct, and the mathematical module is mostly use as we describe it before for running the simulation.
+1 Reg so perhaps we have the gui but we also have simulation module.
+2 Claim that becomes more of element view.
+2 Reg so this the example from the slides.
+1 Reg ok so we wont called it module.
+1 Reg we have object then, validation just remove the module.
+1 Reg and here called msp.
+1 Reg and simulation and the gui.
+1 Reg i guess that is it.
+1 Reg we don't have that much.
+3 Reg is not any larger.
+1 Reg is no no crazy large.
+3 Reg so we might just connect the link between modules.
+1 Reg and lets that add some parallelization.
+3 Reg or we just add notation in the documentation.
+1 Reg where can i give my arrow, an arrow head.
+1 Reg so from the gui to the simulation.
+1 Reg oh no the other way around.
+1 Reg from the gui to simulation.
+1 Reg we have start simulation or run simulation.
+1 Reg and then we also have this.
+2 Reg (inaudible) the map of the road.
+2 Claim the map would be better.
+2 Prem then we can add object to the map.
+3 Claim but we might already go to much to the information view like this.
+3 Prem because the map has object.
+3 Reg we might just called it gui.
+2 Claim graphical user interface is to generic.
+3 Claim object is also quite generic.
+1 ClaimPrem i would just say gui, because we want to keep it generic.
+1 Reg oh this is just great.
+2 Reg isn't there are something like this.
+2 Reg have we followed this kind of .
+2 Claim that might work as well .
+2 Reg and then in the simulation there's a user .
+3 Reg and the mathematical stuff basically outside of it.
+2 Reg but then simulation there's interaction with the user changing the traffic density.
+2 Reg here the editing also with user interaction.
+2 Reg and then validation uses the msp.
+1 Reg with out my power just down with the second.
+1 Reg what about that william.
+1 Reg it was my life work.
+3 Reg we called editing or editor or.
+2 Reg using the same kind.
+3 Reg and msp is outside basically of that box or.
+1 Reg but do we view it as external.
+3 Reg in this case .
+2 Reg but this also.
+1 Reg no but we decide it internal.
+1 Reg this might be other.
+2 Reg so from the map overview.
+2 Reg maybe we can start thing.
+1 Reg this is the user map overview.
+2 Reg map overview starts from the opening the map.
+1 Reg this is the user.
+2 Reg this just start of the map.
+1 Reg user input this way.
+1 Reg in simulation also has user input.
+3 Reg what way does the user  give input during the simulation.
+2 Reg changes the road density.
+3 Claim and those module has to be linked to each other i guess.
+1 Reg which one do we want to link to which one.
+1 Reg map or view we can go to simulation.
+3 Claim that shouldn't mean from this you can go to this or we should mean like something else.
+1 Reg we can do it here run.
+1 Claim i think this already enough.
+1 Reg but it so ugly.
+1 Reg run simulation from the map validation that's called from the editing part.
+2 Reg yeah, and then (some body comes in.
+1 Reg could mentioned like this.
+2 Claim well maybe this doesn't go back it maybe goes to map overview.
+1 Reg it will immediately move to .
+3 Reg still have to get the direction of the arrow.
+1 Reg it's pretty annoying, i hate visio.
+2 Reg okay and that it uses.
+3 Reg and the simulation uses msp as well or not.
+1 ClaimPrem it does right because if you change the object property you will immediately talk to the msp.
+1 Claim so map validation use msp.
+1 Reg so how do we called this.
+1 Reg you could mathematical check also 
+1 Reg how do we called earlier.
+3 Reg we would call it also.
+1 Reg and then we also have one of simulation.
+2 Reg and the return as well.
+2 Reg or is it from.
+1 Reg this should be arrow.
+1 Reg (drawing) so this is mathematical check.
+1 Reg this is check or ?
+3 Reg is not mathematical check.
+2 Reg is more uses the random number generation and statistical distribution.
+1 Reg it will respond also, or will it will go through this.
+1 Reg map update, and run simulation again.
+2 Reg we can see it as.
+3 Reg like outside this is (inaudible) functionality is basically be use in real time update in here is more like to start and stop.
+1 Reg we will respond it.so
+3 Reg and then, basically that one should be request mathematical functionality or whatever.
+1 Reg so i think this it.
+2 Reg there is something with sensors.
+3 Reg aren't those sensor part of information view.
+1 Claim the sensor is part of the simulation i guess.
+3 Reg so sounds like certain object that can be place in map.
+3 Reg simulation basically cover everything.
+1 Reg so the sensor are in simulation.
+3 Reg yes the object i think.
+1 Reg you can place them.
+3 Reg you can place them on the road or some traffic light or whatever.
+3 Reg so don't i think that to be included somewhere.
+1 Reg we also don’t have the time to go into full details.
+1 Reg so this is the general functional architecture.
+1 Reg if this is not enough.
+1 Reg i'm sure they will tell us.
+1 Reg so lets make the last one.
+1 Claim first must decide on how we wanna do this.
+1 Reg so this information view point will be the technical part of the.
+3 Reg so we can basically chose between entity relationship diagram or class module.
+3 Claim i think  it might be enough to have entity relationship diagram.
+1 Claim but we should also.
+1 Claim we have to handed it over to some developers.
+3 Prem but in the entity relationship diagram you can add information.
+1 Claim we have to add some additional information and the i think we can.
+3 Claim i think the when you fill in uml class module is already too specific.
+3 Claim not really to specific but it more could create when you have like some code.
+3 Reg let see i don't know exactly.
+1 Reg did you ever use this one ?
+3 Reg actually we use this for the assignment a we do it like class module.
+1 Reg and if we just make connector.
+3 Reg this is a class.
+1 Reg if we give this strange arrow.
+1 Reg how we do that.
+1 Reg so if we just copy this.
+1 Reg this is this kind like.
+2 Reg alright so the things we have a .
+3 Reg is this thing still .
+3 Reg does it need a member.
+3 Reg we could do that.
+3 Reg but then we have different connector.
+1 Reg lets just start and see where we end up.
+3 Reg that basically what start.
+2 Reg is it about only car.
+1 Reg lets call it vehicle.
+2 Reg is nothing about walk.
+1 Reg ok let just .
+1 Reg we don’t consider pedestrian as being traffic.
+3 Reg so they are not included.
+1 Reg no they are not important.
+3 Reg this the traffic density in road would be lower when you have to drive away some pedestrian.
+1 Reg in some parallel.
+1 Reg okay so what else do we have.
+1 Reg we also have.
+1 Claim i think we must also include the map editor part here.
+2 Claim i don't think so.
+3 Reg this is more about basically joining data elements.
+1 Reg oka so we have the road the map lets focus on the map.
+1 Reg oka the map has the road.
+3 Reg one or more roads.
+1 Reg okay this could settle.
+3 Reg do we add the multiplicity already now.
+3 Reg or do we connect them with the those crowd feed.
+3 Reg or do we connect them with some like in the uml class with some multiplicity.
+3 Claim i believe you have to get association or association is the right one.
+1 Reg how does it work.
+2 Reg so a map can have multiple road.
+2 Reg and road can be in one map.
+3 Reg intersection consist of four roads.
+1 Reg an a road can be in as many intersection as it wants.
+3 Claim or do we consider can a road be like cross intersection or is road element between intersection.
+2 Claim alright that is good thing.
+3 Prem because basically i think you have a road between the intersection and the intersection.
+1 Reg then we have four roads one intersection road is between two intersection.
+3 Reg and each map at least accommodate six intersection each map.
+2 Claim yeah, but i'm questioning.
+2 Prem because that map is connected to everything.
+3 Reg so is it really.
+1 Reg intersection has a traffic light.
+1 Claim i would not say it a road.
+2 Reg this have four maybe more coz.
+3 Reg is this traffic like is one pole or is it like traffic light just a bunch of traffic lights.
+2 Claim i'm not only worry about that.
+2 Prem one direction has one or more traffic lights.
+2 Prem but also different traffic lights for going right and going left and going straight.
+1 Reg okay so we can have as many traffic light as we want.
+2 Reg not as many as we want but we can have three per road so twelve.
+1 Reg oh that is right so we can right left and straight through.
+1 Reg but we don’t have twelve, we have four to twelve.
+1 Reg here road and vehicle.
+1 Reg do you think road can have as many vehicle as it wants.
+3 Claim so i think it should be one too.
+2 Reg traffic light has or does not have traffic light sensor.
+3 Reg but the traffic light sensor is place in the roads.
+1 Reg so traffic light sensors connected to traffic light.
+1 Reg it placed in the road.
+1 Reg so a road how many traffic lights sensor can it have.
+3 Reg or well it depends.
+2 Reg if for right left.
+1 Reg usually you have one far ahead also.
+1 Reg so you have six traffic light sensor.
+1 Reg if you have them it's just like a bike.
+2 Claim but then it could also have more.
+2 Claim but i think is for every lane it should.
+2 Claim we called a sensor it might be different physical.
+1 Reg so we see it as one sensor so we have three sensors.
+1 Reg and traffic light also has one one sensor.     
+1 Reg what else do we have.
+3 Reg should we have notation between each relationship basically.
+3 Reg connected to place on combines to.
+3 Reg do we called it place on or drive on.
+2 Reg is the direction of reading.
+1 Prem traffic light place on the road.
+1 Prem vehicle drives on the road.
+1 Claim so intersection should be directed (inaudible) the road.
+3 Reg has a or connected.
+3 Reg so we do basically state that you have intersection and they are connected by road.
+3 Reg not road are form intersection by crossing.
+2 Reg but also give them number and in the glossary we define them.
+1 Reg this is the all we have?.
+2 Reg i'm thinking i'm not sure.
+3 Reg should we only have like this one.
+2 Reg lets look through the requirement again.
+2 Reg so the traffic light has direction.
+2 Reg or we can maybe in there.
+2 Reg we can try to added.
+2 Reg the vehicle has the speed.
+3 Reg size of the vehicle?
+3 Prem because if there's a like truck.
+3 Prem it takes away more space on the road.
+1 Claim so we can number vehicle per minutes.
+2 Reg not in vehicle but in space.
+3 Reg it's more like length.
+1 Reg space capacity or just capacity.
+2 Reg or just length is .
+1 Reg but we mentioned on the intersection it has only one lane.
+1 ClaimPrem but then we should look at the traffic light because why can we have maximum of twelve traffic lights.
+1 Claim if we have multiple lanes you should have multiple traffic lights right.
+2 ClaimPrem but i was thinking more in there might three traffic lights between the brackets that goes straight but then we model them as one traffic light, because that's one .
+3 Claim but i think you can have more.
+3 Reg for example you can have one lane going left, one going right.
+1 Reg and then you have two traffic lights going straight.
+2 Reg but i was thinking those over same functionality.
+1 Reg okay so we just see it as one.
+1 Claim we should mentioned it.
+1 Claim the road has a length, has a lanes and the capacity i guess.
+1 Prem because that what i imagine.   
+2 Reg what is the capacity?.
+1 Reg how many vehicle it can handle per minute.
+1 Reg but their mentioned something about the vehicle per minute.
+3 Reg i believe there something.
+1 Claim here you should able to changes the traffic density that entice the map on different road.
+1 Reg enter to changes traffic density.
+2 Reg there's a road between intersection but also there also road from which vehicle enter the map.
+2 Reg so different kind a road.
+1 Claim so we have to make another road.
+2 Reg and those have one intersection.
+3 Reg but does it state it anywhere there should be such road.
+2 ClaimPrem it not stated in the assignment but it should be because there's really connecting road.
+2 Prem because in connecting road you shouldn't be able to change the traffic density.
+2 Prem otherwise the cars are created out of nothing.
+1 Reg and this is entry road.
+1 Reg and it is the same thing or not.
+2 Reg that also has another attribute.
+2 Reg the amount of cars.
+1 Reg lanes and we don't call it capacity then or we do called capacity.
+2 Reg density i would say    
+1 Reg we just don’t call capacity.
+3 Prem because that like property of the road.
+2 Reg property of the entry road.
+2 Claim but i wouldn't say it's property of connecting road.
+1 Reg so the connecting road has the capacity.
+3 ClaimPrem exactly because entry road has certain density which couldn't be changed.
+2 Claim i wouldn't say leave the attribute out.
+2 Prem in the entry road there's definite attribute that state how many car enter the map.
+2 Claim density may not be the best word.
+2 Reg we may interpreted as.
+1 Claim so we shouldn't .
+1 Reg from one to n.
+3 Reg entry road also connected to intersection right.
+1 Reg we can do it like this.
+2 Reg the entry road also connected to the intersection but it's only one.
+2 Reg entry road has only one (inaudible).
+3 Reg yeah, but intersection can have three entry roads.
+1 Reg one intersection can have up to four entry roads ?
+2 Reg it can have four but.
+1 Reg oh zero to three.
+3 Reg four they can get the actual.
+3 Reg it could have.
+3 Reg but that is really lame simulation.
+3 Reg but than the line never change.
+2 Reg the density changes you can still see what the effect of the.
+2 Reg i wouldn't missing any attributes (inaudible).
+1 Reg perhaps also connected to entry road.
+3 Reg might have something like sensitivity.
+3 Reg might be relevant to notice amount of trucks or they just don't care about vehicle.
+2 Reg if there's a car how many.
+3 Reg i don't know what works like that.
+Instructor Reg just remind you the two hour mark (inaudible).
+3 Reg what time do we have ?
+1 Reg it is roads but do we already has .
+1 Reg but it has no connecting roads.
+1 ClaimPrem it doesn't have four connecting road anymore because we have the entry road.
+3 Claim not every road has to have entry road.
+3 Claim i mean not every intersection has to have entry road.
+1 Reg so but it is zero to four also.
+1 Reg i think this is the map.
+3 Reg no it's not zero.
+2 Reg it can if there's four entry road.
+1 Reg such a weird thing it can, but it such a weird situation.
+1 Claim i think this is it.
+1 Reg so we focus fully on the map for the information view point.
+2 Reg there are other viewpoint.
+3 Reg this basically the static.
+3 Claim but i don't think we have the time for something like information life cycle or flow model.    
+1 Reg let see if we have cover all the .
+2 Reg desired outcomes design the interaction that student would have, design basic appearance of the program.
+2 Reg that what we can do now in visio maybe we can draw it.
+2 Reg the basic structure of the code we have not design.
+2 Reg this kind what information viewpoint say.
+3 Reg sorry we couldn't do something like really simple gui.
+3 Reg basic appearance for example like an drag and drop some object.
+1 Reg so we have something.
+1 Reg our context view point just a bit.
+2 Reg so lets draw a gui.
+2 Reg let choose the ribbon style.
+1 Reg let just choose ribbon style and on the top just make it like visio     
+1 Reg it just a little bit like this.
+2 Reg this basically only file.
+1 Reg there's nothing more.
+1 Reg transcribing going to be fun.
+2 Reg and in the left end like here.
+2 Reg just do it like that.
+2 Reg this are the options for road , and in here is .
+3 Reg who would prefer not graduate if you have twenty transcription of two hours.
+1 Reg make it nice a traffic light thing like nice sensor.
+2 Reg how we draw it?
+1 Reg Reg usually sensor is like something on the road that you can.
+2 Reg you can draw a road.
+3 Reg like in the information model we basically model that you have those connecting roads and which over between intersection.
+3 Claim but in another view i believe there's only context thingy we basically model that intersection are created when roads over lap or something like that.
+2 Reg so how which way.
+3 Reg i don't know exactly anymore but we were talking about it.
+2 ClaimPrem but i think then we have to make a choice there's also an object for intersection, because otherwise there the t intersection shouldn't be allowed.(inaudible)
+3 Claim maybe it could be an error if you try to run simulation.
+1 Reg and this is file.
+1 Reg my english getting is worse.
+3 Reg brain damage after two hours.
+1 Reg this is the red cross.
+1 Reg okay so lets draw something here.
+1 Reg just make some basic.
+2 Reg oh look we don’t have a traffic light.
+3 Reg you have something like run simulation.
+2 Reg the car has to have direction.
+3 Reg but a road can have like one lane this way, and at the traffic light can basically split more.
+1 Reg i will now take a picture.
+3 Reg you can also send that one.
+1 Reg this the user interface.
+1 Claim it should automatically updated.
+2 Reg how the user can change traffic scheme.
+2 Reg i'm not sure you.
+1 Reg we don't have the time for that anymore.
+1 Reg it a bit a shame.
+2 Reg we will do that in the next session.
+2 Reg shall we stop the recording.

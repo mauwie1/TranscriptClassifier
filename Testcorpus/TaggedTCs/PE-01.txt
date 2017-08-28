@@ -1,0 +1,737 @@
+1 Reg so the first reflection period you’re allowed just general discussion
+Instructor Reg oh, no, go ahead
+2 Reg so i was having a look here and, i guess, you know, i’m just trying to get where we need to start so, ehm.
+2 Reg so i guess you know, the first thing is they want to create a visual map so we can discuss that and, you know i guess, you know, how visual do we actually want to make this.
+2 Reg do we want to go to full graphics or is it- you know, for them it’s probably useful to, you know, as to what level we need to ensure that it isn’t like the graphic interface is for them to use.
+2 Reg good thing to discuss.
+2 Reg first up because then a lot will, you know, pull of that as to how we want to go forward.
+2 Reg what are your thoughts.
+1 ClaimPrem i’d say, being able to watch what is happening is, at least it’s useful, maybe more useful than seeing some kind of summary at the end.
+1 Reg this had longer waiting time, doesn’t tell you- well yeah, the bottleneck
+2 Reg i guess, how do we represent that on a screen to the user.
+1 Reg it’s starting to 
+2 ClaimPrem and we’ve got varying length and stuff like that so, i guess, i was thinking about it, so we can play these i guess and i guess-you know we need to assume, you know, make assumption as to what the- you know if we’re left hand or right hand drive and as to the speed limit and stuff like that because as we work out what speed a vehicle is travelling at we can determine as to what the- how the traffic will interact with each other on the wait times.
+1 Reg i did notice as far as i could tell, speed wasn’t mentioned
+1 Reg only my assumption was you could potentially have different speed limits  for different roads but it would also give a function of traffic density
+2 Reg i thought that as well because they were mentioning they got different types of road like the small ones.
+2 Claim and i presume you might have, you know, only, you know it might be 40 kilometres an hour, medium ones might be 60 and you might have some large ones which are 80 kilometres and, also depending on what speed limit it is at those intersections, would be the minimum amount of time you’re allowed the yellow/orange light as well.
+2 Prem because if you allow it for a period so people can clear the intersection you’d because so.
+2 Reg what else you’re thinking?
+2 Reg should we just list out all the requirements for now?
+2 Reg i’ll start that and i’m gonna make sure, well
+1 Reg i’d say going off the list, here for starters you
+2 Reg i’m taking right, or you want right?
+2 Reg so we got visual, visual map
+1 Reg it said at least 6 but
+1 Reg we’ll probably be short-sighted and just limit it to 6
+2 Reg no no no i just put 6, and i knew what you meant.
+1 ClaimPrem in 3 we have the answer to our earlier question, convey visually in a real-time manner so, we have to have some drawing that is-
+2 Reg i was more getting at, do you have you know, like you can actually draw it so you have proper roads you know and stuff.
+2 Reg you know, or you can just do, you know, more simple with just lines and then you could do you know, just have dots going along or something.
+2 Reg or we just, you know, depending how far you want to take the graphic side.
+2 Reg so, traffic light behaviour.
+2 Reg they’re like our work ones.
+1 ClaimPrem i’m thinking, it’s all very well having things like left turns, you need to have, if you have that you also need to specify how like, people turn, this is going straight ahead.
+2 Reg so that’s not really-
+2 Reg it’s coming down to the variables, so i guess we have a list of variables.
+1 Reg how do you want to specify traffic flow.
+2 Reg i guess there’s a probability of turning or something like that yeah?
+1 Reg and you got density, number of cars or something
+1 Reg let’s see if there’s something else.
+2 ClaimPrem so we also have a requirement here that we can’t allow, we can’t you know, signals that allow crashes, so we have to make some, can’t because crashes
+1 Reg yes, that’s a good one.
+2 Claim so i guess this comes back to like i was saying, the minimum, i guess it’s like orange light, minimum lights.
+2 Claim which is gonna be a combination of your speed
+1 Claim an interesting question from the assumption point of view is, do you want it to be on repeat or not.
+1 Prem because part way through it talks about randomness
+2 Reg ok, so whether we want to allow them to continue like, run at multiple times with the same assumptions.
+1 Reg same assumptions, but we get different results, and that depends on whether you want it to be roughly random or you want it to be more systematic
+2 Reg so, how complex do you want the algorithm i guess underneath to be yeah.
+2 Reg that’s a nice pen.
+2 Reg i guess it’s called ai for traffic yeah.
+1 ClaimPrem random is probably easier, you can make it both random and repeatable if you use the right 
+2 Claim because i guess, like i was saying here where we had the- was it traffic, no, what is it, left turning so i guess you know, you have your car and you come to an intersection and you can turn left, right or go straight and, you’re right, the easiest way would be to say that’s a 10% change whatever.
+2 Reg that’s a 10 % chance, and there might be 80% 
+2 Claim if you work of that assumption that could be enough room so that they’ve got, so.
+2 Claim so that’s an input.
+2 Prem because i thought that is the easiest way and then you wouldn’t be able to repeat it, but you’d be able to just set up to, how they wanted to [inaudible].
+2 Reg you want a pen for a minute?
+1 Reg yeah, no no so we- right, so we’re still working with requirements.
+1 Reg so we got visual map and 
+2 Reg we’ve also got this thing about these left hand turns, protected by left hand green arrow lights.
+2 Reg i assume they’re talking about the opposite side of the road, i’m not 100% sure, what’s your take on that.
+2 ClaimPrem because normally we have right turn arrows, so i assume they mean that this is all right hand drive, and we have left hand drive.
+2 Reg that’s a left turn, so
+2 Claim i presume that’s another assumption i guess
+1 Claim i think that- sounds likely.
+1 Claim the point is, in our system, maybe if you have an arrow on a left hand turn it will usually be on as long as straight ahead, i can’t be on at other times as well
+2 Reg do we wanna allow having like the left hand, like the opposite to that, allow to have that option to input it?
+1 Reg i’m gonna say can’t hurt
+2 Reg that’s problem i guess, or constraint, depending on how we want to view it.
+1 Reg there’s also somewhere the thing about triggering arrows or even traffic lights based on whether a car is there, i think.
+1 Reg you see that, i’m sure i read it?
+1 Reg with a- oh yes 2c.
+1 Reg so, data model be and say traffic light behaviour, can’t crash is pretty important.
+1 Reg and you’ve got left turn, and we’ve got and car triggered and as i’m seeing it it’s falling into a few main areas.
+1 Reg one being ui, one being data model, one being actual simulation and how it runs once you’ve put in everything 
+2 Claim so i presume here as well we also have the time restraints which i think we put here, minimum length.
+2 Prem because that’s gonna be an input as well that you’d set up for each traffic light.
+2 Prem and i presume also if you and intersection with left turns, all the four points have the left turn.
+2 Reg or is it just going to be a case of- are we just keep it simple and then just allow, or we allow, they choose in which approach or which intersection i guess is the question probably
+1 Claim i would think the approach would make sense
+2 Reg so it starts from around there which approaches we can actually- 
+1 Reg they’re in a relation
+2 ClaimPrem so we start having two separate- pieces of data so i guess we have, you’re gonna have your intersections.
+2 Reg that’s one group, and then you have your, i guess roads, as a separate group.
+2 Reg and i guess that will govern the speed the vehicles travel on, but then do you have, do you just assume it all car- like you said with the traffic density and stuff but, do you still presume everyone will drive the max speed possible, able to?
+1 Claim i wouldn’t, i would do a probability distribution on it.
+2 Reg ok so speed then has a distribution 
+1 ClaimPrem so that has a big impact on how you actually run the simulation, because if you make them all uniform, you can theoretically avoid that individual car.
+1 Prem you just need to know roughly the density.
+1 Claim whereas if you want each car to be individual, i feel that would be more reliable.
+1 ClaimPrem using one of these cards, it is a trade-off, because it probably mean you have to simulate at the individual car level which is possibly more complex.
+2 ClaimPrem i was also going to call it a risk because if we go down that route, we get to very very complex very quick, with the more variables we add, we’re obviously increasing the work that’s required to get this completed.
+2 Prem and you know, we start talking about probability of turning and then we’ve got different speeds and it starts getting very complex very quickly, with the ai.
+1 Reg are we using the cards?
+2 Reg you got something to start with or- 
+1 Claim i guess a good starting point is context.
+1 Reg do we think have it yet.
+1 Reg are we still trying to determine the requirements, or are we trying to determine
+2 Reg i think we’ve worked out most of the requirements so far.
+2 ClaimPrem the problem you’re talking about with the traffic density, i don’t think we’d read far enough where we’ve actually got the- it’s actually told us here, you know, that we should be able to change the traffic density so that’s one thing we just-
+1 Reg it’s told us that we can, that doesn’t tell us that it’s the right solution, just that it’s a possible solution
+1 Reg i suspect it is the right solution, but
+2 ClaimPrem no, as i was saying the risk is before us, how detailed we make it as to what we end up with so just- we make it too detailed we’ll, we got you know too many options so.
+2 Reg here they’re sort of talking about busy road or seldom used one and any variation in between, so i guess you know maybe if we limited that to, you know, like three or four different types you know, that we don’t allow too many options.
+1 ClaimPrem though as i said, that’s both a risk and a trade-off because the trade-off part of it is the simply you make it- the more possibility you have but it’s not realistic and it doesn’t actually help anyone.
+1 Reg what else have we got.
+1 Reg assumption, we’ve made heaps of them
+2 Reg well i guess there’s heaps of constraints that we’ve spoken about where they’ve given us requirements so we sort of get stuck with some stuff so- as we’ve got left turns and the different speeds and stuff, density.
+2 Reg i guess going bac to your trade-off with the requirements here- where’s my trade-off card- you’ve got, you know it’s not meant to be an exact scientific simulation so going back to where you were, as to how far we take this.
+2 Reg i guess it’s solution, i don’t know where else it fits but we’re able to use any existing software packages so we’d have to have a look into it.
+2 Reg working out what we could, you know, if there’s any- things we can see to help us with some of the traffic density and stuff like that, flow.
+2 Reg and you know, library packages we can use for the gui and stuff like that
+1 Claim i’m not sure whether it falls in problem or solution, but i think a lot of questions we’ve had come to what data model we pick.
+1 Prem because some of them are very abstract when they’re written like that.
+2 Reg well yes, and then-
+1 Reg when you make, say for example if we make the assumption that, which we made before, that all four corners, each at an intersection, each so that the can be done differently.
+1 Reg that has a completely different representation data model from, here is an intersection, there’s a left turn and it has a right turn
+2 Reg [silence] as i was originally, i think there’s a problem that we have to, you know, when you’re talking about the data model and stuff, the way we represent it as well, we can choose a way that will actually, you know, represent what each- like if we would have envisioned as like a grid sort of thing we could envision that, you know, each grid has a different token on it at a time for the road.
+2 Reg which we can then use as a, you know, that can be its own object basically.
+2 Reg and it can understand what properties it has to pass on to the next and so forth to continue on.
+2 Claim yeah, we need to look at, you know, what data, how we want to represent all our classes and stuff like that and then the data, how to represent it.
+2 Reg and how to use our 
+1 Reg let’s say from a solution point of view we see a risk in just what you wrote here.
+1 Reg we’ve got we have something like this, very trivial route network.
+1 Reg if we have four- we have 6 intersections and we have 5 roads?
+1 Reg does the data model allow you to- if you’re treating into these things independently, how do you put them together.
+1 Claim and the risk is that you end up with each of the pieces self-contained and important.
+1 Claim but no clear way of putting them together, and there might be a completely different data structure that didn’t have separate roads, separate intersections and is a lot clearer.
+1 Reg or they might not.
+2 Reg i guess it also, it depends where some of these things live, like, you know, does the road control how fast the vehicles are travelling, i don’t- or does the car itself control it’s, like the movability and stuff like that.
+2 Reg so [silence] shall we start talking about some of these models and how we are gonna put this together and so forth?
+2 ClaimPrem should we start with just, i guess, we’ve gotta represent this, we need to work out how we’re gonna represent this and then we can work out the data behind those representations i guess because, if we can work it out- what the final outcome is sort of gonna look like.
+2 Claim i guess we might be able to pull something back of that
+2 Reg so i need to have a visual representation.
+2 Reg it’s like they can see in real-time as to how and what’s happening, so- i guess also one of the how many cars i guess are we talking about at a time.
+2 ClaimPrem you know, i guess that comes down back to density of the road and things like that so- because if you start saying that, you know, each car’s its own object and you’ve got thousands of these going at once, some sort of, i guess it depends on what’s controlling the behaviour and stuff.
+2 Reg oh, shall we start having a bit, trying to work out some of this stuff?
+1 Reg yeah, so we [inaudible], so we got intersection, you got roads.
+1 Reg if you’re wanting to have differences for each of the four corners then there’s -
+2 Reg for now we don’t have to do it, it’s just about the complex level
+2 Reg yeah, so here, if you want a list all [inaudible], you’re gonna have, you know
+1 Reg they become separate so i don’t care at the moment.
+1 Reg intersection you have four corners, or four points.
+2 Reg shall we just call em a, b c and d or something for now, just so- or we just draw like, and we just say it at the four points.
+2 ClaimPrem so you know, just say a, b, c there, at least then we have some sort of representation.
+2 Prem if we see say at point blah we understand what we’re talking about.
+2 Prem and i guess each of those points can then have the left turn, which you were talking about.
+2 Prem and if it triggered or not
+1 Reg so you’re wanting that to be a separate class or- actually some of them are completely independent
+2 Reg no, that’s what i was thinking as well, some of them sort of rely on each other, and then -
+1 ClaimPrem you assume that the flows that way, that way, somewhat- i mean you can’t give completely different timings and say, one will be green for three seconds, and the one going the other way will be green for 10 minutes
+2 Reg so going of that, we’re talking about a constraint again.
+1 Reg i guess that’s true yeah.
+2 Claim so this is representation might not be the best, which if we actually draw a maximum you have i can’t draw, same issue.
+2 Reg so, you know, that’s you’re a approach.
+2 Reg i’ve done this as a, what we’re used to
+1 Reg so, what we’re saying is that the constraint is a and c need to have the same traffic- or at least, saying that it’s the same timing?
+1 Reg well almost, still gotta consider our arrows
+2 Reg but then, if we’re putting arrows on both of them you would just still have the same timing anyway.
+1 Reg well that’s an assumption, whether, are you assuming that we’d have both of them making right turns at the same time?
+1 Reg even if it’s car triggered?
+2 Reg yeah, well that’s, you know, that’s one of the things.
+1 Reg is that the assumption.
+1 Reg the assumption there you might make is that the timing  is the amount of time from green, if you happen to have a road area that’s only on one side and not the other.
+1 Reg the thing you add each time because this one doesn’t have the right arrow, it still needs to a full green turn
+2 Reg yeah, we’re adding a lot of complexity to the problem
+2 Reg once again it depends how complex we wanna make this, you know.
+2 Reg when we start form a simple approach, then we can always add to it and we start of the same, you know.
+2 Reg all left turn, all- if you allow left turns you allow for the pair, and then that simplifies that timing.
+2 Reg so that pair or that pair could have, you know 
+2 Reg and then you’d go, you know, maybe i made this wrong, maybe we make this be simple in ourselves and you know, you call this, you know, the a b pair.
+2 Reg and the c d pair.
+2 Reg so that they match you know so
+2 Reg you have to turn things, so you have the four points, and then you call it, you know, so then i guess you
+1 Reg so you say four points, but dependent a b c and d, same time 
+2 Reg and then we just have the cars triggered, so, that is you know, do you have turn triggered or do you just allow the  intersection itself to be triggered.
+1 Reg that would be the assumption you could
+2 Claim yeah, so that’s, yeah, that’s also an assumption that we need to determine as to what we wanna do, you know
+1 Reg so, from the trade-off point of view, what we’re saying is we’re trading of complexity against usefulness, or something like that.
+2 Claim yes but then if we build a simple model that we can add to over time, we can always, you know, revisit this and that.
+2 Reg so, the more complex situations, so.
+2 Reg i guess than we’ve
+1 Reg the main objects at the moment are roads and intersections
+1 Reg and we don’t know how they go together
+2 Reg so then i guess with roads here you’ve got things like traffic density.
+2 Reg but then speed plays a factor here as well.
+1 Reg well, maybe it’s just in
+1 Reg it’s quite possibly what you expect if you’d got more or less busy roads, and you got bigger and smaller roads which we are meant to simulate.
+1 Reg then that also goes  in the real world, with different speeds.
+2 Reg different speeds, and you’ve got size, one small and large, what the size of road is.
+1 Reg is that more of a visual thing?
+2 Reg it’s no, you just talked about it, i can’t remember where it was
+1 Reg i know that it said something about that, i think the question is, is that more it’s busy because it’s got twice as many cars, or it’s big
+2 Reg well it comes down to traffic density, i guess, you have two variables here.
+2 Reg you have traffic density and then you have like a flow, like how much can the road handle.
+2 Reg like if you say the road can handle, you know so, five cars a minute or whatever.
+2 Reg that’s, i think they normally work in minutes on this sort of thing, you know.
+2 Reg maybe that’s what we need, maybe that’s the thing the person has to enter.
+2 Reg how many cars can flow along this road in a minute.
+1 Reg i guess that’s something you specify, or is that something which comes out of the speed and the density of the traffic?
+1 ClaimPrem so, here’s my, my problem with specifying things like that up front is, it possibly removes the value of the simulation.
+1 Prem whereas the simulation is about what behaviour emerges if you set this criteria, not if we set this criteria in advance will it work
+2 ClaimPrem that’s true, i was just trying to work out a way that we can, you know, like a maximum flow a road could actually handle, because i guess you get to a point and that’s as much as, you know, you’ve flooded the road with cars and yeah- i guess we need to work out
+2 Claim we need to design the basic appearance of the program.
+2 Claim you know, as well as the means by which the user creates a map, traffic timing schemes and use traffic simulations.
+2 Reg so spend a bit of time on the actual, how we’re gonna, you know, what variables and stuff we’re gonna have.
+2 Claim so maybe we need to actually work on how we’re gonna represent this data.
+1 Reg so we’re saying, if we’re saying fourway intersections, they’re basically saying that there are no dead-ends, each road extends from top of screen to bottom, left to right
+1 Claim in which case we said we had to specify length, you don’t even necessarily have to specify length.
+1 Prem if for example you say, this one’s a hundred and this one’s a three hundred, then it’s two hundred long.
+1 Reg i’m thinking of the grid on the screen where you drop lines, you can drag them up or down
+2 Reg i was thinking more, i was thinking along the lines, do you remember pipedrain?
+2 Reg is an old windows game
+2 Reg basically you had a- basically you’d start of like so, you’d have the grid.
+2 Reg and you’d divide it onto blocks, like that or whatever.
+2 Reg and then all the time these little pipes come down and you’d have to combine into a pipe.
+2 ClaimPrem well we could make your own block shapes, so you’d have you know, like your, you know, road sort of thing that’s just a straight road.
+2 Prem and then you could have like, you know, a larger road, you know.
+2 Prem and then you also have your intersection as another block you can drop on
+2 Prem oh, i’m just thinking it you know, so you could actually then, you know, draw em in and then you know, if you want to make a longer road, you know, make it down like that, and then you’d have your intersection.
+2 Claim just trying to think of a visual representation, it’s easy to actually work out behind.
+1 Claim i’d say that gives you the risk that, you then have to validate whether this can be simulated.
+1 Claim and this one as you’ve drawn it, without putting in other road that way, isn’t matching the constraints.
+2 Claim no, i just doing this as an example obviously, but yeah, you’d have to obviously add restrictions to that, as to what was done.
+2 Reg i’m just trying to think of a way that’s easiest for people to implement and visually see.
+2 Claim i’m trying to think about how you’d actually create this gui environment and what would be an easy thing for people to do.
+2 Prem because you could just have the different types and they could drop that on and these represent some of the objects we’re talking about.
+2 Reg i’d be as well so-
+2 Reg what are your thoughts on?
+2 Reg how would you represent it to the user?
+1 Claim i think like i’d just draw just the collection of lines.
+1 Prem i mean, my thought is, once you drop a line, a road there, we assume that it’s going from top to bottom.
+1 Prem i’m pretty sure that assumption matches the requirement.
+1 Prem that way you only have to place it once and then you can possibly drag it back and forth, left or right, up or down, depending on for example a vertical.
+1 Prem you can possibly click on it and then edit the properties of it like the speed and- so-
+2 Reg ok so, one of the- i’m gonna make an assumption here, that when you do that, if you’ve got a road heading that way then it’s always the same size, is what you’re saying.
+1 Reg yes, that is true
+2 Reg same size, speed, ok.
+1 Claim though you could actually remove the assumption if you wanted to, by making it that you only edit the segment between two intersections.
+1 Prem because it’s, yes it’s possible that you could change the speed halfway between intersections, it seems way past the requirements we’ve got.
+2 ClaimPrem so how do, so- because in the end we’re going to have to have some algorithm that knows where a car is and stuff so, we need some sort of coordinate system to actually determine where we’re at i guess, yeah?
+2 Claim i guess that’s where  it’s coming back to all of this, the grid thing as well is still where, like, you could easily take, you know, the grid sort of thing and say, oh ok that’s, it is a grid like that like you know, i was saying originally.
+2 Claim but instead of having blocks you just, like, i want to put a road there and you just build one from top to finish and then you put that there so that all of a sudden this here becomes that area there.
+2 Claim so that’s a c b, and that’s 1 2 3 4, that will be, you know, b2 is an intersection.
+2 Claim sort of like a chessboard or something.
+2 Prem because then you can actually state how many cars are actually on that section of the road.
+2 Prem so, and if you went back to that other thing you’d know that, you know, that the car’s at b2 and you know, it’s at position a, waiting to turn left or something.
+1 Reg so you’re saying, this intersection could be a one to one so you don’t-
+2 Claim yeah, so that’ll have to be another thing, we have to actually work out.
+2 Reg so i guess the first thing the user would have to set up is a grid system, yeah?
+2 Reg so obviously the user has to set that up at first, so i guess, you know, so the application.
+2 Reg start with you know, setting up roads yeah.
+2 Reg so i guess that’s, you know, and so if we use like a grid system like this with lines representing the roads, and the intersections are representable, well obviously we represent intersection road with each other so.
+2 Reg so what would the user do first, i guess that they would just place a line slash road on the map here.
+1 ClaimPrem i guess what i said about validation it applies even for dropping lines, you still have to have at least one intersection or otherwise it’s-
+2 ClaimPrem in the end you’re basically coming back to this system anyway, because in this section here you’ve got, you know, a road so, it would just be the representation of that.
+2 Prem it’s very similar, just a different way of doing it you know, or it’s having these building blocks, you just have a road building block really.
+2 Prem and you can tell it which way you want the road to actually be placed.
+2 Prem whether it’s you know, which way, and then you can change the properties form there.
+2 Reg that just means that each, each one if these grids will have a value as to what it is, so i guess you have you know, i guess at the beginning you decide.
+2 Claim i guess you don’t have to, you can just keep adding you know, at the bottom here just add you know, more roads and columns.
+2 Prem so if they want to make it larger, or they want to have two they can so.
+2 Reg i guess you know, if we need to have six intersections, what would be, you know, if we’re going to do a grid like that, like how many would you expect to start with?
+2 Reg you just do a to z and 1 to 
+1 Claim i wouldn’t think you’d need to do that.
+1 Claim i mean you can have a grid, but don’t use pixels.
+1 Reg or at least doesn’t- i’m not saying that if every line has to be one pixel wide
+1 ClaimPrem the problem- i’m not sure about snapping to a grid just because  it gives you much lower possibilities
+2 ClaimPrem yeah, i guess the thing is with the grid you’d be locking in the distances where, like you’re saying, without that you’d actually be able to have different distances between the different intersections which is probably a good idea, so- that’s just a trade-off, risk
+1 Claim well i mean, you can argue that pixels is a grid in exactly the same way
+2 Reg exactly, you can, you’re right
+1 Reg it’s just not limited to things that are user visible, it’s this.
+1 Reg you can even put a grid on for helpfulness and if they want to drag it inbetween in the middle of a, i don’t care
+2 Prem because i guess they’ll need a way to actually, like we need a way to say what intersection is which, so i was actually just trying to work out a way to actually specify.
+2 Claim that’s, i guess we should just be using the pixel work actually, which is fine, it’s just an xy, x location so 
+1 Claim that means if you drag your road you have to make sure you don’t place it at every intersection’s xy.
+1 Claim that means if you drag your road that way you have to update every intersection’s xy.
+2 Prem yeah, how else would you know where the intersections were occurring?
+1 Reg an intersection between two roads with, and then it works out its own xy base don that
+2 Reg but then you need to- but how does the user then specify the properties of that intersection by clicking on it.
+2 Claim and then we need to store that somehow to say that that is that particular intersection.
+2 Reg and how do you-
+2 Prem and then if i do move that road, how do you need to know to update it.
+2 Claim cause, that’s another question i guess as well, which you know, i guess it’s a problem i guess.
+2 Reg do you allow them to move roads or just allow them to add and delete.
+2 Reg so if you were to add a road, do you then add a, you know, allow deletion or not.
+2 Reg ah sorry, allow moving, do you allow to add and delete and then replaces, or-
+1 Claim i would have thought moving isn’t- while doing it makes sense, but you’re right that there’s data structure implications
+2 Claim that’s a risk i guess involved in allowing that, if you start you run the risk of not being able to track what the user’s actually done.
+2 Reg and if i move it, you know, one pixel because i just moved the mouse a little bit, it’s you know.
+2 Reg because then as well also, is your pixel representation.
+2 Reg like if you draw a line then and you have another line next to it, and then you say, oh this one is three hundred long and this one is two hundred long, would you actually use the pixels to work out the distance between the two?
+2 Reg we say pixel represent x amount of distance, is it a scale?
+1 ClaimPrem well, they won’t have to blanks, because they’re all top to bottom of the screen.
+2 Reg ok so, and i guess also we’re also, yeah.
+2 Reg we’re only talking about horizontal and vertical obviously ok.
+1 Reg so if we were going at the pixel then we might say that this one is two hundred, i can never remember whether that’s x or y.
+1 Reg x, that’s two hundred x, and that’s three hundred y, so this intersection is 200, 300.
+1 Reg but whether you then say, it’s an intersection and a pixel 200, 300, or whether that’s an intersection between road a and road b.
+1 Reg and road a knows that it’s a 200 x and road b knows it’s a 300 y.
+Instructor Reg it’s now 45 minutes
+1 Reg ok, what does it mean, more cards.
+1 Reg design decision, how many decisions have we actually made or have we just been talking about the problem.
+2 Claim we need to start trying to chase into where we actually want to go for- so i guess we’ve been talking a lot about the problem working out all the different bits and pieces of it and stuff.
+2 Reg and we found a lot of different parts of it and there’s a lot of risks as to, you know, that go of the trade-off as to how complex we want to make this and how difficult and stuff like that.
+2 Claim obviously need to make sure we don’t run out of time as well.
+2 Claim and obviously a lot of assumptions, where we’ve got things to do with how we’re going to represent them and what distances mean and the data structure and so forth.
+1 Reg we’ve focused mostly on data model.
+1 Reg would you put that as a problem or solution, i’d be- it’s somewhere in between, i’d be more solution than
+2 Reg we’re verging on a solution so yeah, so
+2 Reg i guess we’re saying that some of our own constraints as well as to how we’ve the work so
+1 Reg i’d say the assumption that we’re making is, what are we making, that the actual simulation will use a similar ui to the setting up of the simulation.
+2 Claim i don’t think we could represent a different way, but we haven’t even spoken about how we’re gonna represent that, so
+1 Reg correct, we’ve focused on the data entry side of it
+2 Reg that’s a problem that we haven’t looked at, so
+1 Reg so is there really, yeah.
+1 ClaimPrem so yes the risk with that is that we’re, because we’ve focused largely on data entry we haven’t tested whether any data modelling decisions we’ve made will actually work in simulation or not.
+2 ClaimPrem we need to- i guess that’s a trade-off, because we could have a whole different visual thing but it’s gonna be a lot of work and stuff, so it’s a trade-off to have it looking very similar.
+2 Reg to make life easier hopefully.
+2 Reg i guess we need to, do we assume that the data models for the simulation and also the design are the same, or do we have different data models.
+2 Reg i assume they’re the same and they just have of use for each
+2 Claim and there’s also a risk in doing that is that your data models become very complex.
+2 Prem because they’ve got two models basically.
+2 Claim and once again that’s also like i said originally, a trade-off to make our life a bit easier, hopefully
+1 Reg so if we- we pick a constraint and see how our solution meets it.
+1 Reg the constraint i’d be interested in is the, not having everything on green at the same time.
+1 Reg is that action something that’s user level or not?
+2 Claim well we’ve got to allow them to have the- we allow them to set the traffic timing signals so, and i guess, we haven’t even covered, i guess that’s a problem you know.
+2 Reg as to how we allow the interaction between signals, we haven’t even covered anything like that.
+2 Reg how does one signal talk to the next signal.
+1 ClaimPrem well i don’t need to- it’s on the intersection that matters, we shouldn’t have that one on green at the same time 
+2 ClaimPrem ah yes, no, that’s obviously a constraint, that you know, you can’t have something that comes back to, you know, you can’t because crashes by signals.
+1 ClaimPrem yeah, my question is, in our data model could the user because crashes, by having it the same signal.
+1 Reg or have we not worked out that the data model-
+2 Reg i presume that they would just have- we’d just specify the green orange and red time through, the a b approaches and the c d approaches etc.
+2 Reg and from there we would, you know, you would never allow them to have them at the same time.
+2 Reg they just alternate between their cycles.
+1 Reg so they’re not requiring users to make that decision, we make it based on their inputs.
+2 Reg we allow two sets of input as to the different timings.
+2 Reg or even more if you’ve got left turn because you have to allow- you have to state how long the left turn signals 
+2 ClaimPrem that was one of the things i was [inaudible], the problem is we haven’t- i believe we need, you know, how does the traffic light interact with the next one, you’re saying they won’t so- because that’s also i think in most traffic systems now, they sort of have an understanding of what the traffic density is and obviously we have no traffic density sensors, we just have the triggered sensors.
+1 Reg my assumption would be that we don’t have intersections talking with each other.
+1 Reg you already put it down on the table, you can pick it up and return it
+2 Prem the problem i guess we need to solve is, we need to look at how we’re going to just, you know, like we’ve spoken about this and stuff but.
+2 Prem so user will have input, all the different variables and stuff like that so, and i guess that will be just, they click on the intersection and that will pop up with a gui sort of interface with the different options they can have [inaudible].
+2 Claim maybe we should draw some of those out and they will map up to the data models underlying
+2 Reg i’m guessing for now.
+2 Reg yeah, we to go?
+2 Reg we’ll put that stuff away for now
+1 Reg that’s more clear then.
+2 Reg so do you want to start drawing then?
+2 Reg the interface, or do you want me to or-
+1 Reg we’re coming out with a-
+2 Claim so i guess we gotta give same to developers to design so, i guess we sort of gotta, give them something that they can sort of take away and go, oh yeah, this is what we’re looking for.
+2 Claim so that’s what we’re thinking
+1 Reg so if you had something like that, the assumption is that you can click there and that gives you intersection 
+2 Reg so, i guess first thing we need to tell them is that this is going to be like a pixel map, yeah?
+1 Reg and so we are- who’s the road, int, just leave it at int there
+2 Reg alright, so and then we’re going to have- you can click on the either of those yeah, click there or you can click on the road.
+2 Reg and i guess that one there will then pop up into its own box here which will have the intersection data.
+2 Reg so, what do we have again, you’ve got cycles, timing and get a box or something like that-
+2 Reg some sort of box.
+2 Reg and then we’ve got left turn, now we’re just gonna allow it for a right turn [inaudible], just gonna allow that as a checkbox for all of them.
+2 Reg or do you want the a b pairing yeah?
+2 Reg we’ve spoken about it
+1 Reg we said that’s a trade-off.
+1 Reg i’m sort of- where are we, probably
+2 Reg don’t see an issue with any- you have a checkbox i presume, for each of those because it is a really 
+1 Reg well, depends on whether you want to have a turn probability or-
+1 Reg or if you wanna have a
+2 Reg but then the turn, but then you break the turn probability into a b or a b c d?
+1 Reg or just a b c and d and turn probability for left and right.
+1 Reg it gets messy, i agree
+1 Reg so that’s- cycle timing, well
+2 ClaimPrem so [inaudible], because each have their own cycles timing as well 
+2 Claim cycle timing is really its own object that can be used, you know, classes can be used in multiple spots.
+2 Prem because you have green, orange and red, and now just add the timing
+1 Reg and all of them will be carrying the data of a b and c d, not about each of the four
+2 Reg yeah, so, but then there’s obviously constraints on that you’ve got, well it’s not because that’s actually two, the a b and then c d yeah.
+1 Reg that’s a- yeah, that’s for cycle timing
+2 Reg left turn, you also have a cycle timing associated to it
+2 ClaimPrem so that’s associated, because you gotta have as well.
+2 Reg so how long each variable takes
+1 Reg what else do we have, whether it was triggered by car or always on.
+2 Reg and that’s just gonna be a checkbox, so we just do for all of the corners.
+2 Reg or we separate it, turn again, because 
+1 Claim i would think you’d put it with the cycle and left turn timing in the sense that if you’re triggered by a car’s presence, you’re gonna- if you trigger the green light you gonna want c and d to go red and then b to go green.
+2 Reg so basically what we’re saying is that we have this intersection.
+2 Reg which is then made up of an a b group and a c d group yeah?
+2 Reg so which are both the roads, so these are actually roads.
+2 Reg i’m actually considering it like that
+1 Reg it’s a point on the road, so yes
+2 Reg yeah, but- yes, so this will be the ab road and  that will be the cd road
+2 Reg i guess they leave them there and then for me you’ve got, you know, you’ve got your cycle timing, and there’s a part of [inaudible], you know, like you’re saying a trigger.
+2 Reg and the left turn.
+2 Reg but then you’ve got that again into there
+2 Reg then did your left turn just become a party of just saying, at this point, like you’re going that way and you’ve got, you know, so cycle timing could be, you know, green for 10, orange for 2, when you’re waiting for 10
+1 ClaimPrem you wouldn’t even specify red, it’s red so long as cd is green
+1 Reg red’s an emergent property, green is [inaudible], and possibly orange.
+1 Claim possibly even with orange you could just default it.
+1 Prem it’s always two seconds orange or four seconds orange or whatever
+2 Reg so you’re saying orange would just be the default, you wouldn’t actually specify
+1 Reg you could- well you could do that
+2 Claim that’s, like i was trying to say, that’s really dependent on the speed.
+2 ClaimPrem that’s how they determine, because if a road says it’s 69 kilometres an hour you’ve gotta allow you know, the time that it takes, say an intersection is 10 meters.
+2 Prem you’ve gotta allow the time for it to travel through, that if you’re aware at that point that it goes orange, then they’re not here when it goes green for the other, you gotta be all the way at the end so
+2 Reg so we could set that as the default
+1 Reg and something that’s worked out, whether it’s a constant or whether depending on different things for different speeds is totally up to us.
+1 Reg that puts it only in the simulation, not in the ui
+2 Reg have you got a card, i guess it’s constraint
+1 Reg are we- simulation, are going to have to be showing somehow whether- which direction traffic is going, which is green, which is orange
+2 Reg yeah, i presume so
+1 Reg guess we show that
+2 Reg well i presume, like, as we were saying about corners here, you could just have a status light.
+2 Reg you could have like, you know, like a green red
+2 ClaimPrem show that [inaudible], but then you’ve also gotta show the traffic i guess, so you know you show little blocks that represent cars.
+2 Prem you know, you just you know, something like that, to represent how many vehicles are actually in that queue at that time.
+1 Claim ok so let’s the intersection, how much we’ve covered depends on how much we want to decouple left turn and straight ahead
+2 Claim like i’m saying, some of this stuff actually depends on which road type you’re on as well so.
+2 Claim it sort of- yeah, but they also need to have an understanding of what rod they have as well, crossing sort of.
+2 Prem you know, because like you’re saying before, i guess you’ve actually got this intersection object.
+2 Prem and then you have road a, road b, you’d actually know.
+2 Claim so you might actually find that orange is actually specified on the road-
+2 Reg and the time it has.
+2 Reg so then you’re gonna have your road objects, and it’s gonna have things like, i guess you know, size, speed yeah?
+1 Reg so that’s the intersection data and if you click here you’d get-
+1 Reg and what do we have under there, maybe you’ve written it down
+2 Reg so, a few things over here, the speed, the traffic, the flow traffic density.
+2 Reg but the traffic density is really just a, i guess how much you can handle-
+1 Reg well it’s how much you can handle, and how much you’ve actually got on there is i guess the same thing.
+2 Reg i guess you’ve got this point here, you know, you got, this is one end of the road, how many cars you’ve got entering per minute or something like that.
+2 Reg which is your traffic density, and i guess-
+1 Reg and then  if you have turn probabilities you kind of know roughly how many, you know, will end up there
+1 Reg well you make a good point, is that the entry that we care about, traffic density
+2 ClaimPrem quite possibly, because maybe we do have an option here, we can have entry here, you know, call that an entry, and you say ten cars and that’s how you determine your traffic density and so forth
+1 Claim and so for the road you need to know the amount going up in- no, the amount entering-
+2 ClaimPrem yeah, because then you’d have, you know, when you get there you’ve got your probability of turning and going straight and so forth and then you’d work out how many cars you have at each time at different sections
+1 Claim well, either e could add or we just figure it out, i mean when you’re writing a simulation, if you put in ten cars, and it’s supposed to be ten percent but you actually have 3 cars turning right if you go in random.
+1 Reg then you’ve got seven going straight of
+1 Reg so ok, we have speed, we have traffic density, cars
+2 Reg just, if you’re going to put that on, so, and that would be the same for both ends i presume.
+1 Reg well you could make two separate values and 
+2 Reg yeah, make an assumption that it´s gonna be the same on both ends.
+2 Reg the road just has that traffic ok.
+2 Reg so that´s how that [inaudible], that data 
+1 ClaimPrem i think that goes a long way towards giving us a data model, because if so we really need to think out, we´ll simulate it.
+2 Reg ok, well let´s start thinking about that then
+2 ClaimPrem so i think we´ve got enough there to actually get started, that would give them enough to actually, if we were to take that away they would be able to, i guess, implement something like that, but then yeah, we´ve gotta work on the ai, or what do you wanna call them.
+2 ClaimPrem and we have to actually work out the simulation, and how to represent the simulation, so- putting roads aside
+1 Reg i think so
+1 Reg i’m just gonna write here turn prob question mark, we haven’t really decided whether we
+1 Claim we probably needed it, i think 
+1 Reg and for that he can want it for both left and right
+2 Reg so what are we thinking if the simulation ends.
+2 Claim so we need to represent it so, you have here just a box representation of cars, something like that, just a box
+1 Reg should be fine, let’s see, what’s that, what’s the assumption here.
+1 Reg and it was beneath it, i mean it said you can choose to depict individual cars or use a more abstract representation.
+1 Reg depends on how many cars you want to throw into it.
+1 Reg if you have a 100 cars piling up here you’d want to have-
+2 ClaimPrem yeah, well that’s the thing isn’t it, so i guess it depends, you know.
+2 Reg there’s an assumption made as to how many cars were sort of allowing all this at once you know.
+2 Claim i guess we need to sort of work out, i mean you know, well we’ve got thing like you know, traffic density and cars entering, how many, you know, do we have an upper limit?
+2 Prem like, does it make sense to show, you know, what if i put in 100.000?
+2 Prem are we ever gonna cater for it?
+2 ClaimPrem probably not, so we need to actually make an, you know, a constraint there
+1 ClaimPrem i guess the point is, if for example, a 100 kilometres is representing, that is representing roads that are 2 kilometres apart, then each pixel is 20 meters, which is longer than the average car, and as a result you might need a way to represent it
+2 Claim well that’s it, yeah, or you know, just show a- you could show like a graph or something like a bars or things about how busy it is or something like that.
+2 Reg you know, but then what’s you upper limit’s you know, sort of flow
+1 Claim ideally you want to watch individual cars i suspect.
+1 Prem particularly when getting to things like signals that are only triggered by a car turning up, you’re gonna want to see an individual car sitting there
+2 Reg we call it a box but we, you know, i guess in the end we’re saying we’re doing a pixel map sort of thing and stuff, but, you know, do we make each road so, you know, the roads will be like set 10 pixels or something wide, or something then.
+2 Reg our car will be 5 pixels or 4 pixels or something, that will actually you know, some sort of scale like that you know.
+2 Reg it sort of, you know, if you can choose something like that then we can actually work out how we’re gonna represent that.
+2 Claim because this box here will just be but it’s actually, it’s like a- like we say a road, you know, it may not, you know, we need to actually work out what’s visible but if we just say 10 pixels wide for now
+2 Reg wide, a car will be 4 pixels, so they can next to each other
+1 Reg so, talking from the
+2 Reg four pixels and a square
+1 Reg talking from the risk point of view, i can see two separate areas of risk.
+1 Reg one is that the simulation itself becomes too complex, the other is that it, we can simulate in memory fine, but we can’t actually represent on the screen.
+1 Reg so, do you have any feel which of those is the more interesting, important-
+2 Claim it’s gonna be the representation that’s gonna hold us back, so how do we represent this data.
+2 Prem because in memory we can do whatever we want and that’s not gonna care, it’s just gonna keep piling up and- we need a way of representing these, we also need a way of representing these in data as well.
+2 Reg like how do we know where a car is situated.
+2 Reg you know, so, all of a sudden we’re creating a car object, you know, that actually knows where it is and stuff.
+2 Reg and you’re talking about the turn probability, is a turn probability actually a car thing?
+2 Reg you know, you go that far as to say, oh car has a probability of, every time it gets on an intersection it can have 80% going straight or 10% going left or right.
+2 Reg or would you make that intersection based.
+1 Reg well my assumption was that it was intersection based in the sense that, we’re making up random cars, you’ve probably seen in the real world, there are some intersections where everyone turns at, and no one keeps going, and there are some intersections where everyone keeps going, and it’s very rare to see one in the right or turn lane.
+2 Reg there’s a risk you run with this sort of thing as well.
+2 Reg it’s that once you get to a certain point here, you can actually get it so that you have too many cars in that section
+1 Reg and it’s too difficult to represent
+2 Reg well no, because- but then, if you’ve got a case that more and more cars just keep going here whatever and stuff, and you know, it just keeps growing, we’re not actually representing it or handling it, it’s just you know, all of a sudden we just keep throwing more and more cars in here and it’s a matter of space so, sort of
+1 Reg each car needs to be aware of the car in front of it is what you’re saying perhaps?
+2 Prem so saying that you know, if you’ve got this set up, that you know, your turn probability here in this intersection is you know, 50 and 50 whatever.
+2 ClaimPrem so you always gotta turn, but you know, you don’t, you know, depending on your, you know, you’ve also got, you know- we call this cycle timing, as in seconds, i was thinking of it in seconds to represent it, but it’s also a case of how many cars
+1 Reg cars aren’t moving instantaneously, they have to be 
+2 Reg no, yes, so how many cars can fit through on that turn cycle.
+2 Reg so, it’s not just a case of you know, an actual time, but you know, to represent this you need to, you know.
+2 Reg and then also how fast, how quickly do you move the pixels
+2 Reg to represent, or do you care, do you care that you know, you got your grid lock this way and you’ve got a car coming up, you’d wanna see it, you know moving all the way along.
+2 Reg or do you just want to see, you know, that, you know, the light goes green so all the cars are moving, and when the lights are red, so that’s red, you just see a line here with all the dots of how many cars are actually stopped there waiting.
+2 Reg at that point in time, you just do it as a queue to visual-
+2 Reg representation of the traffic.
+2 Prem because i don’t think, you know, actually watching a screen, watching a car you know, go actually means anything.
+2 Prem but whatever you’ve just seen, you know, you actually just have a representation of you know, that’s the traffic waiting there and you know, and you’ve got your next intersection here.
+1 Claim i think that- let’s say that, that also has implications to the data model
+2 ClaimPrem and that’s why we keep coming back to the data model to actually work out, because they’re so tied into each other, how does it represent that.
+1 Reg so would i be right in saying that at least the conceptual level, the simplest possible model is, each car is a car and it has a position in the screen.
+1 Reg well it has a, it is on a road at a particular point on that road
+1 ClaimPrem the complexity with that comes, as i mentioned before, the cars have to interact with each other and so you have to know, if we come up to stop the fifth car in the line, you’re not going to be jumping of one second after the lights go green.
+1 Prem you’re gonna be jumping of 10 seconds after the lights go green.
+2 Claim no, and there’s obviously risk involved into how difficult you make this and stuff, but it’s more a case of you then say you know, this light goes green, so all these cars you know, and we say that you know, in the 5 seconds, or you know, you can pass 5 cars.
+2 Prem and this is the next intersection up here that once, you know, you simulate and you go, ok, so if the 5 seconds occur or whatever, and then you have the 5 cars piled up up here.
+2 Claim you don’t actually show in between, you sort of, you might just show- be able just to show, trying to work out how you’d show that in real time.
+2 Reg do you say that you know, how many cars a second and you move the dots, or do you- you know what i mean, like that goes green and it may be- you move that one and you ad one there and then you remove the next one and then you add one.
+2 Reg you know, you divide that time up
+1 Reg i think the only-
+2 Reg i you actually don’t care then you can 
+1 Claim i think the only- the only easy way to ensure that you remain self consistent is to simulate the entire thing a second time, then update your drawing appropriately
+1 Claim i mean, i think you’re trying to suggest shortcuts that make  sense initially, but then when you actually think through them and go, ok i took this shortcut, but that effected this other car sitting over here.
+2 Reg would you go back to the intersection based, where the intersection knows how many cars are in its queue?
+2 Prem at each point, we go back to like a b c and d whatever, and d has 5 cars.
+2 Claim so when it gets a green it understands there’s x amount of cars it can pass through to its next, you know, thing.
+1 ClaimPrem i’m gonna call that a trade-off, just because if you have the intersection managing it, then you’re assuming that all your cars are uniform.
+1 Prem whereas i suspect to be a useful simulation you might want to have, ok well, some cars drive exactly the speed limit, some cars drive 10 kilometres an hour under it, and they have cars pile up behind them.
+1 Prem some drive 10 kilometres an hour over, possibly.
+1 Claim which is why i came back to, one option is to say because this is normally distributed based in some way on the speed of the road.
+1 Prem so most of them stick fairly close to it, some could be a long way above or below.
+1 Prem and in and on the distribution you can tweak as much as you like, and it’ll mostly stick in the centre.
+1 Reg but the key thing to that is that only works if you have a model of individual cars where each car knows what the car in front of it is doing, and doesn’t go faster than the [inaudible].
+1 Reg and whether we want to deal with that is-
+2 ClaimPrem no, there’s a lot of risk  involved in doing that because it’s just so complex
+2 Reg so, and that’s where i was going, i’m trying to work out ways we can actually reduce the complexity.
+2 Reg it’s, you know, how are we going to present this to the developers to work on 
+1 Reg so let’s ask this question.
+1 Reg if you have an intersection, knowing how many cars are sitting at the intersection.
+1 Reg how do you track in the cars that are between one intersection and the next, do you say these cars left intersection a, they’ll take 20 seconds here, to intersection b, we’ll forget about them until they arrive.
+2 ClaimPrem quite possibly no, i guess maybe, you have your roads managing that in between.
+2 Prem and that’s where the size of your road would come into it as well.
+2 Reg so you, i guess, your road would have, you know, you’d have your speed but i guess in the same aspect we’re calling it speed, but i guess we’re really talking about cars per minute or something like that as well.
+1 ClaimPrem i think if this gets to be individual car level very quickly, if you want a simulation to be including a drop there and a drop there, then it doesn’t matter whether you’ve got a model of – this point of the road either has a car on it or it doesn’t.
+1 Prem this intersection either has a car or it doesn’t.
+1 Claim when you have individual cars there it seems to me the same old problem
+2 Claim it would be easier just to show a number.
+2 Prem so you just have 5 and you just increase and increase that number as traffic flows.
+2 Prem that might be an easy way to represent the actual cars
+1 Reg but is that the roads 
+2 Claim that’s just saying, how do you represent, in the middle.
+2 Prem because now, like we’ve talked about before we, it’s sort of a risk to use the same data model between both, and we’re starting to come across some of these things where we’re saying that, you know, the data model is similar but it also has all these separate variables.
+2 Claim maybe we’re better of having a different model for the runtime, as to the creation.
+2 Reg that sounds like  maybe we are, maybe we are pushing all onto one basket, trying to save all.
+2 ClaimPrem but this was for the creation and then we’re trying to reuse it for the simulation, so maybe we need to actually separate those two paths.
+1 Claim i guess the question is still, are we actually using any additional information to what we’ve specified in here?
+1 Prem because ultimately if we’re gonna say that a model of cars, the a car would have a position, it would also need to be able to figure out, in order to go to the next point, whatever that is, need to know am i at an intersection, what’s the state of the intersection.
+1 Reg or you’re right, there is an intersection level one where intersection knows, i’ve got 5 cars we’re gonna send 3 on.
+1 Claim but those 3 have to be tracked somehow.
+2 Reg yeah, well that’s where, you know-
+1 Claim i quite like keeping an xy thing, it’s still complex i agree to go from, i’m at this point, in one second where will i be.
+1 Prem i’ll be at this point, or i’m right here, it’s red, i’m still gonna be at that point
+2 Reg so you really want the car model to say that, where the car position is and how fast it’s moving and so forth.
+2 Reg but ir relies on all the other factors as well so
+1 Reg yeah, it’s the interaction between the cars that gets messy
+2 Reg i guess that’s where you sort of have, you know, you’d have your car object.
+2 Reg but then you’d probably got any intersection, you’d probably got a list of like, the queue.
+2 Reg and that’s a list of those, for each point as to, you know, the car objects etc.
+1 Reg so, if you add a list of cars that are somewhere here going in some direction.
+1 Reg would you have to have something else controlling it and telling the car what it could do next?
+1 Reg and then the car actually does it?
+2 Reg or- don’t know.
+2 ClaimPrem i guess we gotta step back a little bit and try and work out, you know, actually we ned to give this to someone to develop it and you know, a lot of this stuff that we’re discussing, a lot of the problems and stuff, and i think we’re actually giving them anything to go on so we need to obviously work out some, you know, class design and how, you know, stuff like that
+1 Reg so, representation, you mentioned for the car we have position, we have speed, and presumably direction and that’s separate from speed.
+1 Reg and we’ll for the purpose of argument that that’s been set up to be valid.
+1 Reg so if you’re right here that your position is right there, your direction is there, and you’re gonna stay on a road the entire way.
+1 Reg if you- ok i’m gonna say, if you have that and you want to get to the next position one second later, how do you do it?
+1 Reg i’m not saying we have to pick this representation, if we do that’s the question we need to answer.
+2 Reg well yeah, that’s definitely a question.
+2 Claim so i guess that’s, you know, we need to work out what the pixels- divided by time and that sort of thing, [inaudible], how far do you travel compared to what speed.
+2 Reg so, and then it comes down to, you know, what each pixel represents.
+2 Reg what would you think?
+2 Reg i should just make it easy numbers and just go 10 meters or so?
+1 Claim yeah, that works probably.
+2 Reg that’s an assumption that we 
+1 Reg so for example we got a window 500 by 500, which isn’t so unreasonable, do you think that 5 kilometres, you would be able to fit 6 intersections in a 5 by 5 kilometres, so
+1 Reg it’s sort of reasonable.
+1 Reg and i mean, from a data representation point of view you have the option
+2 Reg so you’ve got, so what are you saying, 500 pixels was it?
+1 Reg that’s- entirely random, but that’s just saying, yeah, at least theoretically ok.
+2 Reg and we go, so that’s gonna equal 5 kilometres
+2 Reg this is what i was talking about before, the sort of scale of what everything represents.
+2 Reg so that’s a scale.
+2 Reg so once you start talking about that you can then represent speed as being, you know, 60 kilometres an hour
+1 Reg how are we doing for time?
+Instructor Reg you are now at 1 hour and 26
+2 Reg so, if you do you know, say 60 kilometres an hour, you can the work out how many pixels are they travelling per second 
+1 Reg that’s- and that’s fine, i mean, you have the option if it’s easier for the simulation to be build in meters if that turns out to be what you want to know.
+1 Reg and then they map back to pixels, so 
+2 Claim are you better of, instead of doing it that way and you say, you know, one pixel equals 10 meters, you work out, you know, you go, ok it might be better to work out the time on this and say that ok, but everyone, you know, whatever the travelling, you know the average travelling speed at 60 kilometres is, it’s going to equal to 1 pixel.
+2 Reg and that maybe that’s your scale so that, you know, car travel scale of car travelling.
+2 Reg and 60 is a normal speed, for us anyway.
+2 Reg equals 1 pixel a second.
+2 Reg and then we just have to do the maths on that, what you reckon?
+1 Reg 60, yeah, probably, 60 kilometres an hour 20 meters a second?
+2 Reg something like that
+1 Reg so somewhere between 1 and 2 pixels a second
+2 ClaimPrem so something like that, so at least you can actually see there is a representation and so.
+2 Prem and there’s a constraint that we need to, actually limit this number at the entry.
+2 Reg in that road, you know, you can’t just say and go-
+2 ClaimPrem well i guess that’s obviously, yeah, whatever the road can’t, just take that because i guess it would just clog it up and then that shows you what the traffic would look like clogged up
+1 Reg we exit there.
+2 Reg sort of 
+1 Reg there you could possibly assume that one’s, if you do bank all the way back up to there, you’re not putting any new cars in the system
+1 Reg you don’t put any new cars in the system is there’s a car on the point that can’t move.
+1 Reg i guess in the end what we’re really talking about is, this is just an intersection, with a queue.
+2 Reg so, that’s sort of you know, we can use the same logic there to handle a queue.
+2 Reg so, and that’s where i was talking about having a queue on a- to actually, how many cars are waiting there and stuff and
+1 Reg going back to this question, from a car how we find the next position.
+1 Reg it seems to me the global, or at least somewhat global point of view.
+1 Reg and i wondered whether it would make sense to sort in the direction of travel.
+1 Reg so, for example if we’re looking at this road we start by figuring out the top car, where does it end up, and then the next car down the road, where does it end up assuming that even if it’s going at  80 and it would hit the car in front of it, that we won’t.
+1 Reg and it gives you a logical sort, you then come here and figure out, well what’s the intersection doing.
+1 Reg shall we let a car move over the intersection, shall we not.
+1 Reg is it reasonable to say that we could essentially simulate each road entirely independently so long as we’re dealing with traffic lights and the constraints are maintained and you can only have
+1 Reg unless of course if you don’t have a left turn arrow or in our context, right turn arrow.
+1 Claim it might have to know whether a car is crossing an intersection from another direction.
+1 Prem makes it slightly more complex but-
+2 Reg well, as we’re going this gets more and more complex
+1 Reg well, it seems to me, we have an intersection, going to your idea of having a different data model, this is the configuration to the intersection, in the simulation what we care about is things like, what’s the current, state, is it green this way, green that way.
+1 Reg how long has it been in that state, when will is transition
+2 Prem because, that’s the same with the cars and stuff, i guess you’re talking, with [inaudible], you’re talking a lot about state machines and stuff and action, where you are and stuff like that.
+2 Prem more so than anything else.
+2 Reg so i guess you, like you’re saying you know, if we were to go to something like that.
+2 Reg you’ve now got- so you’ve got your intersection, and this is the i guess, that sort of thing.
+2 Reg and you’re gonna have you know, like it’s state as to green red
+1 Reg and when it flips to green
+2 Reg and it obviously has functions on it, that you know, allow it to, you know, change.
+2 Reg you know, things like that so it understands what it’s allowed to do and what it’s allowed to change to.
+2 Reg and yeah, you’ve got, i guess you’ve got stuff like that
+1 ClaimPrem so yeah, the picture i’m seeing is, because behaviour of cars depends on the intersection and this behaviour of cars also depends on behaviour of other cars, you need something else that’s sitting on top running the entire simulation, saying, now we’re on this second, now we’re on the next second.
+1 Reg and like you said, you have the state of the one, you have the state of each car, each intersection
+1 Claim but they can’t act on their own and say, i’m gonna go with 100 kilometres an hour i don’t care about the car in front of me
+2 Claim and obviously you have to have an understanding on which road it’s almost to, limitations of that road
+1 Reg what are you trying to find out, what we’ve missed?
+2 ClaimPrem no, i’m just having a look at what we- the desired outcome so- need to make sure we design the basic structure of the code as well, so we’ve got a lot of the classes and stuff.
+2 Reg do you want me to dive into that a bit further, still what we 
+1 Reg so i’m gonna call what i just described the controller
+2 Claim i was thinking that you would definitely go with model views and controls
+1 Reg sits somewhere and does something.
+2 Prem because we’ve talked about how we’re going to represent the cars and stuff like that, so forth, and the scale, the actual map.
+2 Prem the simulation which controls the movement and stuff, and we’re gonna have different data, different models
+1 Reg what have we missed?
+2 Reg that’s what i was thinking as well 
+1 Reg as long as we’ve covered those two main points at least.
+1 Reg [silence] so, can you the requirements, we readily accommodate at least 6 intersections, theoretically it’s more 
+2 Reg yeah, well we haven’t settled it, but we can just, you know
+2 Reg just drop them on the pixel grid
+2 ClaimPrem i guess we do probably want a minimum as well, we haven’t actually discussed this you know, minimum, distance between roads, which would be a constraint, because obviously you don’t want another road.
+2 Prem i mean right there which doesn’t actually allow you to fit cars in between 
+1 Reg behaviour at intersections, we’ve done that but we haven’t made absolutely final decision on quite a few of the open questions 
+2 Reg no, there’s still stuff outstanding
+1 Reg but some of that, to me some of that you’d probably prototype anyway.
+1 Reg so, ok, this is what we thought was right, doesn’t actually work.
+1 Reg have we specified how car triggered sequence work?
+2 Reg not particularly, i presume that we get to a point and you’d- so that would be part of this sort of thing again and you know, the trigger i guess.
+2 Reg i guess that just comes of this queue, as to when the queue gets a car in it, it would trigger, you know cycle
+1 Reg within 10 seconds, within-
+2 Reg oh yeah, i guess 
+1 Reg do we have the full green the other way?
+2 Reg i presume so you know, in its next available cycle it would you know, trigger some
+1 Claim yes, those are assumptions.
+1 Prem because you there is somewhere the instant you drive out the other way it will turn red, and there is somewhere it seems like you wait a minute or two and then it goes, oh, now i will let you go through.
+1 Reg so is that a four way intersection with sensors
+2 Reg once again the more complex you make it, the more risks you’re adding
+1 Reg certainly the simplest way is wait until the end of the- some will go the other way and then some of the-
+1 Reg so let’s go with that trade-off
+1 Reg traffic density, we described that.
+1 Reg can’t see anything on here that we missed
+1 Reg yeah, do we need to focus some more on the actual, you know, simple sort of code?
+1 Reg basic structure of the code to hand onto some of the- or do you think we’ve given them enough of the- so i guess we sort of have been all over the place.
+1 Reg one of the things it said was, you’re not to produce complete diagrams but to be able to present.
+2 Reg oh no no no that’s fine, i’ll just, making sure we’ve covered everything.
+2 Reg what are we missing?
+1 Reg we’re missing specification and the exact, how configurable you want the cycles to be on the intersection whether you want left decoupled form straight ahead, or you want turn probabilities etc
+1 Reg those things are ones where we make both assumptions and trade-offs, depending on-
+2 Reg how much do you make it you know, configurable.
+2 Claim but there are some things we must have, and there’s some things that you know are, you know that we can’t live without sort of you know.
+2 Prem because some of those things can be configurable or you know, default and sort of things and other things like cycle time really need to be, you must allow the person to enter them so.
+2 Reg so different things like that.
+2 Reg as you’re saying about the control so, and that’s obviously the gui and implementation to begin with them and the model behind that.
+1 Reg i think that the simulation controller is independent of that
+2 Reg it’s independent so
+2 Reg no that’s yeah, i’d also draw a line between the two, thinking that that’s one path and the other is separate.
+2 Reg make live a bit easy.
+1 Reg risks, we’ve really only identified complexity i think
+2 ClaimPrem the risks are, yeah, it’s complexity and its user [inaudible], and just you know, the control i guess, how do you- the simulation is obviously a risk because it’s obviously very hard to you know, work out all the logic behind simulating some [inaudible].
+2 Reg what do you see anything else?
+1 ClaimPrem i think that’s trade-off as well as risk, because one of the risks is if we make it too simple does it get used.
+1 Prem because it doesn’t do useful things, if we make it too complex it doesn’t get build.
+2 Reg yes, so as you know, as a trade-off happen there is to you know, too complex over usability.
+1 Reg so when it comes to specifying intersection data would you see it having defaults or not?
+2 ClaimPrem well there’s something that i don’t you can get away from entering so, i guess you’ve gotta have a default of some, like they can’t be nothing, so we have to set some sort of default.
+2 Claim you know so, i presume the left turn will be off by default.
+2 Reg so, there’s a lot of assumptions that we’d be making as to defaults.
+2 Reg so entry screen with that.
+2 Reg it’s just cycle timings, i presume you know, like we say the orange would only be, you know, they’d probably be default for the orange cycle timing.
+2 Reg you know, you place it at minimum green, there’s no point having it for half a second or whatever, it’s probably you know timings as well.
+2 Reg to the you know, i guess there’s also the assumption that we’re making you know, we’re not gonna allow anything stupid, like you know, we’re going to assume that you know, people are gonna use this to actually simulate cars, not to, you know, like set all the intersections to one second green you know.
+2 ClaimPrem it’s not actually going to represent anything so, because the assumption there is that it’s gonna be used to represent traffic problems.
+1 Reg i think there’s a lot of this we pass on in the same way to the developers, we would-
+2 Reg so i guess we were talking a lot more about the solution and stuff and how we would pass that on to developers and stuff, and like you’re saying, there would be ways to write stuff up but there would be a lot of verbal communication presumed as well.
+2 Reg [silence] we’ve talked a lot about the risks and actually the complexity of this, the trade-off between usability vs complexity.
+1 Reg so what do you think is the most- the assumption will be risk heavy.
+1 Reg the assumption we’ve made that would have the greatest impact if we were to be wrong.
+2 ClaimPrem i guess the assumptions that we’ve made have probably to do with- obviously the complexity is the thing that what gets me is the you know, the more options you allow, obviously, every single optional thing allows you know the complexity just raises by, probably doubles or triples or something like that, at every different complexity you allow because especially trying to simulate the movement of vehicles and stuff would be quite complex.
+2 Prem when you start introducing it you know you can have certain intersections, you can have left turns, arrows and stuff like that.
+2 Prem and if they don’t allow left turn option, they continue straight and right and stuff.
+2 Claim and so, that’s the biggest risk.
+2 Reg what do you think?
+1 Claim to me the biggest assumption is on the simulation side, are you working at individual car level, or trying to work at some kind of statistical level.
+1 Prem because there’s no way you could change that without rewriting it.
+1 Prem whereas all of the stuff around how you set it up with an intersection and so on, you tweak it a bit, you make an extra parameter, but it’s not a complete new ride
+1 Claim is that- i think the car approach we took better
+1 Reg it is a better trade-off 
+2 Claim i guess that’s still a problem that we have you know, we need to determine what one would actually work better.
+2 Claim but it’s hard to actually- it comes back down to that sort of risk thing and trade-off.
+2 Claim as to, the complexity vs usability again, as you make this more complex, the car model that probably suits the problem better.
+2 Reg a more simple problem you can solve probably by using the intersections etc.
+2 Claim but you are right that- to allow more scope if you would use the car model, would definitely improve a little bit.
+2 Prem like you’d be able to change it to do what you wanted.
+2 Reg what else is here.
+1 Reg i don’t think we’re going to be changing anything at this stage.
+2 Reg no no i don’t think so, i’m just trying to throw some cards around.
+1 Reg ok, so you’ve got context, solution, eh sorry, context, problem, solution
+2 Reg so i guess, we sort of covered those with the first 5 minutes was context and then all sorts of problems, and this was more solution based now so.
+Instructor Reg if you’re finished you can just say so
+2 Reg i think we’re pretty close
+1 Reg probably we are

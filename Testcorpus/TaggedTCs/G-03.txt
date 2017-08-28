@@ -1,0 +1,1171 @@
+1 Reg ok, well, let’s start with the context [laugh] ok.
+1 Reg it’s more like the overall
+1 Reg right, all the external and internal
+1 Reg or all the external elements that have an interaction with an internal element
+1 Reg do they have external elements that they need or-
+3 Reg wait, do we have to start with a before, or the-
+1 Reg no it’s up to 50 minutes.
+1 Reg or yeah, we can do it but it’s not necessary.
+1 Reg i don’t know, what do they mean.
+2 Reg if we take our- 
+1 ClaimPrem maybe we need an official map of the area, so maybe that’s an external- i don’t think that application creates a map itself, right 
+3 Claim no i don’t think so
+2 ClaimPrem i don’t think the map is going to be external, because they say that you are only allowed to create your own maps.
+2 Prem and that you have only four way crossings and no one ways.
+2 Claim so i don’t think you can do a google maps integrated service.
+1 Reg ok but is there something else integrated, or
+3 Reg can we just look at our own context viewpoint and take elements of that one
+3 Claim i think a file system would be an external thing
+2 ClaimPrem user file system then, because it’s your own map.
+2 Reg the plugins, no google maps, so which plugins should it have
+3 Claim i don’t think that there are going to be any plugins
+3 Prem it’s a very simple system, it doesn’t really do anything outside, just- it’s more mathematical thing on the inside
+3 Reg does it have flash?
+3 Claim i think so and you could do things, right.
+3 Claim and then it would be visual.
+3 Claim it doesn’t necessarily have to be flash to be visual
+3 Claim but it has to be something
+1 Claim but there are no requirements of the program itself.
+3 ClaimPrem no i don’t think so can be on time so that it updates, like every millisecond
+1 Reg but like, you can create a map, but that map, is that your own creation or is it like a real-life-
+1 Reg no, your own creation
+3 Reg it’s your own creation
+1 Reg because it says you can’t have t intersections and stuff, so that’s really your own
+1 Reg ok, so it’s not-
+1 Reg it’s not that you use some existing information about roads or ok-
+3 Reg no, it’s gotta be.
+3 Reg there were too many dependencies, there are some- here.
+3 Reg in this section it says that there may not be one way roads, no t sections, and it must all be- always with the traffic lights 
+3 Claim i don’t think this exists in the real world
+2 Reg no, they don’t [laugh]
+3 Reg i need at least six of these intersections to make the program work
+2 Reg ok so what else, we have the libraries in our own mind.
+1 Reg yeah, there is no information on the-
+1 Reg yeah, or like the- how do you call it, the
+1 Reg the structure of the program.
+1 Reg we can’t look into the files, the directories
+3 Claim i don’t think the context is that big actually.
+3 Prem i don’t think it’s going to- i think the functional is going to be very big, and information a little.
+2 Claim not even the information, functional mostly
+1 Reg ok so if we say the context is only a user file system, as an external element, is that it then, or?
+2 Reg well- looking at this [inaudible], we have the user saying
+1 Reg oh yeah, the use 
+2 Reg three of information, i don’t know.
+2 Reg i can imagine there’s like a help function or something, but-
+2 ClaimPrem yeah, but we don’t know that because we can’t look at the program
+3 ClaimPrem but that doesn’t matter because we can design our own program.
+3 ClaimPrem but they say that you should not- maybe we should not make it too difficult because it is for students.
+2 Reg that’s true 
+3 Claim i think there could be libraries depending on the language they choose.
+3 Reg but if they do have java that
+2 Reg and there are abilities right
+3 Reg plugins, i don’t think-
+2 Claim no, i don’t think so
+2 Claim and they are internal or external
+3 Reg if we had a feedback-
+2 Reg ok so, the application itself, libraries, how do we call it, like, the language part.
+2 Reg or is that a library
+3 Reg no that’s not a library, that’s part of the development view.
+2 Reg ok, so it’s not included in the context
+3 Reg it’s too high level, the context
+2 Reg so we only have the user file system, the user, the application itself, libraries.
+1 Reg for now i think so
+3 Reg i think so.
+3 Reg i think we only have- 
+2 Reg something later on
+3 ClaimPrem this is quite nice, because it’s not an event ticketing system [laugh]
+2 Reg it’s actually an application, so maybe just for us
+3 Reg maybe that’s why they chose it.
+1 Reg ok, so we have two hours and we’re done with the first one in six minutes
+2 Reg ok i already have, for the functional, creating a map, lying out roads 
+3 Reg you can also create the lengths of the road.
+3 Reg i don’t know if you have to tell that too.
+3 Reg is that too detailed.
+2 Claim ok yeah, should allow for varying lengths, to be placed.
+3 ClaimPrem maybe we could make a section on rules, because there were also some rules, because it says here, at least six intersections-
+3 Reg and then there was another one.
+3 Reg all intersections will be four way
+3 Reg and they are with or without sensors- or that you can determine yourself.
+1 Reg and they must have traffic lights?
+1 Reg that’s also a rule 
+3 Reg where is that rule
+2 Reg so is that then, how can we model that, is that a tree or something.
+2 Reg that you should- like
+2 Reg if you have- i bet that it’s kind of a loop.
+2 Reg or you have to test that you- just check
+3 Claim whenever you have, like, enough of traffic lights, or- i think it’s a test that it has to just check everything.
+3 Prem you can’t say that is this one’s ok  then we skip the rest
+1 Reg no no, that’s true, but- how are we going to model it
+2 Reg do we already have to think about that?
+3 Reg no when you compile the program, when you say one then it checks, ok, it’s ok, or you can say, hey check my program.
+3 Reg and then it tests it.
+3 Claim i don’t think it really matters when you do it.
+3 Reg at least if you do it before it start running, the simulation
+2 Reg let’s just write them down for now
+2 Reg and then discuss it later
+1 Reg but rules, are that then in the functional.
+1 Reg or is that in information
+2 Reg it’s not an information flow
+3 Reg it’s just to check if it’s all there
+1 Reg is there in the context viewpoint, business rules something.
+1 Reg yeah, no idea, i think it’s 
+2 Reg you have a business process model notation, but yeah.
+2 Reg ok so at least intersections
+2 Reg oh, intersections will be four way.
+1 Reg but, no t intersections, that’s maybe not something you can create, or-
+2 ClaimPrem that’s a rule i guess, because he’s gonna check if it’s there, and if it’s there he will say it’s an error.
+1 ClaimPrem oh will- that’s a little hard because we don’t know how the program looks like, maybe you can just drag and drop an intersection.
+3 ClaimPrem i think they want you to create roads, so that you get this.
+3 Reg and then this is like where your simulation once, and that you see these intersections, but then the roads don’t end and cars can just flow in and out.
+3 Reg but you don’t see what happens here.
+1 Reg but how do you draw
+3 Claim i think if you want to drag or drop, do it on a grid, click
+1 Prem because if you choose drag and drop, you don’t have to- like you don’t have to put the possibility of a t- what is it called- t intersection on it.
+1 Claim so you can just only drag a four way-
+3 Reg that you only can drag these crosses
+1 Reg do that you don’t- i don’t know
+3 Claim i think that’s a good idea.
+1 Prem because at least one rule last then.
+1 Reg but i don’t know.
+1 Reg that was what i had in mind, but-
+3 Claim because if you have single parts and you can just say, ok i have a single part like and a single part like this
+3 Claim but if you have the crosses then you can’t have that.
+1 ClaimPrem and it’s way less complex because-
+1 Prem you also don’t have those one way roads
+3 Prem and if you already add the traffic lights to the crossings, then you also don’t have that anymore.
+3 Claim i think that’s a good idea
+2 Reg and now we have to make a picture of this, and also send this right.
+2 Reg we don’t have to write something down yet right
+3 Reg no if you want to play a card then alright
+1 Reg ok, so- ok.
+1 Reg do we have other rules.
+1 ClaimPrem but they can have a varying length, so you should be able to drag and drop the lengths as well
+3 Claim but you can do that.
+3 Prem if you have this cross then you can say, ok you can only move this.
+3 Prem and like this, and you can pull it
+1 Prem yeah, and then it just gets longer
+3 Prem and then you don’t have the problem that you have to make 
+1 Claim and you- maybe we have a rule then that you have, like, a minimum length.
+1 Prem because then you’re not able to drag one way, like- so it’s nowhere or- if you have this one, and you take this point and drag it to the middle then you have a t intersection
+2 ClaimPrem no but then you still don’t have one right, because if you have a cross here and here, and you put it over each other, then it still goes on in the next one.
+1 Reg but then still, if the crossing is, like at the side of your view
+2 Reg at the side of the view that’s true
+1 Claim ok so, a crossing must have traffic lights, must be four way, each- how do they, each road has a length
+2 Reg oh and the first one, a is also a rule, right.
+3 Reg oh, i mean, i think they mean that not all lights may be set to green at once
+1 Reg stuff like that
+3 Reg at the same passing, but i don’t think that the crossings are linked together.
+1 Claim but then they should be, or the traffic lights are linked together.
+1 Reg must there must be a check that not everything is in green.
+2 Claim yeah, only in the one crossing
+1 Reg in the one crossing.
+1 Reg so the crossings are linked together 
+2 ClaimPrem it doesn’t really matter if another crossing is also in green, because then, it comes to the next one and if it’s green then other traffic lights are not on green.
+1 Reg ok, so that doesn’t matter
+3 Reg but it is a-
+1 Reg ok, the rule is for each crossing, not every-
+2 Reg we’re at 15 minutes and now we have to do something with the cards
+3 Reg to prompt the players to question their design decisions.
+2 Reg [thanks] but is there 
+3 Claim i think we just have to question what we designed so far, that we look back at it and think, hey was this a good idea, or was this a bad idea
+1 Reg or maybe we got too far from the real idea, or 
+1 Reg ok, so then, but can we use some-
+3 Claim i think we have to just look at this table, and they have all kinds of aspects listed
+2 Reg so we don’t have any design problems, yet, but we have some solutions, we think.
+3 Reg yeah, do we have solutions?
+2 Reg well, we came up with business, or with yeah, some kind of rules.
+3 Reg we do have a few rules
+2 Reg and that’s a solution to particular problems
+2 Prem but maybe there are some assumptions that effect design problem.
+2 Claim and that’s why we came up with the solution of creating specific rules
+3 Prem because we have the context, but the context is not really big
+2 Reg so that was a problem
+3 Reg that was a problem.
+3 Prem and then we had- we went with the functional.
+3 Reg well we did solve the problem that you cannot have t crossings and one way roads.
+3 Claim and there were not really trade-offs in that, or risks
+3 Reg as far as we can see now
+3 Claim would there be any bad things in there?
+2 Reg so far you mean or-
+3 Prem because, it’s actually a quite nice solution, that you have a set length, at least, a minimum length
+1 Claim yeah, but we solved the problem of getting t intersections.
+1 ClaimPrem or the possibility that you don’t have traffic lights, because you have to drag and drop like, a finished four way intersection and with traffic light.
+3 Claim maybe another rule could be that you cannot have- you can have six of these intersections in your map, and they are not connected.
+3 Claim maybe something should be like, all intersections must be connected to at least another
+2 Prem because otherwise you have separate rules for 
+1 Reg that’s a good one
+3 Claim must there only be one map.
+3 Prem otherwise you have six different-
+2 Reg so you can create only one map, per file or-
+1 Reg yeah, just every intersection has to be at least connected to one other intersection
+2 Reg but then you can-
+2 Reg it’s not connected 
+1 Prem but then you can have two four way crossings, connected to another one.
+1 Claim so like every intersection dropped in the map should be connected.
+1 Reg or is that not-
+3 Claim it should be connected to the rest
+1 Reg but what is the rest that’s
+3 Reg all the other intersections in the map, but if you 
+1 Claim should be able to be- if you
+3 Claim in the one intersection you should be able to reach all intersections without going off your map
+1 Reg that’s better for me- i think so
+2 ClaimPrem but then it should be indirect, otherwise you have to draw lines to every intersection
+3 Claim yeah, it should be indirect, like, you have a graph and then can go like, [knock, knock, knock, knock] and then
+2 Claim so you should be able to go form every intersection, to another indirect connect intersection- yeah.
+2 Reg you just said it like, quite good
+3 Claim you should be able to reach every other intersection from every intersection in the map
+3 Reg i don’t know if it’s indirectly, i think it’s just
+2 Reg you have just reached it and you get-
+1 Claim you should be able to intersection in the map
+3 Claim i think it depends on how you view it
+2 Reg but let’s draw a card
+3 Reg i don’t really know how to use the cards, i don’t really know what to do
+1 ClaimPrem oh well just actually, because we said ok, we- in the context, and then there was-
+3 Reg it did help 
+1 Reg but we didn’t have a card yet
+2 Reg make it more specific
+2 Reg let’s just start with one card, and sure we have something with it.
+2 Reg so another problem maybe.
+2 Reg or we don’t have a risk, let’s look at risks
+3 Reg risk to the system
+2 Reg in the context or-
+2 Reg no but like, i mean, to use the others.
+1 Reg he always use two at once you mean
+1 ClaimPrem i think so, because if you look at the map, at the scheme.
+1 Reg ok we have a risk and the risk is-
+2 Reg are you going to fill that one
+2 Reg ok so the risk
+1 Reg and then a problem.
+1 ClaimPrem the problem, which is a risk, and therefore we need a solution.
+3 Reg are you player one?
+3 Reg ok i just write your name.
+1 Reg is this an idea?
+3 Reg do we have a problem?
+2 Reg ok, what could be a problem
+3 Claim i don’t think this is a good way to go
+2 Reg give your drawing, what you draw, or-
+3 Reg it’s somewhere on the back
+1 Reg somewhere in between
+2 Reg ok looking at this- a problem
+3 Claim i think we have this quite good covered now
+2 Reg maybe we just found like- the problem was that we had the rules for creating a map, and then we came with a solution of making the fixed intersections.
+1 Reg but that is already past
+2 Claim we did it the wrong way around then 
+2 Claim and i think the cards are like, alright you have to think if you have a problem, that’s why you do it
+2 ClaimPrem but maybe it’s now fine, because we just-
+2 Prem thought about- maybe just find out, because we thought about, ok do we have a problem, do we have a solution, and or do we have something else.
+2 ClaimPrem and that is not the case right now i guess, so- then we can take the solution right.
+2 Prem because we just had one.
+2 Prem so then we can say this, and the solution was to make business rules for the system.
+2 Claim so we are now at a solution and yeah-
+3 Claim actually all our cards should be removed now.
+3 Prem again, because we’re now done
+2 Reg so then we- do we write it down?
+3 Claim no, i think we should just do it with the next one, but i’ll take this one out
+2 Reg use this one as a-
+3 Reg as a test 
+2 ClaimPrem but then if we start talking again now, then we’re gonna have the same thing, because we don’t- we’re not gonna take a card right now, we’re gonna go on and then we-
+1 Claim but maybe if we just think like, ok this could be a problem or we have to think about that we can directly take a card, instead of-
+1 ClaimPrem think about a card if it’s necessary because it’s time
+3 ClaimPrem maybe we could also have a tab with options, because you have a section with rules but you have also options.
+3 Reg and there are also options
+1 Reg like with the sensor
+3 Claim and you also have, a variety of sequence and timing schemes should be allowed.
+3 Reg in the top part
+3 Claim and also, for the roads to be of varying lengths.
+2 ClaimPrem but that is actually a problem, because we just said that each road [laugh] ok
+1 Reg the card is there [laugh] 
+2 Prem because we just said that each road has a minimum length
+1 Reg but we also need then-
+2 ClaimPrem then it’s also of varying, so then it’s maybe- how do you call it- because we said it’s varying but we also stated that it has a minimum of length.
+2 Prem because otherwise you can choose to have a length of zero, for example, and then you’ll have actually a t
+1 Reg that’s why we put the minimum right
+3 ClaimPrem but that’s ok because the you can have crossing like this
+3 Prem and then you can still like, also do this, if you like but
+2 Reg yeah, but is the length still varying
+1 ClaimPrem but do we also need to make the maximum length, because otherwise you can do, instead of this, you can go the other way, you can still make the t section.
+1 Reg if you can put it all the way, as far as possible
+1 Reg and you have your square, and then you can take that one to there, and then you have a t and over there you have a t.
+3 ClaimPrem i don’t think you can do that, because if you have this field to play in, and you always have a cross, so maximumly you can always put it here.
+1 Reg but then it’s also the case with minimum right
+3 ClaimPrem yeah, the minimum will always still be there, you need the minimum, otherwise you cannot guarantee that there are no t
+2 ClaimPrem but then you can say that you’ll have like some kind of margin, or- yeah, i don’t know if that’s the correct word in this case, you have a kind of margin or padding between the, like the field you can draw in.
+2 Prem and the actual point or places you can put your intersections.
+2 ClaimPrem so that it’s not possible to drag your crossing, like, in here, because you just are only allowed to drop it in like, some frame, and a bit smaller than the actually drawing.
+1 Reg that, something like that
+3 Claim i think you need a frame
+1 Reg so this was a problem
+3 Reg this was a problem 
+1 Reg and a risk right
+2 Reg but it was also like an assumption that you have a minimum length.
+2 Reg that is our assumption right or-
+3 ClaimPrem we created that now, and that’s ok because it’s our own system
+2 ClaimPrem ok you should write the cards down because
+2 Reg i can’t keep it up
+2 Reg we had a problem
+3 ClaimPrem ah yeah, i have a problem, and then somebody else, and then the new card was, i think it is a risk.
+1 ClaimPrem i think so as well, because the risk is that there are gonna be t sections
+3 ClaimPrem but is also a constraint, because a constraint is, you may not have any t sections.
+3 Claim so maybe it’s both
+3 Reg and then the time is 29.4.
+3 Reg took us three minutes to talk about that.
+3 Reg ok so everybody decided on that.
+2 Claim ok and then, we have to find the solution
+3 Reg we have the solution
+2 ClaimPrem we have the solution, because we made an assumption that you need a minimum length
+1 Reg yeah, those two together
+2 Reg or maybe like, we first did an assumption and then a solution
+1 Reg but it kind of 
+1 Reg so, and then assumption.
+3 Reg ok that’s all we need.
+2 Reg we create a frame within the drawing 
+1 Reg is this your problem, i think it’s yours [laugh]
+3 Reg yes, that’s my problem.
+3 Reg at least we can still laugh
+2 Reg for on with the functional, or go to the informational
+3 Reg well, there were a few options, and then at once we flipped back to-
+2 Reg the options, you’re right
+3 Reg oh the varying length right, that was the option we were talking about and it was-
+2 Reg how do you call that, the, like the frame you are drawing in, is that actually screen size or-
+3 Reg the boundaries set, the boundary [inaudible], workspace.
+1 Reg you don’t even smell it anymore [laugh]
+3 Reg that was disgusting
+3 Reg i can also imagine they were just sitting here from 9 am, and just, sweating in here and working and-
+1 Reg but still the deadline is at 5 and
+2 ClaimPrem but it’s still weird because i felt they just unlocked every room-
+2 Reg well, it doesn’t really matter
+2 Reg ok, so where are the options
+1 Claim variety of sequences and timing schemes should be allowed.
+2 Reg oh yeah, variety, oh yeah.
+1 Reg and then the left hand turns as well?
+3 Claim yeah, i think so yeah.
+3 Prem that you can- are able to have the arrows.
+3 Reg but then there are no right hand arrows.
+1 ClaimPrem no it says, also be able to- but also on the- i know what you mean because it doesn’t say so, but because it says also left, it would mean- implicate like, also left, but also right.
+3 Claim i don’t think so.
+3 Prem i think that also just means, like, ok you should be able to have a variety of sequences and timing schemes.
+3 Prem and also be able to accommodate left hand turns, but does not say right hand.
+2 ClaimPrem no but it makes sense of course, because if you have the thing.
+2 Reg just two pens, and you drive like this and you have to go to the right, it doesn’t matter if they still ride this, drive like this and stuff.
+2 Claim so if you go to the left
+1 Reg oh big circle
+2 Reg just a big circle, you can always go to the right, but to the left is kind of dangerous
+1 Claim everything should be on red then, except the road that is- well no that is
+3 Claim no i think you can just say that- i don’t think you should go that far.
+3 Reg just say, like this, that left hand turns are possible with the arrows in the lights
+1 Reg protected by left hand green arrow lights
+2 Reg oh yeah, those are awful 
+3 Reg i think the next one is the sensors.
+1 Reg i think so as well
+1 Claim i think so as well
+1 Reg and then point three, are that also options.
+2 Claim i don’t think it’s- yeah.
+2 Claim i think there’s more of a run, that you can say, hey, play my simulation
+3 Claim but also, cars need to be simulated, that they drive in-
+3 Reg they- didn’t we learn anything about that
+1 Reg well then we don’t do it.
+1 ClaimPrem right, because the other things that weren’t stated we also left out.
+3 Claim i don’t think we should do that.
+3 Claim i think we should at least then ask questions, what the designer would want of the system
+3 Claim i don’t think we need to make our own interpretation
+1 Reg so, it’s not an option then?
+3 Claim i don’t think so
+1 Reg but like the application should be able to visualize the traffic levels right, or-
+2 Reg but, that’s not an option right.
+1 Reg but then it’s still- it’s not an option but it’s still in the program.
+2 Reg it’s a functional thing
+2 Reg then just a general bullet point or something.
+1 Reg i have also like, general bullet points, as creating a map, and lying out roads.
+3 Reg we may choose our own interface.
+2 Reg where does it say?
+3 Reg and then, the current state, about halfway the paragraph.
+3 Reg it is up to you-
+2 Reg it’s up to you
+3 Reg to present this information.
+1 Reg yes, you can-
+2 Reg yeah, but an interface is- ok.
+3 Claim i don’t really get it, for who are we now making the system.
+3 Prem because i thought we were making this for the teacher so that her students wouldn’t have an easier life
+2 Claim maybe we have to define the stakeholders
+3 Claim maybe we should do that.
+3 Claim yeah, let’s do that
+1 Reg it depends from the viewpoint right.
+1 Reg context is different then-
+2 Reg is that a problem
+1 Reg problem we don’t 
+3 Claim i don’t think it’s a problem
+2 Reg ok so we play the card
+3 Reg your client for this project is professor e.
+3 Reg your client for this project is professor e.
+3 Reg ok i’ll write it down
+1 Reg problem, and then is it a risk that we don’t know?
+1 Reg the stakeholders, and therefor we’re gonna do the wrong thing?
+3 Claim i think so
+2 Reg do you have the time?
+2 Reg ok so the problem with the- we defined
+3 Reg oh did someone do a risk card
+3 Reg you did a risk card.
+3 Claim i think we’ll need the before then 
+3 ClaimPrem it’s a risk that we do not know who the stakeholders are, because otherwise we make the wrong decisions.
+3 Reg so then we would have assumption again.
+1 ClaimPrem but not yet because we-
+3 Reg we did not make them yet
+3 Reg just a risk still
+2 Reg yeah, the risk is that we are going to make an assumption 
+3 Reg thinking about what you say.
+2 Reg ok so professor e
+3 Reg yeah, the client for this project is professor e, who teaches civil engineering at uci.
+3 Reg one of the courses she- oh it’s in the first paragraph.
+3 Reg the very top piece
+1 Claim but that indirectly, it’s for the students still.
+1 Prem because like, if bol.com
+1 Prem asked us to program something for them, an application, then it’s not for bol.com,
+1 Reg you want to buy a book on the app form bol.com.
+1 Reg so you’re also a stakeholder then right
+3 Claim i think they are indirectly a stakeholder
+3 Claim but i think the professor is the primary one.
+2 Reg and then that’s it?
+3 Prem she wants to provide them with some software that they can use to play with different traffic signal.
+1 Reg but we also have the developers.
+3 Reg oh, we are also the developers.
+1 Reg are we the developers?
+3 Reg we are also the developers.
+1 Reg no, we’re the software architects.
+1 Reg and that’s also- that’s a different 
+2 Reg she mentioned in the explanation that the developers should know what they have to develop.
+2 Reg based on our architecture
+3 Reg the developers are not- is not who are- the professor e is not the developers.
+3 Reg but then they are also stakeholders
+1 Reg that’s from the different viewpoint
+1 Reg and professor e, she is the one that-
+3 Reg she wants the system for students
+1 Reg ok, so she’s the [opdrachtgever] how do you say that
+2 Reg owner of the business case?
+1 Reg at least she’s the owner of the idea
+2 Reg what does the book-
+3 Reg that’s how they call her.
+3 Reg your client for this project is professor e.
+3 Reg your client for this project is professor e.
+1 Reg but, in a way-
+2 Reg like, the literal translation of [oprachtgever] is client
+2 Reg so, we have the developers, then we-
+1 Reg yeah, the software architectures
+3 ClaimPrem i think so, because there are also still some things i think that might be unclear.
+3 Reg that we have to ask us question to professor e before it can be implemented.
+3 Reg i think they’ll be there
+3 Reg almost on time with playing the game.
+3 Reg five minutes too early [laugh]
+2 Reg ok, so we have the developers, the client and the software architect.
+1 Reg and the students in a way
+3 Reg here the user,
+2 Reg is there a trash can behind you?
+2 Reg so, there was the solution.
+2 Reg is that really a card.
+2 Reg yeah, it is a card.
+3 Claim i think that this was a good idea
+2 Reg we were- we had the options defined and then the- yeah, general thing
+1 Reg but what of our next-
+3 Claim we have to decide- we also don’t have all the options yet.
+3 Claim but we also need to design the user interface.
+3 Prem i don’t think we should leave that for developers
+2 Reg i don’t think so [laugh]
+3 Prem they’ll be like, oh you didn’t tell me about to do, oh i like this button here.
+3 Reg oh well, my program does not want me to put that button there, so now it’s there.
+2 Reg the girl with the development background 
+2 Claim ok, so like, the interface is also the functional viewpoint.
+2 Prem because then we can show what the input of the users should be, or-
+2 Reg is it also information, like both because 
+3 Reg i think it’s both  
+2 Reg so let’s start with the functional still but-
+3 Claim maybe we should finish the options, and then do the interface.
+3 Reg that could be fun, the interface.
+3 Claim yes, that’s going to be fun.
+3 Prem we can draw, and use colours.
+1 Reg let’s not put too much time in the interface
+1 Reg we had all the options right
+3 Reg no we have more.
+3 Prem because, change the traffic density that enters the map on a given road.
+3 Claim so that mean that all open roads you have, i think- oh we have another problem.
+3 Prem i don’t really know what they mean by that.
+2 Reg because- oh my god girls.
+3 Reg wait what’s the problem and it’s the fourth point
+2 Reg and the first-
+3 Reg and the first sentence
+3 Claim should be able to change the traffic density that enters the map on a given road.
+2 Reg but that makes sense right.
+3 Reg so that’s only on the ends, and not on the pieces the roads between-
+2 Reg no i think the traffic density means-
+3 Reg so only on these.
+1 ClaimPrem but there is an example, it should be possible to create a busy road, or a seldom used one.
+1 Reg and any variation in between.
+1 Reg how exactly this is declared by the user and depicted by the system is up to you.
+1 Reg so we have to-
+3 Reg shall we till one hundred, how many cars per second.
+1 Reg but how can you
+3 Reg shouldn’t the cars have varying speeds?
+3 Reg or should they just go all out, 40 kilometers an hour
+1 Reg we were not allowed to create dangerous things, and saying that one drives one hundred, and the other one drives 30, that is an-
+2 Reg no but it’s also not a requirements mentioned in this assignment.
+1 Reg but also not doing, and doing it both is not mentioned.
+2 Claim so maybe we also have to define a minimum or maximum speed.
+2 Reg but i don’t know how we have- how we can define- or how we can make sure that the road is busy.
+2 Reg how do we do that
+1 Reg we have the sensors
+3 Reg they mean by this that you have the entry roads that cars just randomly enter.
+3 Claim and i think what you could do in the project is that the system numbers, these, that they get numbered
+2 Reg so the input roads
+3 Reg the input roads get numbered, and then for every input road you can say, ok, i want this density to be 10.
+3 Reg or you have a slide bar from low to high.
+3 Reg and that high being that they are all stuck together in traffic, and that they can’t move and-
+3 Reg i don’t really know how else to do this.
+3 Claim i don’t even know if we have to say this or that we can leave this to the developers.
+3 Prem because maybe they have a much better solution for this.
+3 Claim but as a user you also need to know which road you’re going to increase.
+2 Prem because if you have a very busy road, the other intersections need to participate on that.
+2 Prem like, you have to get the cars away from wherever they are
+1 Claim some traffic lights should be more often on green then others
+3 ClaimPrem there’s nothing for us to choose, because the user can determine how long the traffic lights are set, red, orange and green.
+2 Reg but is it also on the user to- is it possible that the user can create a bad map
+1 Reg so there are not rules that we define that makes sure that everything is always working.
+3 Claim i don’t think we can define that
+3 ClaimPrem because the requirements don’t state that, it’s not possible.
+1 Reg ok so, on option is to determine the traffic density of each road, and-
+2 Reg that enters the map though 
+3 Prem oh, this program is not meant to be an exact scientific simulation, but aims to simply illustrate the basic effect that traffic signal timing has on traffic
+1 Claim so it’s necessary that they see whether it’s a bad design.
+3 Reg so it should be-
+3 Reg if you wish you may assume that you will be able to reuse an existing software package that provides relevant mathematical functionality.
+2 Reg then that is something, if we do that
+2 Reg yeah, that’s for the context viewpoint then 
+3 Reg is this then a problem and we have the solution?
+2 Claim no i don’t think so, we’re just
+3 Reg i think this one
+3 Reg your design will primarily be evaluated based on its elegance and clarity.
+2 Reg yeah, i don’t know
+1 Reg almost ready for a break 
+1 Reg hour, so 8 minutes left.
+1 Reg let’s finish the functional
+3 Reg are we going with options though.
+3 Claim i think we have, oh yeah, well, we have to be able to change the density to the incoming roads.
+2 Reg we had that one right
+1 Reg what i have now is, variety of the sequence and timing schemes should be allowed, left hand turn should be protected by left hand green arrows, intersections with or without sensors that detect if a car is present, and determine the traffic density of each road.
+3 ClaimPrem i think they should be each incoming road, because i don’t think these roads
+3 ClaimPrem maybe we should split them, a few, because variety of sequences and timing schemes, maybe we could split that into two?
+3 Reg that you have- what do they mean exactly
+1 Reg there’s a sequence, time- what do they mean with schemes.
+3 Claim oh, maybe with sequences they mean the order in which you can do red, orange and green, and with timing they mean, how long is red, how long is green and how long is orange.
+1 Reg i don’t know what else
+2 Reg yes so, in holland you only have- you’re going from red to green
+2 Reg but if you’re from green, then you’re first orange and then red.
+2 Reg but in foreign countries you are often going from green, to orange- no 
+1 Reg then you know it’s gonna turn green
+3 Reg then it’s going to- 
+3 Reg it must be 
+2 Reg so you already- we can- i don’t know what the reason is for doing that
+3 Reg in germany they do it so that you can start earlier.
+1 Reg but it’s like, orange is green in those countries
+2 Reg or maybe it’s more like, still watch how and if not someone else is an idiot crossing the road.
+1 Reg that sounds like something for the law
+1 Reg like, it was orange
+3 Reg and with orange yeah.
+3 Reg i wonder how the rest is doing
+2 Reg especially the ones without the card-
+2 Reg i like the [laugh] is it on pause?
+3 Reg we finished the options and we have the rules
+2 Reg so write down that we have to do the user interface
+3 Claim we need to do the interface
+1 Reg ok i already.
+1 Reg and then we’re done with functional and then we do the informational
+3 Claim i think so, but we need to make all kinds of graphs, i think 
+1 Claim maybe we have to think about the elements.
+1 Prem like, because we have rules and options, but i don’t know if there are some more, like because here you have like all the squares and arrows.
+1 Claim maybe we have to define the message, or the interaction
+3 ClaimPrem but we also have this, because we have the traffic system, but then we also have the cars, and we have roads, and we have all the options and we have a user interface
+2 Reg so that are the elements of the model, right.
+3 Claim and i think the cars are also elements
+3 Prem because they also have a speed, maybe a that’s fun
+2 Reg and the traffic lights?
+3 ClaimPrem traffic lights not, i think they’re part of the intersections, intersections are elements
+2 Reg ok, but you can adjust the sequence and the timing of the traffic
+1 Reg then it’s an element
+1 ClaimPrem but then also- then the roads in between is also some kind of element because you can-
+1 Reg make it longer and shorter
+3 Reg no, they’re part of the intersection.
+3 Reg you don’t have any 
+2 Reg well i get then that we have intersections, and then sub elements of intersections, which are traffic lights and roads.
+2 Reg an intersection itself is not a real element.
+2 Reg or because if you adjust or you make some changes on an intersection and it’s on an element of the intersection.
+3 Prem because traffic lights belong to intersection.
+2 Prem because if you change an intersection, what do you do.
+2 Prem like, or you’re changing the traffic lights, or changing the road
+3 Claim but then also the sensors belong to the intersections
+2 Prem because they’re also in it
+1 Reg so those are all set elements, right?
+3 Claim i think so, i think they’re all below in the class diagram
+2 Reg exactly, some kind of-
+2 Reg but it’s not like, intersection itself is not a specific- or maybe it is but then-
+1 Reg it is an element that you can’t do anything about it- with it
+2 Claim you don’t- you can’t edit it
+3 ClaimPrem you can, you can make the things longer.
+2 Reg but then you
+2 Reg that’s the road element
+1 Prem because you can’t put an intersection there and then 
+3 Claim i don’t think you have a road element
+2 ClaimPrem i think, i guess that it’s like you have the- on top you have the intersection, it’s like a hierarchy so if you change something on the traffic light you also change something on the intersection because a traffic light is below, or like lower in hierarchy.
+2 Claim but if you change- so you change the traffic light, then you change the intersection, but if you change an intersection you’re not specifically changing one of those three elements.
+1 Claim but then we can leave it like this right.
+1 Reg and now a break?
+2 Reg ok where- [oh yeah, we have to speak english again of course]
+1 Reg ok let’s- the user interface
+2 Reg well, we first have the elements of the model.
+2 Reg are we finished with that?
+2 Reg we have cars, intersections, with all those sub things, and then do we have something else.
+1 Reg no, we have everything right
+2 Reg what was the here?
+2 Reg yeah, we have a customer interface, maybe the application interface.
+3 Reg no we have an application interface
+2 Reg and we don’t have something where the data is stored right, or that is the user file system.
+2 Reg or do we have some kind of temporary- well there is like, there is some, how do you call that, you’ll have to get those images of cars and intersections.
+1 Reg like the or
+2 Reg but like the- maybe there’s some data storage where all those images are stored
+3 Reg i don’t think there are images.
+3 Reg you can also make-
+1 Reg but- or like the elements, the- i don’t know
+2 ClaimPrem maybe that’s too far, like it’s not too deep here
+3 Claim i think that’s too far
+3 Prem because you have the interface.
+3 Prem and we have the program itself.
+3 Prem and you also have the adjustable options
+2 Reg was typing [previous project] [laugh]
+3 Reg that’s how much you love the program
+2 Reg what was it called.
+2 Reg ok sorry, what did you say 
+3 Reg oh we also have the adjustable options.
+3 Claim something has to happen with them, but i don’t really know how that’s done, that’s- it’s not really something that’s saved, it’s more like given with an argument when you want it the next time again.
+2 Reg i really don’t know
+3 Claim i don’t think we should do anything of that.
+3 Prem i think that’s too far fetched
+1 Claim if we don’t understand it, it’s too far [laugh]
+3 Reg well, i like that
+2 Reg ok great, and then, do we have other things.
+2 Reg we just had like, so many options and rules.
+2 Claim maybe we have a template or- something like that or
+1 Reg the template for what
+2 Reg i can- an intersection is adjustable template, you can- you have like a standard-
+2 Reg intersection, and then you can make adjustments to that intersection
+1 Reg but then that’s saved in the database.
+1 Reg what you just said.
+2 Reg that’s what i meant, template for- those are predefined right, so
+3 Claim maybe if we make the interface, we find elements that we are missing
+1 Reg let’s do it like that
+3 Reg let’s draw an interface
+1 Reg ok, i have the feeling you want to draw
+2 Reg so go ahead
+3 Reg this is going to be the most fun part.
+3 Prem now now now ok because we also need some way in which we can represent all the settings that the user can make.
+3 Reg well, you have the interface, but you also have the different options the user has.
+2 Claim but i think it’s- first we have to make sure if the interface is such a big element of the functional viewpoint.
+2 Prem because we didn’t model, like, an interface for our
+1 Prem because that’s the designer, not the software architect
+2 Prem well we thought about like, ok, what can you do, you can- we looked at all the options.
+2 Claim so that is- you should be able to create a map.
+2 Claim things like that, right or- that is what interface should offer the user
+1 Claim i don’t think we have to model it, when you say it like that.
+1 Claim it doesn’t matter if- 
+2 ClaimPrem but it’s good to- because if you think about an interface, because we also did it in [previous project], we looked at interface and we went through all the menu’s.
+2 Prem and then we figured, what is possible for the user to do
+3 Claim i do think we need an interface for this thingy-
+3 Claim for this simulation thingy.
+3 Prem because, we are now designing the system and we also have the developers who need to be able to design the system.
+3 Prem but if we give them this, how do they know what we really want from them.
+3 Claim if they have it visual it might be better for them, more clear what they want
+2 Reg but we’re talking about a functional.
+3 Claim ok then we need more information
+2 ClaimPrem i don’t know, this is hard, because this is- before what i was thinking about our functional viewpoint as well.
+2 Prem because, if we want to design every possibility user, or every possible a user is able to take, or like, do, then you are- you have like, such complex diagram of- because in [previous project] you have so many options
+3 Claim i don’t think it’s possible in [previous project], i do think it’s possible with this.
+3 Prem because this is not that big.
+3 Prem this only has- we have five options
+2 Reg that’s true, ok well then, we can try it and then- we can try it, but then still-
+3 Reg but maybe it’s more information, i don’t know.
+2 Reg i’m not sure what information
+1 Reg it’s not really the information flow
+2 Reg information flow is more like all the and yeah- the flow of information but-
+Instructor Reg i just wanted to remind you guys that at the two hour mark you design session is over and you have to start on documenting the rationale
+Instructor Reg and after that you guys have to go to [professor] for your feedback as well, i think.
+Instructor Reg and the room is [office] if you’ve forgotten.
+1 Reg [i don’t get it]
+2 Reg so we still have half an hour to work
+1 ClaimPrem yeah, so then i say let’s skip the user interface and go to the information flow, because we have to at least do those three
+1 Prem and then when we have time, but we still have one, only half an hour left
+2 ClaimPrem maybe we can do the interactions, or- because we have the elements of the functional viewpoint, but we didn’t talk about the interactions.
+2 Claim or maybe we can do that in the information and then, maybe we can apply that to the functional as well.
+2 Claim maybe it’s not a big deal for a viewpoint
+1 Reg what do you mean with the interactions
+2 ClaimPrem well, that you have then- like the sequence of- i don’t know- the sequence of elements that are called or- because if you, for example, model a petri net, then it is very important that you have the sequence of-
+1 Reg what happens when you press this
+2 Reg but that is also more related to the interface or like the-
+2 Claim ok maybe we can first start with the information and then-
+2 Prem because otherwise we have like the trouble with the time
+1 Prem it’s just like the same with our- with [previous project], it’s not really an information system.
+1 Claim so it will be really small
+1 Reg so what do we have from [previous project], you have the information flow between the system, the user and something else, we have the tree things.
+2 Reg and it’s also like, for example, all the information that is send when you’re saving a file?
+1 Reg so also the communication with the own system and the server from the program.
+3 Claim you should be able to set the settings, so that’s also information flow
+3 Reg well you can adjust the density of the cars-
+3 Reg coming in and the signals of the traffic lights
+2 Reg of the traffic lights, the density-
+1 Reg moving the intersection closer or further apart from each other?
+2 Reg so, adjusting the road length
+1 Reg and, which one did you say?
+1 Reg about coming in or about the traffic lights
+2 Reg oh both, the density and-
+3 Reg all the options we have that’s also influenced i think.
+3 Reg user can all set that.
+2 Reg can you share your map
+3 Reg no, don’t make it too difficult
+3 Reg out of scope 
+2 Reg so you only can save and open a file
+3 Reg that’s an information flow right
+2 Reg but also functional.
+1 Reg so write it down
+2 Reg can you print it
+3 Reg nope, out of scope
+3 ClaimPrem i don’t think we should do that, i think too far fetched
+2 Reg ok so we were saying you can save and reopen a file.
+2 Reg but what information is coming with that or- like file name
+3 Reg the map, and the sections you had on the map
+1 Reg yeah, the map itself.
+2 Reg so what did you say, the-
+3 Reg the setting and the map
+3 Claim i think that was it, the most important things.
+1 Reg as saved, and last edited, you also always have something like-
+2 Reg oh yeah, we have date, but that is not clear about date
+1 Reg no, is it the save date-
+2 Reg so to create it
+3 Reg create it and save
+1 Reg last edited doesn’t mean that you saved it
+2 Reg or you can do both maybe, the- when is it saving the last edit then, it’s also  
+1 Reg just last saved, it doesn’t really matter.
+1 Reg and then that’s it i guess
+2 Reg ok, so are we there then, the information that is send when saving the files are all those things you just summed up.
+2 Reg communication with the system and the server of the program.
+2 Reg sequence and time of the traffic lights.
+2 Reg the density of the incoming roads, adjusting the length of the roads
+3 Claim maybe we should be more specific communication with the system and the server of the program
+2 Reg i just, i think that you mentioned it but i wasn’t sure whether
+1 Reg we had, that’s the one advice [professor] gave, like, the system is communicating with your own computer right
+1 Reg some kind of communication going on
+2 Claim so maybe what is needed from the- from your computer to run the program
+3 Prem we do have something like this in [previous project].
+3 Prem that they start a local server with a database to put the current program in that, the current map.
+3 Claim so maybe that he meant that.
+2 Reg it sounds like information right
+1 Reg but it’s also like the deployment or the 
+2 Reg yeah, i thought the same 
+3 Claim i think we should just put it here.
+3 Reg i think it 
+2 ClaimPrem but we don’t have to describe that deeper, because we only have- or like this is the information, so it’s not like all the technical requirements, but only-
+1 Reg only that there is a-
+3 Reg what kind of communication.
+3 Reg communication with the system and the server of the program.
+2 Reg the system is an application i guess
+3 Reg oh, and the server of the program.
+3 Reg i don’t get it
+2 Reg ok do you want to remove that one then, or- we can describe it more specific
+3 ClaimPrem i think we should- i think it belongs somewhere but we should describe it more specific because it is very vague
+2 ClaimPrem but we can’t describe it specific because we don’t have an actual application
+2 Claim so we can only make assumptions, but we are not able to check
+3 Reg we could also state- oh yeah.
+2 Claim oh maybe we can remove them when we are modelling basically
+3 Reg ok let’s do that
+2 Reg ok, are there any other information
+1 ClaimPrem i don’t think so, because it’s really small system and it’s not an information system
+3 ClaimPrem are there not any options anymore, because we have the sequence and time, the density of the incoming roads, adjusting the lengths of the road
+2 Reg yeah, this one in the options
+3 Reg oh, the left hand turns, that’s not really information
+2 Claim or you can state that it is information that is left handed or right handed
+1 Reg you say like it’s a traffic light, what kind of traffic light, you can go left handed or 
+2 Reg but i think that both- oh ok.
+1 Reg it is an information point.
+1 Reg what kind of traffic light.
+1 Claim so that’s the end then- that’s it i guess
+2 Reg is it- so that is an information?
+1 Claim it sounds like it´s a really small point.
+1 Prem but that makes sense, it was really small
+1 Reg also if already
+2 Reg it is, like, it´s not a very big program
+2 Reg so it´s just basic and 
+1 Reg and no information unit
+3 Reg the functional is the largest
+1 Claim concurrency viewpoint is also important maybe, to do.
+2 ClaimPrem well i think it´s better if  we focus more on the functional because i think it´s not- that we´re not- i don’t know, but it feels not like we are already finished yet.
+3 ClaimPrem no, we still need to make all the models
+2 Claim and i guess the documentation is mostly rationale and, what was it, what were the other things.
+1 ClaimPrem ok, only the operational viewpoint, because there you say what kind of systems you need, like i said, windows or mac.
+2 ClaimPrem but we don’t know that, that’s the- so then we have- for everything we have to make an assumption
+3 Claim i think at the end we could state why we did not make these decisions.
+3 ClaimPrem like, we didn’t choose for operational because we have no idea what operating system it has so we did not choose for concurrency because it is assumed that it is so simplistic that it does not needed
+2 Claim and maybe we can mention some information we need additionally too.
+1 ClaimPrem but then we can write it down right now, because it’s-
+1 Claim i think it’s good to have that
+3 Claim we need it for the rationale
+2 Claim ok so we need os, we need- we need to know the operating system
+1 Claim yes we need- that’s it right
+3 Claim i think so, for now it’s enough.
+3 Prem we’ll come across more later i think.
+2 Reg wait, it was the development right
+3 Reg no, that was the operational
+2 Reg this was the operational, ok.
+1 Reg concurrency, so what you said, it’s too simplistic
+3 ClaimPrem i think it’s too simple yeah, because- yeah.
+3 Reg no you don’t need concurrency.
+3 Prem you have the traffic lights telling who’s allowed to go.
+3 Prem and as long as the traffic lights keep going the  you cannot have any deadlocks.
+3 Claim so it will all keep flowing
+2 Prem and the information flow will continue when the functional continues
+3 ClaimPrem it all keeps flowing, you don’t need a concurrent viewpoint.
+1 Reg oh, we don’t have any of the information about the program language or whatsoever
+3 ClaimPrem we should know on which os it should run and then we, if they have a specific language they want it in
+3 Reg it depends on what environment they want it in to- if they want it online or 
+3 Reg yeah, that’s more if you have upgraded versions, new versions, how easy it is to install and to use
+2 Reg like, english or dutch
+3 Reg yeah, is that deployment
+3 Reg i think it is information
+2 Reg it’s a variant
+1 Reg if it was modelled somewhere- we did also-
+3 Reg in i don’t remember 
+1 Reg but it’s really, really slow.
+1 Reg ah wait, the next one then, the operational viewpoint
+2 Reg that’s the os right
+1 Reg oh you already had that one
+1 Reg then we have them all
+1 Reg so only the deployment.
+1 Reg are you opening it?
+2 Reg but the- in information, or functional
+1 Reg maybe we should 
+3 Reg but we are modelling it
+2 Reg yeah, it was like 
+3 Reg for the professor at uci.
+3 Reg isn’t that in america?
+2 ClaimPrem ok, so maybe language is not an option because we’re modelling it in english
+2 Reg or we- we have english.
+2 Claim ok well, let’s leave it out then.
+2 Prem because- so we have like, ten minutes left.
+2 Prem and then we have to do documentation.
+2 Claim so maybe we can start modelling then
+3 ClaimPrem i think the context should just be, you have the system and then you have a user of the system, and then you have potentially some libraries.
+3 Reg but there was also something they mentioned here.
+3 Reg software packages that provide relevant mathematical functionality.
+3 Claim maybe there are software packages that could also be used.
+3 Reg and then what did we have more
+2 Reg user file system, user, external software package, and internal the traffic simulation application itself, and libraries.
+1 Reg i’m trying to open but, it’s busy
+3 ClaimPrem no use, it doesn’t want to thinks it’s monday
+2 Claim ok so first we have to define what the view is.
+2 Reg like, we have the context viewpoint, but what is the view called.
+2 Reg we can make more-
+1 Reg yeah, i know what you mean but
+2 Reg well what was the-  today that was the first one right.
+2 Reg yeah, it’s just the context diagram i guess.
+2 Reg ok, i don’t know.
+3 Reg we have no in the context either, maybe not 
+1 Reg ok view is the context
+2 Reg because you’re doing the-
+1 Reg i’m in the word
+1 Reg in the template 
+2 Reg ok, it’s still loading but we’re-
+1 Reg we’re working on it.
+3 Reg interaction with the user, and the external entities that is what the application uses.
+1 Reg interaction between the application, the user, and the external element?
+1 Reg [what did you say?]
+2 Reg can we say more about it, or maybe why we think it’s small.
+3 Claim no i don’t think you have to mention that
+1 Reg it’s always more right
+3 Prem i think you can describe it in the glossary
+2 Reg ok well, oh so, damn it.
+2 Reg ok here they have like in the element table, they have an id, a name and a description.
+2 Claim so maybe you can number every element
+2 Claim and then you have to tell me which element 
+1 Reg ok my free trial has been expired
+2 Reg you can’t use it anymore?
+1 Reg but not all the advanced arrows and stuff
+2 Reg ok, what is the rationale.
+3 Reg well, the context diagram shows the application and the external elements that it needs to function.
+3 Claim i think that that’s the rationale
+2 Reg can i have your 
+3 Prem because it describes the relationships and dependencies between the system and its environment.
+3 Reg i took it straight from the book.
+3 Reg i do not know if we have to reference that.
+1 Reg let’s do it, just to be sure
+2 Reg oh yeah, didn’t ok.
+2 Reg maybe we have to- what was it
+3 Reg software architecture systems from-
+2 Reg and it’s from 2007
+1 Reg we had the new one
+2 Reg oh wait, maybe i can- do i have to mention the chapter as well?
+2 Reg wait i have to put the
+1 Reg to be sure, was this already the complete one?
+3 Reg no, that was everything that was in it
+1 Reg the i’m almost done, only the arrows
+3 Reg [it’s already dark outside]
+1 Reg shall i save them and put them in the drive as well?
+1 Reg then you can copy paste them?
+1 Reg the first one is done.
+2 Reg is that in the same directory?
+1 Reg my computer is not that fast.
+1 Reg it’s in the loading page [laugh].
+1 Reg now it is, but don’t know if it’s fine.
+1 Reg i didn’t put user under it.
+1 Reg so wait, new one is coming up.
+1 Reg ok and then the next one i’m gonna make is
+2 Reg and they have like numbers?
+1 Reg i didn’t do that yet.
+1 Reg wait, in the context?
+1 Reg i didn’t put in the numbers over there.
+1 Reg i thought you were talking about the functional
+2 Reg oh yeah, i have to make an element table
+2 Reg and they have an id.
+2 Reg i don’t know if it’s
+1 Reg they have no id
+2 Reg like, they have an id, a name and a description to refer to the right elements
+1 Reg ok, so user then is just one, and then
+2 Reg no no no no, it’s fine
+1 Reg for this we had 45 minutes right.
+3 Reg yeah, something like that
+2 Reg yeah, but it’s not that much
+1 Reg ok now it does.
+3 Reg [where did you put that docs file, l2, or in b?]
+1 Reg and then it comes.
+3 Reg [also was the whole time just, ah no, i don’t have it, and then it just needed to be refreshed]
+1 Reg can we- wait, what are you doing now?
+3 ClaimPrem well i was just reading what it all was, because you’re all busy and i couldn’t read it
+1 ClaimPrem because i thought, mine is opening again, maybe we can draw it
+1 Reg and then i’ll write with- i draw with-
+3 Reg i have this stuff here.
+3 Reg so that we see what we need.
+3 ClaimPrem we should also make a separate space with the stakeholders and  which stakeholders are dependent on what functions, because they do that in the functional viewpoint too.
+3 Reg i saw it, i saw the table.
+3 Reg they say which stakeholders and what their concerns are.
+3 Claim maybe we should also do that
+3 ClaimPrem and i think we need multiple functional viewpoints, and i don’t really think that we can use this because these are very big systems.
+3 Claim and we don’t have this
+3 Claim but what we could do, is that we have the system, and then we have- that you can create map, or that the system has a map
+3 Claim and then that you can create-
+3 Claim and then that you have the intersections, and then the intersections have traffic lights
+3 Reg there was more wasn’t there
+2 Reg traffic light, sensors, ah wait, element.
+2 Reg can we find that in there
+3 Reg oh here, for- oh no- four way
+1 Reg ok let’s leave it at this, maybe we’ll find it later
+3 Reg maybe we’ll find it later yeah.
+3 Reg i thought there was a third one.
+3 Reg and then the traffic lights have a certain sequence, but they also have a timing.
+1 Reg but currently it looks like this is- like this is something, an object, and timing is a quality of the-
+3 Reg timing is an attribute, it’s a certain value
+1 Claim but then i- then we can maybe state it as an attribute.
+1 Claim that we take, maybe make it an entity-relationship diagram.
+3 Reg we can do that
+1 Prem because then- but then this is not really possible- then below map you would have as attributes
+3 Prem and you would have, create elements, save to.
+1 Reg what does it say about modelling.
+1 Reg does it say entity relationship diagram
+3 Claim i think they belong with the information viewpoints.
+1 Reg but you have them?
+1 ClaimPrem definitely in the information viewpoint, because i made them.
+1 Reg but not in the functional?
+3 Reg no, you only have this functional
+3 Reg they only say, for the functional and the beginning at least, of the chapter, that you need the- so big.
+3 Reg the context mode- oh wait that’s the functional structure model
+1 Reg ok that’s all, ok then, you’re right.
+3 Claim i don’t know, i don’t think really that there is
+1 Reg and this is not really, this is just uml stuff
+3 Reg this is also a component diagram, so
+1 Reg you have some notation, and then uml component
+2 Reg you have that in the 
+1 Claim but i don’t have that anymore
+1 Prem because of- it is expired
+2 Reg that your is expired
+1 Reg ok then maybe we can open it in yours.
+2 Reg do you think that to make a reference under each- like a caption under each model, to refer to
+1 Reg like figure 2,
+3 Reg do we know what this all means
+1 Reg well now, yeah, only the description.
+1 Reg but this is the entity relationship
+1 Reg and we need it uml
+3 Reg well this is a component diagram.
+3 Reg i don’t have that.
+3 Prem i do have it in visio
+3 Claim so we could use visio for it
+2 Reg ok, what are the- what is the description of the library
+1 Reg why did we choose the library
+3 Reg well you always have stuff to import, and the library could contain mathematical stuff, or other functions that are not supported.
+3 Reg and the software package could also contain, yeah, the software package.
+3 Reg and the libraries are maybe the same.
+1 Reg well we did separate them
+3 Reg well, the libraries in the- in our [previous project] application.
+3 Reg the libraries contain spellchecker stuff, and to make java look good.
+3 Reg visually, so, i can imagine that with anything you use you need libraries just to make it a little better.
+2 Reg ok, so like, complements to the application
+3 Reg it just extends the application and the language that you use a little bit.
+3 Reg and the software package, that would- no it would be the other way around.
+3 Reg and the software package would be the mathematical, statistical relations and – expressions, 
+2 Reg ok, so do you want to repeat that last sentence about
+3 Reg the software package, that would be the mathematical and statistical equations needed for the flow of the cars.
+3 Reg for the flow
+3 Reg and the flow i think, you could also say cars but i would say
+3 Reg i’m not really sure about.
+3 Reg ok, so this is a component.
+3 Reg ok, so we have an application right
+3 Reg i really hate visio sometimes
+1 Reg that’s why i instead [inaudible].
+1 Reg yeah, or just say like a traffic-
+3 Reg oh traffic simulation
+2 Reg do we still have to record this by the way or-
+1 ClaimPrem well, i’m not sure so i thought let’s keep it on
+3 Reg so- it’s not even ah ok.
+3 Reg then we have the map
+1 Reg and the map can create, edit and save
+3 Claim [but this should then be a part of it i think]
+3 Prem [because then you have the map, and then tada]
+1 Reg but don’t you have like-
+2 Reg they do it like this, but then just don’t say what it is.
+3 Claim we can do it like this
+3 Reg and then the map has create-
+3 Reg yeah- what,[oh wait, look] edit
+3 Reg oh man [bless you]
+3 Reg [well ok, can be somewhat tolerated]
+3 Reg [don’t forget to give an id]
+1 Reg [that is a really good one]
+2 Reg [oh, we need to get back to english maybe].
+1 Reg oh wait, to keep it [unambiguous]
+1 Reg i did like two point space map, in the first-
+3 Reg [yeah, i know uml, stop it.
+3 Reg so you said a one and then two points
+1 Reg no no no, one point, and then space, and that’s it
+1 Reg where is the- ah ok.
+2 Reg thanks for reminding us [person 1]
+3 Reg yeah, that would have been a lot of work in 
+3 Reg it looks pretty now
+1 Reg so you’re the developer right [laugh]
+3 Reg i wonder where we started
+3 Reg 1, 2, 3, 4, 5, 6
+1 Reg intersections have- you wrote down traffic, what do you mean then
+3 Reg but it didn’t fit, so [laugh]
+1 Reg let’s make a traffic light.
+1 Reg oh wait, like this, create, edit and save was on the same level.
+1 Reg but you have intersection is on the same as map, and then traffic is the same as edit, or create, and then you have sequence and timing, and that’s one level deeper
+3 Claim i think we should put that into another diagram.
+3 Prem because otherwise it gets too much information and it becomes too big
+1 Reg i think so as well
+1 Claim i think so as well
+1 Reg but then we keep those
+3 Claim yeah, i would keep these and then intersection, you have traffic lights and sensors too.
+3 ClaimPrem i would also keep them, just because you then know how i looks globally
+1 Reg and then you can go deeper
+3 Reg and then you have new figures that are maybe a little smaller.
+3 Reg but then they do have clear guidelines, like ok you have this, and this, and this
+3 Reg oh i know what they have.
+3 Claim no, come on- you can do it, become blue.
+2 Reg what did we forget
+3 Reg the length of the roads
+3 Prem because intersections also have a road length
+1 Reg how far are you with the writing
+2 Reg [i’ve started with the product introduction, but, let me see, how many pages are there]
+3 Reg [just a few lines]
+2 Claim [i think it’s not a lot really, but ok.]
+1 Reg [so you can make it]
+2 Reg [look here, this is the model, and i just explained real short here what the model is]
+2 Reg the glossary and the rationale, [and there i put the same amount on for what stakeholder the model is]
+2 Claim [and we need to do that for each of the models]
+1 Reg [ok, then it isn’t that bad]
+2 Reg yeah, but i don’t know if we have to make more models for- that we have to use more notations for one viewpoint
+1 Reg we think for the functional we’re gonna use more
+1 Reg but not for the information i guess
+3 Reg i don’t think so
+2 Reg no [just for the context]
+2 Reg also quite small so
+3 Reg traffic simulation has a map, and a traffic simulation has multiple intersections, and a traffic simulation also has the boundary
+1 Reg the workspace boundary right
+3 ClaimPrem maybe we should name this differently because map sounds to me like the thing in which you work.
+2 Reg well we mean [map], like traffic map.
+3 Claim but here we have- maybe we should call it something like file options
+1 ClaimPrem or just file, because it’s your file
+3 Claim i think so too.
+3 Prem then we can name the other thing, map, and then we can add the boundary to that, and then- but actually, a map has intersections again.
+1 Claim you see we need the attribute, the entity relationship diagram
+1 ClaimPrem no, let’s continue with what we have, since that’s from the book.
+1 Claim but then we can just draw the line, the arrow to there, to there and one between them.
+1 Claim or maybe not even this one to this one, but to this and then to this one.
+3 Claim the file with the file, and then the- i think this has a map, and then we could go from this one to this one again
+1 Reg because- what do you mean with that
+3 Claim this one should actually be the map itself, with the boundaries
+1 ClaimPrem so the boundaries- let’s not call it map, that’s confusing then
+3 Reg the workspace it would be 
+1 Reg the workspace yeah.
+3 Claim yeah, this then would be the workspace.
+3 Claim and then you have the traffic simulation.
+3 Claim that would go to the workspace, and then would have go to intersections.
+3 Claim and the workspace then has a boundary.
+3 Claim no maybe not, maybe it is just like you have this, in the middle, and then you have- oh, the option is that you can do this with the file, and then you have the also has intersections and you can remove this from the intersections.
+3 Claim and also has a workspace, and the workspace has a boundary.
+3 Claim yeah, maybe it’s alright.
+3 Claim maybe we should just do this, and we also had other options.
+3 Reg oh yeah, we did the sequence and timing schemes and the traffic lights.
+3 Claim this should be a new diagram
+3 Reg the sequence and the timing of the traffic lights, but also the type of traffic lights you can have
+3 Claim but we can do that in the next diagram.
+3 Reg and then the sensors, we have that.
+3 Reg and then set the traffic density
+1 Reg also the diagram
+3 Reg this would belong with a road, with the edges
+2 Reg [looks good] [laugh][i think]
+1 Reg [do you know which line goes between]
+2 Reg [it is 20 past four o’clock]
+1 Reg yeah, let’s draw the arrows and then make the other one
+3 Reg [three quarters of an hour is really short]
+3 Claim [i think it’s ridiculously short for this kind of assignment]
+1 Reg [yeah, but you have till 6, what do you have till 6]
+3 Reg [what kind of line needs to go between.
+3 Reg it’s really all of them are, this has this, and this also has this, but there’s only one of this, at least 6 of these intersections]
+1 Reg [yeah, but that doesn’t matter]
+2 Reg [it’s not an entity relationship diagram]
+1 Claim so only an arrow, and only an outgoing arrow i guess.
+1 Reg no, this one is both ways, this one is only outgoing.
+3 Reg [oh come one, stupid thing]
+1 Reg oh no, never mind]
+3 Reg [it should just work.
+3 Claim oh, probably should have pushed apply.
+3 Reg [oh, now it does give a broader arrow.
+3 Reg i just get really tired of these programs that won’t work.
+1 Reg [you radiate it too] ok, the other one i guess, and the other one as well.
+1 Reg ok, can i change one thing with the-
+3 Claim you don’t want them that fat
+1 Reg no that’s- no wait
+3 Reg ok, you do it
+1 Reg just make it a bit more
+3 Claim oh you have to select everything
+3 Claim you have to pull a box over them all.
+1 Reg oh and then it does it.
+1 Reg ok it’s not gonna 
+3 Reg you can also do a arrows [laugh]
+1 Reg [glad we work with gliffy]
+3 Reg [that frustration doesn’t radiate from you]
+1 Reg [windows is and then also visio.
+1 Reg look this, this is just irritating.]
+2 Reg [you have to keep the shift key pressed down, while you’re working with the arrow.
+1 Reg [ok, it’s still not really nice, but it’s good enough.]
+2 Reg do we save this one and put it on the drive, so you can write it?
+2 Reg i guess the modelling was within the two hours
+3 ClaimPrem no i don’t think so, because we still have 25 minutes, 22 minutes left.
+2 Claim but it’s still not that much time for modelling
+3 Reg do you think they’re gonna check on us if we’re done
+2 Reg what do you mean
+3 Reg well, they also just stay here after the 25 minutes are over of just continue working on it
+1 ClaimPrem no, the deadline is at 6, so they don’t mean that you have to be done in this time.
+1 Prem otherwise the deadline wouldn’t be at 6
+2 Claim well i think you have to be done within
+3 Reg well let’s continue and not talk about it.
+1 Reg ok we have two model left right
+3 Reg i think so

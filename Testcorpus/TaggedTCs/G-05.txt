@@ -1,0 +1,807 @@
+1 Claim so first we should discuss about how the views should looks like.
+2 Prem we have the functional requirements here.
+2 Prem that we would have underline.
+2 Claim so we can start noting down the functional view first i guess.
+1 Reg yeah, so which function, which view do we have .
+2 Reg functional, and  information, and development.
+2 Claim so i think development will be the last one.
+2 Prem first we make the functional view deciding what all we need.
+2 Prem and then what all information we have or what all information we will get in the information viewpoint and then last we can decide which module and how the structure of the module will be.
+1 Claim and we have look into the text again.
+2 Reg so here is the requirements.
+1 Reg for example the traffic signal timing.
+1 Reg what does it mean exactly.
+1 Reg maybe how long traffic light is green.
+1 Claim so this could be a function.
+1 Reg function traffic signal timing.
+2 Reg ok you right.
+2 Reg function traffic signal timing.
+1 Reg or the student can customize this timing.
+2 Reg and this we will .this
+2 Reg function for the timing will be called for the red part, the green part, and orange part.
+2 Reg each of those will call this function.
+1 Reg we can also make sub function like they can alter green light differently as the red light, so maybe the red light is longer than the green light.
+2 Reg red light longer will be depend on .
+2 Reg if  there's the other direction has more traffic then the red light in this side will be longer.
+2 Reg if the sensor says there is more traffic on the incoming side then the green light had to be open longer      
+2 ClaimPrem and i think for the orange light maybe we don't need a separate calling of the timing function .because
+2 Prem it is just in the gap between the red and the green.
+1 Reg so it's more like a fixed time.
+1 Reg maybe the user can also customized this when he.
+2 Reg so if we are calling the function for the red thing and then before there is actually making the light red holds for say 15 seconds at yellow, same for the green.
+2 Reg before turning green it holds for 15 seconds and becomes yellow i guess.    
+2 Reg okay this is one function.
+2 Reg and another function is probably the map.
+2 Reg it has to call the map like with most recent data of the map and the traffic stated and everything.
+1 Reg then map like creating a street.
+2 Reg we can import that from the google map right.
+1 Reg but should it be a function.
+1 ClaimPrem map function sub function like creating a street because there you just said  should map of an area.
+1 Claim so student must be able to create map.
+1 Reg and this the map.
+2 Reg so he create a map from scratch or does he just imported from an external source like google maps or satellite images or something.
+1 Claim i think the students can create.
+1 Claim should create individual map.
+2 Reg so you have the function for the time.
+2 Reg and the function for map creation.
+1 Reg and now sub function of map creation is like creating  different streets with different length.
+2 Reg and what about the traffic flow in each street that input has to come from.
+2 Reg it said there's some sensor.
+2 Reg the sensor should tell.
+1 Reg oh of course.
+1 Reg that's good idea sensor.
+1 Reg should be in that map or should be .
+2 Reg this point c has the sensor that detect whether any car are present in any given lane.
+1 Claim and i think when a student can create a map.
+1 Claim he can create streets and he can decide where the intersection is and then he has additional opportunity to decide whether there is a sensor or not.
+1 Reg so we can create.
+1 Claim so in that map we have sub function creating street and creating intersections.
+2 Reg yes street and intersection is under the map creation .
+1 Reg but two different sub functions.
+2 Claim and i think  the traffic flow or like the volume of traffic or direction of traffic can be the third function.
+1 Reg that also good.
+2 Prem because the map creation will be more like static once we've created the road will remain the same but the traffic flow needs to be updated every minutes or something.    
+1 Reg how do we called it.
+1 Reg is it different functionality is it in.
+1 Reg as the sub functionality of map.
+2 ClaimPrem maybe not because i think the map once you created will remain the same.
+2 Prem when ever we change the traffic light or the signal we will not be creating new street .will
+2 Claim so i think the traffic flow function will be called very frequently and the map function will be called only when someone is setting up the traffic light for that signal.
+1 Reg when i read it again.
+1 Claim students must be able to create visual map and visual map is different arrangement of intersections.
+1 Reg so we have that creating intersection.
+1 Reg and creating roads and road of varying length.
+1 Reg i added to the creating street with varying length.
+2 Reg where do the sensor go in the flow function?
+2 Reg as a sub function of the flow or?
+1 Claim you approach should readily accommodate at least six intersection.
+1 Reg so what was your question?
+2 Reg about the sensors, but lets talk about that six intersection.
+2 Claim so this intersection function should called six times to create six intersection that's it right.
+2 Reg if we want to create six intersection at least.
+2 Reg then we just called this function six times.
+2 Reg so we can called even hundred times if you want so at least is not a problem.
+1 Reg this is constraint that student must create six intersection at least.
+2 Reg and i was asking about the sensor.
+1 Reg so when show when read that requirement we can see first create a map and second behavior of the traffic lights.
+1 ClaimPrem is a b c should be under that behavior that means the sensor should be under the behavior of the traffic lights.
+1 Reg so behavior of the traffic light is another function.
+2 Reg but isn't the timing also behavior of the traffic light.
+1 Reg maybe we can combine this.
+2 Reg the timing and the behavior.
+2 Reg see yeah, we can have some properties for the traffic light function one of them will be the timing.
+2 ClaimPrem and the timing will depend on the sensors so they are gonna be together the same module i think.
+1 ClaimPrem lets read this again maybe we can read something about this.
+1 Reg so second functionality is behavior of the traffic lights.
+2 Claim oh and the sensor we should be able to sometimes like use or disable or however they want.
+2 Reg that will be a separate module that can be called or maybe we don't call it.
+1 Prem so and this behavior should be customized for each intersection.
+1 Claim so at least six times again.
+2 Reg are we going from both direction because i'm little confuse what that (inaudible) it says no one way road.
+2 Reg so what does that mean?
+2 Reg both are going both way at each intersection we will have like say this is the intersection then you have coming from this side coming from that side any road.
+1 Reg maybe that's a constraint when this students create streets.
+2 ClaimPrem should be property of the street, make sense   
+2 Reg t is not allowed.
+1 Reg so behavior of the traffic lights.
+1 Reg variety of sequences and timing schemes.
+1 Reg but what is difference between variety of sequences and timing schemes.
+1 Reg intersection one has green light light phase for about 10 seconds red light about.
+2 Reg i know what sequence mean than.
+2 Reg see if this intersection one this is intersection two .
+2 Reg so say when traffic is going in this direction.
+2 ClaimPrem if this has been green for 10 seconds, then this should turn green maybe after 10 seconds so when the traffic reach zero they can go through or something so they should be like synchronous you know.
+2 Claim so the green light should come on in sequence.
+2 Prem because see if this also green and this also green at the exact same time then by the time people reach the second  intersection this would have turn red.
+2 Claim so no point having both of them green at the same time.
+1 Reg but is it variety of sequence or timing schemes.
+2 Reg well timing is this 10 seconds for each individual signal that is the timing.
+2 Reg and sequence is like first this signal turns green then after certain gap the second signal turns green something like that.
+1 Prem okay so we have that sub.
+1 Claim so it could a sub functionality of that functionality behavior.
+2 Reg but time scheming just call this function they already have function for that too.
+1 Reg so i called timing schemes.
+1 Claim okay so it's about color phases.
+2 Reg this we have two.
+1 Claim then we have an addition .
+2 Reg oh left hand turn.
+2 Reg i don't really understand what that means.
+1 Prem because when you have a street and car wants to  turn left you have to cross the other side of the street and that's.
+1 Prem you have to make sure.
+1 Prem that from the other direction no cars is coming.
+1 Claim so you need that right.
+1 Claim you need that left hand green arrow lights.
+2 Claim left hand green arrow yes and at the same time the sequence will be that from the opposite direction should be red.
+2 Claim those two should be match together.
+1 Reg i should write it down somewhere.
+1 Reg but where on the which.
+2 Reg in under the sequence probably this is one of the sequences.
+1 Reg okay so property of sequence.
+2 Claim if left hand arrow is on.
+2 Claim then opposite direction should show like.
+2 Claim incoming oncoming traffic should be stop.
+2 Claim like this should be red on the opposite.
+1 Reg oh when you do decide to make the left hand arrow or make normal one or make sensor.
+2 Claim well that should be like.
+2 Prem see it might have two lanes so car who want to turn left this wait in the left lane.
+2 Claim so if the sensor can sense that there are maybe three cars waiting to turn left.
+2 Reg then the left side arrow comes on.
+1 Reg but the user can decide this when he creates intersection.
+1 Reg so we can have different opportunities for user.
+1 Reg when he creates intersections.
+2 Reg so like different traffic lanes.
+2 Reg in the property of the intersection.
+2 Reg you have like left lane for.
+2 Reg like the people who just wanna go straight stay in the middle lane or the right lane.
+2 Reg and people who want to turn left.
+2 Reg say you wanna turn left here.
+2 Reg then you stick to the left side of the road.
+2 Reg and the sensor here will detect that ok.
+2 Reg that so many cars are waiting.
+2 Reg if there more than three cars waiting.
+2 Reg then you turn on the left side arrow and stop that traffic  from the front.
+1 Reg but i want to know.
+1 Reg when you create intersection.
+1 Reg the students create intersection and then he can creates a traffic light.
+1 Reg and then he can decide if he wants to make the traffic light on the right side on the street or on the left side of the street.
+1 Reg should that be a possibility for the student to decide where the traffic light is.
+2 Claim oh that would make sense.
+2 Claim in street that really wide or something.
+1 Reg is it a must?.
+2 Reg i think i see that they have.
+2 Claim i think they have traffic light on both side here.
+1 Prem because  you need that left side arrow and .
+2 Claim for the right side is free turn i think.
+2 Prem for the right  side you don’t need an arrow.
+1 Reg when you create intersection is it a must to create also traffic light.
+1 Claim okay that could be a sub function of creating intersection.
+1 Reg that also have to create traffic light.
+1 Claim but that should be different functionality.
+2 Claim so this creating traffic light function should be able to called when we creating the map, and we creating the street.
+1 Reg okay that is good.
+2 Claim so make that a separate function that we can call.
+2 Reg i hope this recording.
+1 Reg ok mine is not recording.
+2 Reg oh mine is recording it's fine.
+2 Reg why is not recording.
+1 Prem because it was in a.
+1 Prem it was shut down i guess.
+2 Reg as long as it's recording.
+1 Reg so creating a traffic light.
+1 Reg so which of opportunities do the student have ?.
+1 Reg so he can create right side.
+1 Reg left hand green arrow light.
+2 Reg left hand green arrow light.
+2 Reg which is straight i guess straight green .
+2 Reg see the left side thing will be blank.
+2 Reg it'll come on only when it's green we don't normally show a left side red arrow or something is just gonna be blank when you are not free to turn left right.
+1 Claim but it's additional opportunities i guess.
+1 Prem because not every street you have that left side arrow.
+1 Prem because normally traffic light consists of red, orange, and green .
+1 Prem and that left side arrow is an addition.
+1 Claim so when the students want to create traffic light.
+1 Reg maybe it's only additional.
+2 Claim but i think if all the intersection are four way intersection then we will have that.
+2 Claim unless it is like a pedestrian crossing like a human crossing in the middle of the road.
+2 Claim then you will have traffic light that don’t show left or something.
+2 Claim but if it is in a four way.
+2 Claim in a junction then we will always have a left turn.
+1 Reg how to model it.
+2 Reg i'm gonna stop and do the recording again  
+1 Reg how do you call it.
+1 Reg so create traffic light and the system ask the student do you wanna create.
+1 Claim should it be a right side one or left side one.
+1 Prem because the right side one is the normal one which only three light.
+1 Reg when the students decide to create a left side.
+1 Claim the system should be able or should given notice that the constraint is to create red one on the other side.
+2 ClaimPrem but  it should do that automatically that shouldn't be left to the user i mean if the user selects that left turn.
+2 Claim but that will be at the timing under the timing function i think.
+2 Prem because that's the synchronous of the timing.
+2 Reg and little bit of the sequence also variety of the sequences.
+2 Prem because see it should not be.
+2 Claim it should not be left to the users to specified that the opposite side should turn red.
+2 Claim that should happen automatically .
+2 ClaimPrem if this is going green then no matter what the opposite side should turn red because other wise it will be a crash.
+2 Claim so it's not an option it will be and and condition.   
+1 Reg then come back to the timing schemes.
+1 Reg how can we include that.
+1 Reg opportunity for the student that he can decide.
+1 Reg if they want to go right or left can we model this in some way.
+2 Reg well if they want go left.
+2 Claim they should switch to the left lane of the road and the sensor should detect it.
+2 Reg like you know if you  wanna go left at that turning.
+2 Reg then you start taking the left lane from say 100 meter before that or 15 meter before that and the sensor will detect that.
+2 ClaimPrem okay so this guy has shift to the left lane and you know and they will know that okay some three four car or whatever some people are waiting on the left most lane that means that someone need to go left.
+2 Reg so then if you have sufficient sensor trigger that so many people are waiting on the left lane.
+2 Reg then the left signal comes on after sometime.
+2 Claim but that can be choice for the student it could display that.
+2 Reg you know you have three cars waiting in the left lane so do you wanna turn the left signal on now.
+2 Reg have it like that.
+2 Reg i don't know how to put this.
+1 Prem but we only have that option four cross or four ways intersections.
+1 Claim so we always have that situation that someone wants to go left.
+1 Reg so should we do this as a default property that each street has three lanes.
+1 Reg or should we let this to the students that he decides if there should be third lane or is two lanes are efficient.
+1 Reg that's i think also.
+2 ClaimPrem we should definitely have that option because not all street are gonna be so broad street even if it is a four way intersection it could be a small intersection you know.
+1 Reg okay so we have that addition.
+2 Reg of how many lanes we want to have when making the streets on map.
+1 Reg when the student wants to create street he can specified if he wants.
+1 Reg which length of the street and how many lanes .
+1 Reg and that sensors where can we put this.
+2 Prem well it says that they should have the option to disable the sensor also so it will.
+2 Claim so the student can pick that.
+2 Reg it will come under the.
+2 Claim well i think the sensor will be when we are creating the traffic light.
+2 Claim you should have the option that do you want sensor with this traffic light.
+1 Claim this has an effect on the behavior.
+1 Prem the sensor has effect on the behavior of that traffic light so.
+2 Reg after we finish noting we will note down the properties of the traffic light.
+2 Reg like which property affect which behavior right.
+1 Reg okay do we have all the function  
+2 Reg there are four points.
+2 Reg so that would be taken from satellite images i guess.
+2 Reg says like how heavy is the traffic in a certain road so normally that data comes from the.
+1 Reg you mean the traffic density or the traffic flow?.
+1 Reg because we can make like.
+1 Reg functionality stimulate traffic flows and change the traffic density.
+1 Reg because that is two different.
+2 Reg okay so let talk the first one first.
+1 Reg traffic flows so that.
+2 Reg what does that even mean.
+1 Reg so you can decide if.
+2 Claim so basically when they are creating they should be able to see on the map how like we have should have option for showing on the map visually the traffic or whatever what is going.
+2 Claim so we don’t need to show individual car but you know like google map shows like the whole road becomes like red or something if it's caught like a lot of traffic.
+2 Reg have you seen that.
+2 Reg so we can use that maybe.
+1 Reg or when we for example we could take petri nets or something similar to model and then you can.
+1 Reg you can give the students the opportunity to higher the amount of cars.
+2 Reg which is in the next point.
+2 Reg which is the change traffic density.
+1 Reg oh yes you are right.
+2 Reg this just to see it just so the user can see it on his console that okay .
+1 Reg so we have to model or we have to give the opportunity to the students to play and to stop the simulation.
+1 Reg so when we have the functionality stimulate traffic flows it should be.
+1 Reg so to start the simulation.
+2 Reg yeah, or they can.
+2 Reg see when they visualizing they can visualize only the street and the traffic light or they visualize with the traffic.
+1 Reg we have different opportunities so.
+1 Reg so the student can decide you want to.
+1 Reg you can decide which intersection timing schemes he want to use maybe.
+2 Reg it just part of the first one.
+1 Reg i'm still on the first part.
+2 Claim so the update should get the data from some satellite right.
+1 Claim or when user make some changes the simulation should stop and then make the update and then start again.so
+1 Reg this is also function of that.
+2 Reg it could also get some input from say like you know.
+2 Reg this traffic light which is 500 meter after this traffic light will get that.
+2 Reg will get the data that from this traffic light say heavy flow of traffic is coming.
+2 Reg so then this will turn green and let everything pass.
+2 Reg so you know one traffic light will get the signal from the previous traffic light also.
+1 Reg that's like intersection timing scheme.
+2 Reg something like the sequence or something.
+2 Reg but we can have the option that the user.
+2 Reg whether you want to take input only from the satellite or do you want take input from the previous traffic signal also.
+1 Reg that is good.
+1 Reg so may we have so.
+1 Reg so option is including to turn on that sensors or turn off that sensor.
+2 Reg also feed back maybe sensor and some kind of feed back.
+2 Reg like you know sensor is before the signal went like ok cars are approaching 50 cars they have move on.
+2 Claim but than that the fact that 50 cars have cross this signal a maybe signal b should be able to get that information before that 50 cars reach the second signal.
+1 Claim that's a good idea or when there are no cars in front of traffic light it should turn to red.
+1 Claim and then other traffic light should turn to green.
+2 Reg when all the cars have gone from this then it can.
+2 Claim there are no cars then it can allow the flow in some other direction so it can become red.
+1 Reg so i have to write it down so including options to turn on and off the sensors and to make other traffic light sensitive to that signal.
+2 Reg and also satellite data i'm guessing.
+1 Claim satellite data should be.
+2 Reg would be part of the update.
+1 Claim update means that when the students make some changes.
+1 Claim then the simulation should adapt this changes so when the students decide to .okay.
+1 Reg he want to turn off the sensors.
+1 Claim it should be updated in that simulation and run it again.
+2 Claim i think when ever we play the simulated traffic flows at the time it self there'll be satellite update.
+1 ClaimPrem but when do we need that satellite because it's only a simulation.
+1 Reg what do you mean.
+2 ClaimPrem like you know anytime you say you want to see you running the program and you want to see the flow of traffic immediately you have to get the data from the satellite other wise you can't see anything.
+1 Reg but you make that input.
+1 Reg you create that input for that model.
+1 Reg so it's not real time.
+1 Claim it's should simulate real time.
+2 Reg okay let just keep as the one of the input that is fine.
+1 Reg so what else do we have.
+2 Reg but do you put the satellite thing.
+2 Reg so so we can have three of input, one is the feed back, one is the sensor, one is the satellite.
+2 Reg oh and does the traffic control department of the city or town so they also send some input.
+1 Claim i don’t think so.
+1 Claim i think we should leave it like this.
+1 Reg so now to the traffic density.
+1 Reg so that isn't traffic we can.
+1 Reg make this as functionality?.
+2 Prem ok lets see density will be a property but changing the density will be of functionality.
+2 Claim so we should have the option of diverting all the traffic to a particular road and making it a busy road i think.
+1 Reg so you can change it.
+1 Reg and option are busy road.
+2 Reg here it says.
+2 Reg busy road or seldom use road or anything in between.
+2 Reg i think we have all the requirements now.
+1 Reg this is the functionality.
+1 Reg so we have the map functionality.
+1 Reg behavior of the traffic light functionality.
+1 Reg third is simulate the traffic flows.
+1 Reg and the fourth is to change the traffic density.
+2 Reg lets work on this four.
+2 Reg so if it's like peak hour or office hour college hour then will be heavy traffic.
+2 Reg but if we seen in the middle of the night or something then see we a lot times the signal is not red or green they just go blinking yellow.
+2 Reg you just suppose to look and then decide for your self and how you want to go.
+1 Reg should we make opportunity ?
+1 Reg or the option for the user to decide whether they or .
+2 Claim well heavy traffic period or light period is at least would say.
+1 Reg so the user are able to turn off all traffic light.
+2 Reg that might be due accident.
+2 Reg but i don't know.
+2 Reg but in the night.
+2 Reg in the night when ever i go i see it just blinking orange all the time it doesn't red or green unless it's really big main road.
+1 Reg put this to the function.
+2 Claim we can have for each of the traffic light we can see whether during less rush hours whether we want to make it like.
+2 Claim like not functioning with full capacity or something.
+2 Claim we can choose it like we don't have to do it for all the signals but for the smaller ones sometimes we can just select that option.
+1 Reg okay turn off certain.
+2 Claim limited functionality or something like that.
+2 Reg say like it's at that time when there are no buses going in that direction or something then the rules can be little relax for the cars.
+2 Reg you know they can go into the bus lane maybe.
+1 Reg okay when the user want to play.
+1 Claim i think it's good option for him to choose the time speed.
+1 Reg so he can see one hour and five seconds.
+1 Reg or one week and five seconds something.
+1 Reg to regulate the time speed.
+1 Reg is it more playing or should it be.
+2 ClaimPrem no it just a visualization option it's not actually changing the speed of the traffic or the road he just seeing on his monitor the different speed however he wants.
+2 Claim when you play you can have it play at the real time speed or played at like you know.
+2 Claim like review speed which it will be faster or something.
+2 Prem because he seeing like if he want just view the night traffic then half the time the road are empty he doesn't have to sit and see every minute of it.
+2 Prem he can just fast forward it and see the whole five six hour and maybe half hour or something.
+1 Reg now to the fourth functionality.
+1 Reg how does it effect the system when the user changes the street to busy road.
+1 Reg how does this effect the system like more the capacity.
+2 Reg time will be longer for signal green will be open for longer i guess like you know.
+2 Reg if it's a busy road.
+1 Claim no i think that can user decide how long the traffic light is.
+1 Reg but when the road is busy how is that show.
+1 Reg i think when you higher the amount of cars per minute.
+2 Reg you mean how we measure it.
+1 Claim maybe we should write it down  
+2 Claim we should have some parameter.
+1 Reg mor cars per time or.
+2 Reg and also maybe something to do with heavy vehicle like bus or something.
+2 Reg busy street has more bigger vehicle also.
+1 Reg but the system will decide this.
+1 Reg or when the user decide busy road the system add more huge cars.
+2 Reg then the system will put provision for say that two buses can go side by side.
+2 Reg like we have here in the evening at five o'clock if you see five or six buses go after one and another and the traffic light doesn't stop them it lets them all go and becomes red for other stuff i guess.
+2 ClaimPrem okay lets start modeling this view other wise we will run out of time.
+1 Claim or we should discuss the other.
+1 Reg only draft version  of the other views and the model it.
+2 Reg oh this was only for functional view.
+1 Claim so we should do the context view i guess that.
+2 Reg do we have to do the context view.
+2 Reg functional, infor and develop you say.
+1 Reg context, functional, and information.
+2 Reg sorry so not development view.
+2 Reg that's okay we don't need that.
+2 Reg okay so context first.
+2 Reg we have the functional thing more or less.
+1 Reg context so we have user.
+1 Reg i have some some idea we can.
+1 Reg the we have the application or the system maybe.
+2 Prem okay and we have external data sources like satellites and internal data sources to the system like other traffic lights and sensors.
+2 Claim so put some data sources i guess.
+1 Reg so we have internal information.
+1 Reg or was it like when traffic light.
+2 Reg one is the feedback from that other traffic light and other one is sensors what are internal to the system.
+2 Reg and external is the gps satellite traffic data.
+1 Reg but maybe the traffic light cannot communicate directly with each other.
+2 Reg they would go to traffic control office or something.
+1 Reg like gps so maybe that's our only option.
+2 Reg see what i mean by that satellite data is.
+2 Reg it will show actual images of which street is how much crowded or you know the detail of the road will once the user has created the road that data will be store on the satellite.
+2 Reg but when two traffic lights are communicating maybe that will.
+2 Claim well there will be some traffic control office or something i believe.
+2 Prem because see if there say this road and there is a big accident that is happen in the road.
+2 Prem then the satellite will not know.
+2 Prem the traffic light will not know.
+2 Prem but the traffic control office will know.
+2 ClaimPrem and they will inform and you know they will change the road accordingly there's been an accident on the road, they will block of that road and divert the traffic to some other roads we should have some option for that.
+1 Claim but i don't really get the idea with gps.
+1 Prem because it's only students using that system.
+1 Prem so i can decide as a student how the street are look like or how does.
+2 Reg so if you don't want real time data then we don't need the satellite yeah.
+1 Reg i don't know if this are to complicated for the system.
+1 Reg but how to include this in our application.
+2 Reg we'll just keep it as external data sources and (inaudible) line if they want to refer to more.
+1 Reg but does it changes to the system.
+1 Reg what information do you put into your simulation like.
+2 Reg well it will see that at this time this road has this much traffic.
+2 Reg which information the traffic light cannot give you.
+2 Reg you can see for the whole area or something  or each traffic light will have the information of how many cars are only passing this traffic light.
+2 Reg but with the gps you can see with the satellite thing you can see how crowded everything is.
+1 Claim i think that's good idea for traffic control office.
+1 Prem because here we only talk about the student application.
+1 Claim i think the students.
+1 Claim the students create the street.
+1 Reg so how can that be a benefit when they have some real time.
+1 ClaimPrem not real time reality information, because it is not that the big simulation.
+2 Claim fine   if it's only the student that are using it then maybe we don't need it .
+2 Reg but if we want to sort of related to and a real system and real life.
+1 Claim okay when you want to include that we can make a plug in or something.
+2 Reg that can confuse pre required  if not we don't use that.
+1 Reg so the benefit for the student is to download the map or what do you think?
+1 Reg and then information about the traffic.
+2 Reg he can see see like he's impress in this area if you download the map of this whole say whole size area or whole new kind area .
+2 Reg then he can decide that okay this road is gonna get really crowded in another one hour  so i diverted to the other side or something you know.
+2 Reg so he distributes the traffic and he opens up this was not a road or something.
+2 Reg so he open up or something.
+1 ClaimPrem but i think when we want to model this or to make a plug in would real reality information i think someone should create this system so should be really a plug in or should be already created because we can not create such a system because every traffic like information should be in that simulation how to get that information.
+2 Claim so that plug in could just be google traffic system or something.
+2 Prem so if required then we can get it from that  
+1 Reg it is plug it.
+2 Reg okay so context view and okay so these are the user this is the input this is the external input and system components.
+2 Reg the part of the system here.
+2 Reg the traffic or how do you wanna we can make it in two.
+1 Reg maybe we can always make an output on this screen.
+2 Prem output is what exactly we would see if we were standing at the traffic signal like this signal is red for so long and so long.
+2 Claim so that is the final decision of the whole thing.
+1 Reg that is the simulation.
+2 Reg and some where yes system component were other part of it.
+2 Claim the decision making module should be something i'm guessing because.
+1 Reg the creating model module  
+1 Reg and the this session module  
+1 Reg but how to align to understand the function now.
+2 Reg the decision model get state back from data source  
+2 Reg creating street view or something.
+2 Reg which will be more like a database i guess once he has created it will be like static database.
+2 Reg he is not gonna update the street every time.
+2 Reg but the this decision part will be dynamic depending on the  of the date the flow of traffic 
+1 Reg how do we show that ?
+1 Reg do we have time for that?
+1 Claim petrinet should be i think the information view.
+2 Reg okay the  static dynamic part we can show in information for the context did we miss anything?
+1 Reg do we have the interface for the user?
+2 Reg we always having the best for the user.
+1 Reg what is exactly the operating system.
+2 Reg well the application this whole application interfaces i'm guessing.
+2 Reg just keep it as gui or application interface it should be  fine.
+1 Reg what module could you be also simulation.
+1 Reg so you create we have creating module, decision module and then after decision you want to simulate this and that.
+2 Reg but isn't that the output.
+2 Reg isn't this the simulation thing .
+1 Reg but in this simulate you can also make some changes.
+1 Reg like including sensor a note and then after you made some changes you can see it on the screen.
+2 Reg enough with context information.
+2 Reg lets do the information view.
+1 Claim so the information view we can decide oh we should make static and then dynamic.
+1 Reg static is like uml classes i can show you an example.
+1 Reg so i think information we have some classes for example traffic lights and properties.
+1 Reg or what else roads have some properties.
+1 Reg i think we have a.
+1 Reg first we can model traffic lights.
+1 Reg so here you can see that this is our information static view.
+1 Reg so you have some classes with that attribute.
+1 Reg and we have some.
+1 Reg and we have modules.
+1 Reg lets start with traffic light this is a this could be own class traffic light.
+1 Reg traffic light has some attributes  
+2 Reg which is not on the (inaudible)  
+1 Reg attributes like has a red light.
+1 Reg what does that type is it?
+2 Reg red light and score time right.
+2 Reg i mean it'll be like the time for the red light just the red light.
+2 Reg time dot red, time dot green.
+2 Reg and time dot green.
+2 Reg or should be like red is.
+2 Reg what would red be.
+2 Reg red is i don't understand and then we could  attach the giant property with everything.
+2 Reg and then we have green but i don't know what we call green just by itself.
+2 Reg i mean just green or just red.
+2 ClaimPrem red light or green light doesn't really have any use for us i mean we need the time for that right.
+2 Claim and also the gap time for the yellow light.
+1 ClaimPrem but traffic light has also name like traffic light number one, so that is the key.
+1 Reg name is from type string.
+2 Reg ok time is numerical.
+2 ClaimPrem and even put something as a gap so we can change the gap between the green and the red light.
+1 Reg so the yellow face.
+1 Reg so then we have that the additional opportunity to make a.
+1 Reg we can make it like boolean.
+1 Reg we have that left side arrow.
+2 Reg what you call name boolean?
+1 Reg boolean  is a data type with wrong or false.
+2 Reg no which one do you wanna make boolean.
+1 Reg that left side of arrow is it on or off.
+2 ClaimPrem that could be boolean that's fine.
+2 Reg it will have two stages.
+1 Reg or should we make on the class.
+1 Reg like a child class.
+2 Reg no keep it with the red and the other lights there are the same.
+2 Reg i get agree if you.
+1 Reg when this the students want to create the traffic lights.
+2 Claim let see if we're keeping the status on and off.
+2 Claim then we should have that for the red and green also.
+2 Claim so it's should be red dot stage and red dot time.
+2 Claim and state will be boolean for everything and time will be a time for everything.
+1 Reg do we need to turn off the red light?
+2 Claim technically when the green light comes on the red is off.
+2 Prem because we can't have the red light on at all time so does to go off when the green or yellow or anything is on.
+2 Claim so when the time for the red light has passed.
+2 Claim then the red light goes on the zero stage.
+2 Reg so far everything we have state at that time.
+2 Claim i'm gonna do the recording again.
+2 Reg it's been 20 minutes.
+2 Prem otherwise it will be one really big.
+2 Prem in case we cant send it at least some part will go through  
+1 Reg but we can also make.
+1 Reg i have an idea like.
+1 Reg this is the traffic light the normal one and then we have the child class which has all that properties from the parent class with an additional property as a left side arrow.
+1 Reg so we have two.
+2 Claim so you can just inherit this to the child class i guess that should be fine.
+2 Reg i'm not sure how to show inheritance in the diagram but we can.
+1 Reg you can make this like an arrow like this.
+1 Reg so we have that all properties of the mother traffic light of the normal traffic light and then addition you have that left side arrow.
+1 Reg it is on or off and also time.
+1 Reg we have left arrow state.
+1 Reg we have map of static class.
+1 Reg map has street .
+2 Claim has to be a class that has so many properties.
+1 Reg that is street also a class.
+2 ClaimPrem sub class because on the street again we have lanes busy or not.
+1 Claim but it could be also map contains streets should not be a child class.
+1 Reg we can make it like this.
+2 Claim but if we want to disable that street or something then it would be easy to have it like a class or anything.
+1 Claim street should be own class.
+1 Claim not should be not a child class it is.
+1 Claim and then the map include some streets.
+2 Reg map can just import as many street as it wants.
+1 Reg ok map has street.
+1 Reg street is which type.
+1 Reg yes or no maybe or length.
+1 Reg we can also talk about street.
+1 Reg but what does street.
+2 Reg it will have length.
+1 Reg yes length is type int i guess.
+1 Reg it's only only a number.
+2 Reg will it have a direction.
+2 Prem because there is no one way road.
+1 Reg but how to specify this.
+2 Reg we can make it boolean.
+2 Reg and then we can just put our own notation for that saying zero means is going.
+1 Reg probably always true or false.
+1 Reg so i guess that it's not a right.
+1 Reg or we make left directions boolean yes.
+2 Reg we can just specify like that.
+1 Reg one street has both direction.
+2 Reg but are we doing like.
+2 Reg are we considering only like this is going this way.
+2 Reg are we considering this as a whole thing as one street.
+2 Reg or the whole thing.
+1 Reg that is good question.
+1 Prem because maybe we should make it a street as a whole.
+1 Reg and street has line.
+2 Reg and they have lane again then.
+2 Reg direction we have three lanes again.
+2 Reg in this direction we have three lanes   
+2 Reg okay so make street as big thing.
+2 Claim and then street should have up property or down property.
+2 Claim attributes up or down or something.
+1 Reg what i'm thinking about is the user want to.
+1 Claim should be able to decide where the traffic light is.
+1 Reg or is it at other side of the street .
+1 Reg but where to model this.
+1 Claim intersection should be also a class.
+2 Claim there will be traffic light at both.
+2 Prem see because this traffic light is for people who are going in this direction.
+2 Prem this light is for people who are going in this direction .
+2 Prem and this light is for people are going in this direction.
+2 Claim so we need both.
+1 Reg but now we also have that intersection problem.
+1 Reg so has a street intersection or has the map a street and the intersection.
+2 ClaimPrem intersection is property of the map, easier to handle.
+1 Claim but intersection should be connected to a street .
+1 Reg just two certain streets.
+2 Reg how do we connect two streets.
+2 Reg yes but in logic.
+1 Reg but intersection has street one or street two.
+2 Reg so this is intersection one.
+2 Reg it will have one vertical one horizontal something like that.
+1 Reg should we do it like one intersection has the property or contains.
+2 Claim intersection should always have two streets associated with it compulsory (inaudible) has two street associated with it.
+1 Reg so we have intersection first number or.
+2 Reg name or number id or something .
+2 Reg number is easier to handle .
+2 Reg well street one and two and they can't be null.
+2 Claim we have to make it as not null data type.
+1 Reg should we call it like vertical and horizontal.
+2 Reg again it'll depend on the side we are looking from.
+2 ClaimPrem but at least we have to have some name for it so that's fine.
+2 Reg it's like it's going up in the sky.
+2 Reg how do we specify that none of this can be null.
+1 Reg there's opportunity i don't know how.
+2 Reg okay just put a bracket as not null the developer will.
+1 Reg constraint i can look it up.
+1 Reg vertical street is it how does it.
+1 Claim we need a key for here.
+2 Claim you give an idea again it will simpler to connect them then.
+1 Reg i guess when we call intersection number one and the street is.
+2 Reg street will have a name.
+1 Reg and vertical street also name.
+2 Reg vertical street is of the data type street again.
+2 Reg can we do that.
+1 Reg then we have that map.
+1 Reg and in map we have street.
+1 Reg traffic light that's interesting should traffic light be in the intersection.
+1 Reg should intersection contain a traffic light.
+1 Reg or should the street contain the traffic light.
+1 Reg because we only have yeah.
+1 Reg should we allow the user only to put the traffic light in the intersections.
+2 Claim no maybe really long street that's going on and we have a pedestrian crossing in between then we will need traffic light again.
+1 Claim okay but we need to specify where the traffic light is.
+1 Reg exactly on that street.
+2 Reg okay how we're gonna do that.
+2 Reg by length we can do that by length of course.
+1 Reg but we need two numbers i guess.
+2 Reg of course from the starting point and how much distance.
+1 Reg but how time do we have.
+2 Reg not much ups what do i do.
+1 Claim maybe we should leave that option.
+2 ClaimPrem lets start drawing we have like 15 minutes.
+1 Reg and then we have the 45 minutes to create the models to design.
+1 Reg then we leave that only on intersection we have that option .
+2 Reg but to write all this also gonna take some time.
+1 Reg i think i will do that.
+1 Reg where was it not null.
+2 Reg any of this all of this is not null.
+1 ClaimPrem maybe only street because when you don't have intersection is possible.
+1 Reg but now we have that.
+2 Claim not null for street length also i'm guessing.
+2 Prem otherwise is it just a not street if it street it will have something.
+2 Claim and definitely street name also should be not null .
+1 Reg when you don't have a street you don't have a number or name.
+2 Reg when we don’t have street.
+2 Reg we just don't call this data type.
+2 Reg we don't call an object for this from this class.
+2 Reg why we would call an object street but create zero zero.
+1 Reg but when you create this a database would that table street it is possible there is no street in it.
+2 Reg we leave that option also.
+1 Reg i don't know exactly.
+1 Claim i'm still on traffic light the problem.
+1 Prem because when we say okay.
+1 Prem traffic intersection has traffic light.
+1 Prem that does not explain where the traffic light is on the right side or on left side.
+1 Claim maybe we should make lanes.
+2 Claim we have to make lane under the street.
+1 Reg is it sub class or contain it.
+1 Reg but how to specified a lane.
+1 Reg only right directional or only.
+2 Reg no lane will be.
+2 Reg you talking about this whole thing.
+2 Claim okay so make it up and down.
+2 Prem up and down is fine for that.
+1 Reg should it be a sub class of street  
+2 Claim just attribute of street i mean.
+2 Prem is it either up or down.
+1 Claim then we should model the opportunity that the traffic light is on one side or on the other side.
+1 Reg how to model this.
+1 Reg oh maybe a lane has a traffic light.
+2 Claim every lane should have a traffic lane.
+2 Reg that would make it easier.
+2 Reg we are considering this whole street i say oudegrah street this whole thing.
+2 Reg both side of it .
+2 Reg okay and up side will have traffic light down side will have traffic light.
+1 ClaimPrem we all have to connect this that's the problem now.
+1 Reg so we have two.
+1 Claim but i don't know if there should be two different classes but i try to think of it.
+2 Reg and i want to make actual lane in each of this street.
+1 Reg this is street this is lane.
+2 Reg inside the lane.
+2 Reg like the lane is half of the street.
+2 Reg which is going in that direction or in this direction.
+1 Reg oh i thought this whole is a street and this is a lane.
+2 Reg well lane is more like.
+2 Reg we have lane like you know this is the bus lane.
+2 Reg this is the bike lane.
+2 Reg this is the car lane.
+2 Reg those are the lanes.
+2 ClaimPrem we probably don't have time forget that.
+1 Reg but now we have still the problem how to connect this.
+1 Reg we have intersection intersection has a .
+1 Reg vertical street and horizontal street.
+2 Claim well we can connected by having a traffic light being associated with an intersection i mean this don't have to call the traffic light.
+2 Prem the traffic light can call this.
+2 Claim see so for each traffic light we can have the properties as like attributes street one two or however and intersection bla bla bla.
+2 Prem and then the traffic light becomes like an independent entity.
+2 Reg we can place it anywhere.
+2 Claim in the map and then we just connect this property to it.
+2 Reg as the property of traffic light.
+1 Reg that's a good idea.
+1 Reg okay we have that traffic light we have that street.
+2 Claim i think that would be simplier than trying to put import traffic light into each of this.
+1 Reg so intersection is a property of traffic light also.
+2 Claim id just put id that number.
+1 Claim and no should be a in i guess.
+2 Reg well actually would be you know.
+2 ClaimPrem this traffic light is the first traffic light of this intersection so it would have intersection id so and it's on traffic light id.
+1 Reg but i think it is a id or in model i don't know.
+1 Reg but id is not a data type so.
+1 Reg it only date variable.
+1 Reg i don't know if a variable has.
+1 Reg i will think about when.
+1 Reg so we have that intersection now we know that traffic light is on that intersection but in now we need this street to specific is it on that street or on that street so street.
+1 Reg and then is it on the right side or left side?
+2 Claim well it should be on both side.
+1 Reg but you need two traffic lights when there is.
+2 but each traffic light.
+1 Reg its individual and has a side.
+1 Reg so you have to decide.
+2 Reg ok so just so fix with dot r or dot l left side or right side.
+1 Claim we should a red we should specific this here somewhere.
+1 ClaimPrem here and just should be seen some here here because we vertical street horizontal street.
+1 Reg we can use this.
+1 Reg street has the right side.
+1 Reg it is in the left side.
+2 ClaimPrem no i don't understand because we have already an up and a down direction so what a left and right side.
+2 ClaimPrem but the right side and left side we named it as a for down so we don't need both.
+2 Claim we either have right or left or we have up or down.
+1 Reg when you said ok the traffic light is on that street named.
+2 Reg we said the traffic light.
+1 ClaimPrem and then you said only this is on that street so now we need the attribute lets say ok it is on the left or right side but the attribute should be reference to.
+2 Reg dot oudegrah dot left.
+1 Claim but should be somewhere attribute.
+2 Claim so put it in the direction we should can have two values left or right.
+1 Reg but when you say traffic light is on that street and you can't say ok that street has a.
+1 Claim now i think we should we must do it like this.
+1 Prem because you when you say ok traffic light is on that street.
+1 ClaimPrem the street has always two sides so you can not say ok it's on the left or right side it should be here an extra attribute and the traffic lights now and now i'm thinking of how to model this on the street.
+1 Reg you want i mean?
+2 Claim not very but i think we can have this is the traffic light id maybe and it has an intersection id, a street id and a side id .so
+2 Reg it has all these properties and you have again extra traffic light at z intersection at oudegrah street  on the right side.
+2 Reg so then if this is the street    
+2 Reg ok this is one traffic light here and one traffic light here.
+2 Reg this is to do note this one this to do note this one.
+2 Reg so we have for both.
+2 ClaimPrem these all these are like variable you know this street name the intersection name and the left right up or down the direction so a combination of these three will be enough to position the traffic light will be enough for us to know.
+1 ClaimPrem but i'm thinking about how to model this because you have to this is  like a method or something because you have to hold you have to.
+1 ClaimPrem i don't know how to say because you need other way to model this.
+1 Prem because a street has a right or left side always.
+1 Claim so you can not say ok.
+2 Reg no a street has both sides but see this are not like.
+2 Reg it will have say like this street is called oudegrah left this street will call oudegrah right.
+2 Reg it's called that it's not like.
+1 Reg but then we have to make two classes out of it.
+2 Reg can't it just be an attribute out of it.
+2 Reg which can't be null .
+1 Claim we don't know how to refer this attribute.
+1 Prem because when you refer when you say ok street has a side it is so we say ok say it is on the right side but where do you have that information.
+1 ClaimPrem you can not say ok you have that information from street because street always have both.
+2 Prem yes but that  information will be on part of traffic light, right.
+2 Claim so this traffic light will belong to z intersection oudegrah street left side.
+2 Claim so it has all information about this street the sides of this street and the intersection.
+1 Reg ok i will see how to model it.
+1 Claim but i think it's fine.

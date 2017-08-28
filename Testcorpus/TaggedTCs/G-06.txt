@@ -1,0 +1,719 @@
+1 Reg so the first one’s gonna be the functional view, second one is gonna be the information view, third one functional again, and the fourth one information view and the context view we do more high level. 
+1 Reg general dutch expression 
+2 Reg i guess four can be functional 
+3 Reg that’s the automated from one to another time 
+3 Reg essentially, but it’s, three for example, this is fairly simple. 
+2 Reg but it adapts, state diagram. 
+1 Reg that’s the easiest notation that you’re going to use 
+3 Reg so this would be the functional state, i guess. 
+3 Reg at number four this- 
+1 Reg would it be possible to create a busy, seldom-used, any variation of road? 
+1 Reg how exactly this is declared by the user and depicted by the system is up to you. 
+1 Claim broadly, the tool should be easy to use, and  
+3 ClaimPrem i have an idea, because with all the requirements that we have that they don’t expect complete- i mean you cannot be accurate. 
+3 Prem but in my experience, in my bachelor’s i did it in requirements engineering and there’s four types of requirements you have which [inaudible]. 
+3 Prem it’s called moscow prioritization 
+3 Reg yeah, you know it? 
+3 Reg so, must, should, could and wish. 
+3 Claim i think if we outline the must and should, those are the first two that we model. 
+3 Reg and the rest is optional. 
+3 Reg because, no seriously, because- 
+3 Reg it is essentially, that’s how you- 
+3 Reg yeah, but it’s specified like this  
+3 Reg must is very different to should 
+1 Reg well, three of them are must and one of them is should. 
+1 Reg three of the four are must. 
+1 Claim so, i don’t think, in the design of this document that they paid attention to the words must and should  
+3 Reg i know but it’s- 
+1 Claim probably what they want us all to do this- 
+3 Reg i know but in the end it’s- 
+2 Reg if you’re making if you look at the software engineer, someone, or programming. 
+1 Reg yeah, these are the instructions you’re given, if you look at the words 
+2 Claim if we make a wrong software architecture, the software is going to get build wrong 
+1 Reg no, because these are- 
+2 Claim we have to reduce this. 
+2 Claim follow the exact word they give 
+1 Claim you should design the basic appearance of the program. 
+1 Claim as well as the means by which the user creates a map, sets traffic timing schemes, and views traffic simulations. 
+2 Reg you also should not be allowed but- all intersections will be four way. 
+2 Reg there are no t intersections nor one-ways ok. 
+2 Reg must be able to design each intersection- who wrote this. 
+3 Claim maybe once we have all the requirements outlined we can kind of move them into logical components and for example, visual display, editor of the map, i don’t know, logical sensors and then we can maybe build that into a contextual model. 
+3 Reg a very high level one. 
+3 Claim or maybe not, it might actually be functional. 
+2 Reg if you want to design a traffic road simulation program, why are there restrictions to the user interaction, intersections in the software. 
+2 Reg so these restrictions also have to be made on the real world. 
+1 Reg you know they have to transcribe this  
+2 Reg what did i say  
+2 Reg some weird verb  
+1 Reg now they have two minutes of transcribing. 
+1 Reg something in here they have to do with a moderator but not, don’t want everyone to know that 
+3 Reg this program is not meant to be an exact scientific simulation but aims to simply illustrate the basic effect that traffic signal timing has on traffic. 
+3 Reg if you wish, you may assume that you will be able to reuse an existing package that provides relevant mathematical functionalities, statistical distributions, random number generators, and queuing theory. 
+2 Reg you want to press on pause? 
+2 Reg since you’re good at this, maybe these parts, like, these are our outcomes but these are like four. 
+2 Claim one, two, three, four, so, these are like four different processes that can be modelled, i think quite quickly and- 
+1 Reg what does creating a map- what does a map need. 
+3 Reg essentially it’s a process 
+1 Reg this is one process. 
+1 Claim i know, this should be a process, but we don’t  have the requirements- 
+3 Reg we do, we do, we do. 
+3 Reg it’s on top here, look, for example, should be able to create a traffic density, that enters the map blablabla. 
+3 Claim the simulator should be able to simulate traffic flows on a map, and essentially this is- if you compare the number desired, outcome number one, with the four requirements that are there, a lot of the stuff relates to each other. 
+3 Claim so that could be a thing that exists with the way that the-  
+2 Reg we start with the context alright? 
+3 Reg do we need to record this as well? 
+3 Reg we need to record? 
+1 Reg ah let’s try to record as much as possible. 
+1 ClaimPrem but i have not seen anything about its relations to software systems so the context view should be quite basic, general. 
+3 Reg where is my paper, did you take it? 
+3 Reg or do you need it? 
+3 Reg alright, i’ll take yours then  
+1 Reg just use the context view we already- 
+1 Reg i don’t care but, same context. 
+1 Reg the simulation program has to run on something  
+3 Reg alright something in this. 
+3 Reg we’ve not covered use cases  
+3 Reg but that’s the first start i would go from, normally. 
+3 Reg but- something like this because- what are your opinions? 
+3 Reg you have information of, like, view model that will be- 
+3 Reg you have to right? 
+3 Reg because this is 
+1 Reg it’s lovely weather outside right  
+2 Reg mhm very nice weather  
+3 Reg alright, you started with the context one. 
+3 Reg work on that together or you gonna work on that on your own? 
+1 Reg we can start with the context view, i was trying to find out the functional view in number one but we can start the context view. 
+2 Reg just do that one. 
+1 Reg you have a paper on which we can draw? 
+3 Reg i have this one 
+1 Reg well, we opened the one- 
+2 Reg right, so we start with- 
+1 Reg so you would have the traffic simulator as one thing. 
+1 Reg i guess in the middle. 
+3 Reg i’m just gonna start. 
+3 Reg so that would be the traffic simulator. 
+3 Reg also these on this- which was relevant here. 
+3 Prem oh yeah, if you wish you may assume that you would be able to use an existing software package that provides relevant mathematical functionalities such as statistical distributions, random number generators, and queuing theory. 
+3 Claim so these could be part of the context diagram as in providing additional functionality yeah. 
+3 Claim i would go with queuing. 
+3 Prem i don’t even know what it is but i’m guessing queuing theory is something relevant. 
+3 Prem i mean, for cars and shit. 
+3 Prem yeah, for cars and things. 
+3 Reg i don’t know what statistical distributions, why would we need to- traffic simulations  
+2 Reg why would we need statistical distributions or queuing- 
+1 Reg mathematical functionality you would, speed and all 
+3 Reg that’s more physics but 
+2 Reg but- traffic lights not- we don’t have to do anything with the speed 
+3 Prem no but you still have to create the road, the density of the cars, the number of cars, their speed, the left turns. 
+3 Claim so i think mathematical functions here are needed. 
+3 Reg just in terms of the user perspective, for example, there enter three cars, one would be 90 kilometers per hour and the first one would be 5 kilometers per hour. 
+1 Claim let’s then create one entity and we call it mathematical functionality 
+1 Claim let’s not go too much into detail. 
+3 Reg yeah, that’s all i wanted. 
+3 Reg so we have traffic simulator, queuing theory, mathematical functionality. 
+3 Reg alright, did you want to combine queuing theory with mathematical as well. 
+3 Reg basically it’s all, ok. 
+3 Claim and there was another, as in high level, i think it fits into the environment that this is part of their curricula, i think. 
+3 Prem they’re part of the- some course or something. 
+3 Prem their teacher wants to provide 
+3 Claim so the environment would be- 
+1 Reg the software itself doesn’t necessarily have a- what kind of relation does it have? 
+3 ClaimPrem no, it’s just- when you model the environment we then have to explain each of the components that we drew, so environment would be the engineering course, that’s part of their studies 
+2 Reg i know, would you going to-this software program, it’s going to be created not for the civil engineer student 
+2 Reg not for a student right? 
+3 Claim no for the students 
+3 Prem because this is a particular challenging subject for the student  
+3 ClaimPrem it’s just for their purpose, so i think environment is just, uci course, whatever. 
+3 Claim so this would be- the environment would be uni. 
+3 Reg so if we do the- i guess the traffic simulator 
+1 Reg that would be in the middle yeah. 
+3 Reg traffic simulator and the context, is it fam? 
+2 Reg it is functional architecture model  
+1 Reg right, isn’t it? 
+3 Reg and it takes the mathematical functionality 
+3 Reg this would be the environment, this would be the uci civil- 
+2 Claim uci is fine i think. 
+2 Claim and a user i guess. 
+2 Reg do you wanna draw a separate user. 
+3 Claim because there- so this would take- maybe for the sake i would, maybe, queuing theory, i would put that separate. 
+3 ClaimPrem but it’s still math i guess, so we can just lead to - 
+2 Reg i thought the relations between the- 
+3 Reg yeah, that was my question. 
+3 Reg do you show interaction between a user and the system in the context, do you, already? 
+3 Reg or do you just show the high level overview 
+1 Reg yeah, you do show the relationship between the system and the user. 
+3 Reg but how do you show it, just with arrow? 
+2 Reg just draw, like, an arrow that says- what do they have to- they’re gonna create a visual map of an area. 
+2 Reg so one arrow could be like creating or editing or 
+3 Reg then you’re going more to use cases. 
+3 Reg and a model because traffic system isn’t one functionality. 
+3 Reg i mean there’s one package-  
+1 Reg well, then you can call it like, editing. 
+1 Reg which is more general, what they do 
+1 Reg well, the arrow already is  
+3 Reg i don’t know, but maybe something more as in, well, using the system more. 
+2 Reg yeah, that’s what they- 
+3 Reg simulating within the simulation system of 
+1 Reg simulating, i like simulating. 
+1 Reg you can just call it simulating. 
+2 Reg the users do not simulate, the software is simulating 
+3 Reg i guess this is our context, i don’t know. 
+1 Reg does it have any other, well, it doesn’t say 
+1 Reg does it say any other external- 
+3 Reg this would be the context one  
+3 Reg well you gave up on the- 
+3 Reg what happened to you  
+2 Reg so much for  
+1 Reg do we have any other? 
+3 Reg of context, i don’t think so. 
+3 Claim it’s basically just explaining, this shouldn’t be too difficult. 
+3 Claim yeah, some mathematical functions, this can be explained in an environment like this 
+1 Reg does the user do anything else besides simulating? 
+1 Reg yeah, one of the- 
+3 Reg ok, so that’s the context one. 
+3 Reg so then the next one was information. 
+3 Reg no seriously, what were you doing when you stopped. 
+2 Reg i was doing this. 
+1 Reg and i was searching through here, for which activities i can use. 
+3 Reg this was for what  
+1 Reg the process of creating a map 
+1 Reg and in that process there are activities like create a visual map, create a road 
+3 ClaimPrem i think it should be because you need to place cars and then you also, i’m guessing 
+1 Reg do you actually- i was under the assumption that they were only busy with roads and traffic lights, and not necessarily cars as entities. 
+3 ClaimPrem yes, because you need a model of how the cars will flow evenly through the intersections. 
+3 Claim so you need to time everything, but you still need the entity that will travel on the simulation to show that you’ve actually done something- 
+3 Reg in an about way 
+1 Reg it doesn’t specify if one of the systems does that for you automatically, or if you- 
+3 Claim i think it does  
+1 Reg i was under the assumption that there was only changing like, traffic 
+3 Reg for example you may choose to depict individual cars, or to use a more abstract representation 
+3 Claim i think the easiest way to go would be creating the car. 
+3 Claim it should be possible to create a busy road or seldom used one. 
+3 Claim or any variation in between. 
+3 Claim that means that you need to specify, for example, i want 50 cars on these two roads. 
+3 Claim so i think, 
+1 Claim i don’t- you can go either way 
+1 ClaimPrem it’s ambiguous so you can assume- 
+3 Reg my pic would be, go with the car instead of guessing that the program would do that, or else 
+3 Reg there is also, create light timing. 
+3 Reg so create visual map, create road, create car, create light timing. 
+3 Reg and you also have- maybe change create to set light timing. 
+1 Reg define lights, on track of light timing or something 
+1 Reg i like the timer set,  
+3 Reg and he goes with setup  
+3 Claim so create a car, maybe we can set a create car. 
+3 ClaimPrem specify number of cars, that would be, i guess, better. 
+3 Prem because you don’t necessarily create a car but you would more specify. 
+3 Reg that sounds more [inaudible]. 
+3 Prem also you need to see the visualization. 
+3 Claim so from the entire one you need- 
+1 Reg but is this done to create a map? 
+1 Reg this is only one process. 
+3 Reg oh, so now you’re doing, creating the map only. 
+2 Reg i wasn’t really sure 
+3 Claim you must design the interaction- 
+2 ClaimPrem but we can’t really because every we have to go into more detail. 
+3 Claim better to have more, but i don’t know if- 
+1 Reg what would be the second process? 
+1 Reg we have create map, traffic timing scheme, program, appearance, and traffic simulation. 
+1 Reg yeah, maybe i can delete this one and this one- 
+3 Reg what do we wanna do 
+1 Reg and keep program and appearance 
+3 Claim i would, ok, program and appearance, but maybe i would just go with one- 
+3 Claim one high level, and then for the specific parts, for example, creating a visual map and setting the lighting timing- 
+2 Reg we can go into a process 
+3 Reg yeah, but that would be more a petri net. 
+3 Reg it’s as a logical representation of what can actually be done. 
+3 Reg i don’t know, what do you guys think. 
+1 ClaimPrem i think, yeah, it’s gonna be really difficult to specify an entire process of the other ones that you have, because there’s not enough information. 
+1 Prem a lot of this is going to be under the assumption of- 
+3 Reg true, but then again. 
+3 Reg for example, if we think of for example, first you need to specify the road, or the map 
+3 Reg so you specify the map and then the second part would be, you specify the pipe of the road, basically 
+3 Reg like the length and, yeah, and also if it´s like the really populated- or if it’s really abandoned one or something. 
+2 Claim this, we need to interactions 
+3 Reg apologies to the transcribers, pausing too much 
+1 Reg so we’re done with the context view yeah? 
+3 Reg i think so yes. 
+3 Claim what i would suggest is that we help [person 2] out and outline all the interactions that we can find from the text 
+1 Reg one of these 
+3 Reg or i’ll give this to [person 2]. 
+3 Reg so we basically go, for example, the first model is creating the interaction. 
+3 Reg and we outline all the steps that are there, and then the second one and then he can model it quicklier and we can also just transfer it into documentation 
+1 Reg so this one is finished. 
+1 Reg i don’t- for now 
+3 Reg we can can you get me another paper so i don’t ruin this for any- 
+3 Reg ok so, are we going to functional or are we doing the- 
+1 Reg which one do you wanna do? 
+3 Claim maybe it would be good if we covered this one first? 
+3 Prem because this essentially is the functional view, but if, for example, right now [person 2] has five different entities, and if we go into each of those and outline all this, the entire subprocess- 
+2 Reg what is the fifth entity? 
+3 Reg you only have four? 
+3 Reg i don’t know if there’s a fifth one. 
+3 Reg so yeah, basically, going into creating a map, the process of picking- you can pick one or the second. 
+2 Reg only the visualization of the map isn’t in there, in this process. 
+2 Reg should it be added, or in a different process? 
+3 Reg i would go- i would put it in that one and- 
+1 Reg creating an actual map- 
+1 Reg should be there right? 
+3 ClaimPrem i would put it as the last one, as create a visualization of whatever you’ve modelled. 
+3 Claim but ok, so, students must be able to create a visual map, so ok. 
+2 Reg that’s a first activity 
+1 Reg create visual map, create road, specify a few numbers, set up light timing and? 
+3 Reg or interaction, i don’t know. 
+3 Prem so create a visual map would have laying out roads and a pattern of their choosing. 
+3 Claim so this would be first, would be choose a pattern. 
+1 Reg how do you mean, choose a pattern 
+3 Prem students must be able to create a visual map of an area, laying out roads in a pattern of their choosing 
+3 Claim so, select an area pattern 
+1 Reg i’m not sure if they mean that. 
+1 Reg i don’t know what they mean by pattern in this case. 
+1 Reg i thought you could just pick roads, varying sizes and like, broads of roads. 
+1 Reg automatically creating a pattern. 
+1 Reg you don’t just pick a pattern 
+3 Reg no exactly, but you would have them provide, it’s a pattern, it’s a different type of road but essentially you would select- how would you call them, selecting a- 
+1 Reg yeah, selecting a- i don’t know 
+3 Reg as in, maybe we can explain this in the documentation 
+1 Reg what kind of patterns though. 
+1 Reg would you be able to select 
+3 Reg maybe, i don’t know it’s- 
+1 Reg a road pattern 
+3 Reg maybe it’s one-sided road for example- 
+3 Claim well not one-sided, but it could be double like, on the highway, coming into the intersection. 
+3 Claim and two coming out and maybe you could have one- 
+3 Reg so that type of thing, but i think that’s too 
+1 Reg right that makes sense, i just in a road. 
+3 Reg ok, so select a road pattern, then we agree on that one. 
+3 Reg so that would be the first one. 
+3 Reg so after you select the pattern- 
+2 Reg you select the length 
+3 Claim the resulting map need not to be complex but should allow for roads to vary in length, to be placed in different arrangements of intersections to be created. 
+3 Claim so maybe select a road pattern has two, or three sub options. 
+3 Reg one would be, selecting the type of intersection you want to have although they give kind of a restriction that they cannot be t 
+3 Claim but it still says that you can select, and also i think it’s placing the intersection where you want it. 
+3 Reg as in, on the map, so- 
+3 Claim i would go with selecting the intersection 
+1 Reg select type of intersection 
+2 Reg that’s more activity and [inaudible]couple of other types of intersection. 
+1 Reg what are the types of intersection 
+3 ClaimPrem we don’t know, but it doesn’t matter because we’re just modelling the process. 
+3 Claim so that could be in petri nets, just one or the other. 
+3 Reg going backwards and forwards. 
+3 Reg road length, specify road length 
+3 Reg i’m just- length to be placed in different arrangements of intersections to be created. 
+3 Reg so intersection selection arrangements. 
+1 Reg if you call it, specify road measurement. 
+3 Reg specify road characteristics maybe? 
+1 ClaimPrem that’s better, then you’re also done with 
+3 Reg ok, so that would be that. 
+3 Claim your approach should readily accommodate at least six intersections, if not more 
+1 Reg i don’t know how we’re supposed to model that 
+3 Claim so you specify the road characteristics, but this would be a restriction. 
+3 Reg how do we model restrictions in fam? 
+3 Reg how was it modelled again. 
+3 Reg was it with qa notation, that was explained last week wasn’t it. 
+3 Reg it was just a notation, it was like a note where he had some sort of constraints. 
+3 Reg you remember, you were there 
+3 Reg can you check, which lecture 
+3 Prem students must be able to describe the behavior of the traffic light at each of the intersection 
+3 Claim ok so, that means that for each of the intersections you can have a minimum of six, and up to infinite, for each of them you need to specify the traffic light. 
+3 Claim so that would be a sub process of intersection arrangement. 
+3 Reg that is not a separate step but it’s- once you select  
+1 Reg can’t it be a different step altogether 
+3 Reg ok, so this would be the traffic light behavior 
+1 ClaimPrem yeah, because you’re setting up these traffic light after you select the intersection 
+3 ClaimPrem true but in essence you could have them select six intersections, as it would give you the option to model them. 
+3 Claim but it might be better to do it afterwards 
+3 Reg ok so you would go- 
+1 Reg the traffic light would automatically be there as an intersection, but the behavior- 
+3 Claim ok so traffic light behavior you would specify it- it is up to you to determine what the exact interaction will be, but a variety of sequences and timing schemes should be allowed. 
+3 Claim so, you would have- we would have traffic light behavior gives you, i guess two options then. 
+1 Reg sequences and timing schemes 
+3 Prem sequences and timing schemes. 
+3 Claim so you can either go for, yeah, sequences- 
+3 Claim or a predefined timing scheme. 
+3 Reg your approach should also be able to accommodate left hand turns, protected by left hand- 
+3 Reg i don’t understand this one. 
+3 Reg should be able to accommodate left hand turns, protected by left hand green arrow lights. 
+3 Reg nah, the lights turn? 
+1 Prem right, they mean for a set of traffic lights to have, like the, the first two to be straights. 
+1 Prem and then the other one you can take a right as well. 
+1 Claim so separate traffic lights 
+3 Reg but that’s in sequences already defined right? 
+1 Reg i would say so, but they specify here as requirements so 
+3 Reg but it also says that we don’t have to take everything into consideration. 
+3 Reg ok, i think we 
+1 Reg we assume this one is defined in the traffic lights- 
+3 Claim yeah, i think so 
+3 Reg we assume this. 
+3 Prem  combinations of individual signals that would result in crashes should not be allowed. 
+3 Claim i think we should assume that this is done in sequences and timing schemes. 
+1 Reg then we have to model that somehow 
+3 Reg we don’t model the schemes do we. 
+3 Reg how, sorry, how are you gonna model 
+3 Reg the entire intersection, we cannot do that. 
+3 Claim i think it’s out of our scope 
+3 Reg so i think number 8  
+1 Reg why would they specify it so 
+3 Reg a lot of things is specified, but it’s kind of- 
+1 Reg yeah, you want to just put this under traffic lights sequences and timing 
+3 Claim maybe- can you take a note of these things that we kind of put down. 
+3 Prem for example, so that we can write the documentation. 
+3 Prem so that we can go back to the requirements and just say, under sequences we also have this constraint that it should not allow for crashes etc. 
+1 Reg i’m gonna type it 
+3 Reg or you can type it, yeah, as well either way 
+3 Prem and also these like, every intersection of the map must have traffic lights, there are not any stop signs, overpasses, or other variations. 
+3 Prem all intersection will four way, there are no t intersections and nor one way road. 
+3 Claim this is also when you select intersection arrangement. 
+3 Claim this is also constraint on that part 
+1 Reg if that’s the requirement. 
+1 Reg if you select an intersection 
+1 Reg you can choose if you have traffic lights or not 
+3 Claim that’s just a restriction on the system, but it’s not- from the users perspective it doesn’t matter. 
+3 Claim for the process because- 
+2 Reg so they need same activity timing. 
+2 Reg when you select an intersection the selection of traffic lights has also been premade. 
+2 Reg but it’s not a different activity 
+3 Reg no, you don’t, no. 
+3 ClaimPrem there’s two things, selecting the traffic lights for the intersection, you don’t select them because they are already there- 
+3 Claim so if we imagine the intersection being a four way, and also with the lights. 
+3 Claim you just place it on the map, but you still have to click on those lights to configure them. 
+3 Claim so that is still a process. 
+3 Prem because you can choose from different sequences 
+3 Reg ok, which one are you doing right now? 
+1 Reg i’m typing the combination of individual signals and accommodating left hand turns by left hand green arrow lights. 
+1 ClaimPrem they are not modelled separately, they fall under the specification of timing schemes and sequences. 
+1 Reg through the traffic lights behaviors 
+3 Reg can i just ask you. 
+3 Reg can you just, on top, just do create a visual map. 
+3 Reg on top, just as a title, create a visual map. 
+3 Reg and do two, this would be two, no no, this would be the two. 
+3 Reg and the first one, ok, and there is another one we need to do. 
+3 Reg that is for- number one, 1a. 
+3 Reg 1a is intersection selection and arrangement. 
+3 Reg and it says here basically, restriction, just write, restriction 2b. 
+3 Reg students must be able to design each intersection with or without the option to have sensors that detect whether any cars are present in a given lane. 
+3 Reg ok, so this would be when you- 
+1 Reg that’s mandatory or must- 
+3 ClaimPrem they must be able, so meaning when they select intersection they should be able to say, intersection one has the sensors, intersection two hasn’t, third one doesn’t have them 
+1 Reg but are those sensors mandatory 
+1 Reg does the- is the option to use mandatory 
+3 Reg the option is mandatory. 
+3 Claim also, that basically gives you another restriction, choosing- on the same one basically- that would be - 
+1 Reg we mentioned that one was a. 
+3 ClaimPrem oh no, so it’s again would be a, because it’s the same bullet point essentially. 
+3 Claim intersections like an arrangement, this one also needs to have- maybe you can just do restriction 2b, and just restriction- 
+1 Reg how about this one. 
+1 Reg your approach should readily accommodate at least six intersections if not more 
+1 Reg that’s one, and then on the end 
+3 Reg should readily accommodate at least six intersection- 
+1 Reg you have to address the requirements 
+3 Claim i’ll go with restriction again, when you select them it should be at least, for example, restriction 2 plus 2c, you can just do restriction minimum of six of, yeah, intersections, or more 
+3 Reg have you managed to find those qa’s? 
+3 Reg how we can write them. 
+3 Reg because i know he did, it was quite simple. 
+3 Reg i think it was just a- once you have the model you can just type, write on top of the model. 
+3 Reg based on the map created and the intersection timing schemes a student must be able to simulate traffic flow on the map. 
+3 Reg ok so that was creating a map 
+1 Reg qa quality attributes right? 
+3 Reg this would be another, this would be a separate one i guess. 
+3 Reg traffic light behavior would be the second activity, the second process. 
+1 Reg what are you talking about? 
+3 ClaimPrem because of the model that [person 2] drew, as for example, first you create a visual map, then you find the traffic behavior, but this traffic behavior would be a separate process, wouldn’t it? 
+3 Reg or is this part of creating a visual map 
+1 Reg you mean qp isn’t it? 
+3 Reg i don’t know, qp 
+1 Reg qp are different things. 
+3 Reg no, whatever quality annotations or something 
+3 Reg oh that’s quality properties 
+3 Reg sorry transcribers, for all these 
+1 Reg aren’t we supposed to transcribe our own stuff? 
+3 Reg no, [professor] and the rest of the- 
+1 Reg right so, based on the map created and the intersections timing schemes, students must be able to simulate traffic flows on the map. 
+1 Reg it’s not a different requirement 
+3 Reg this would be simulate the traffic flow. 
+3 Reg that’s like the last that we have? 
+3 Reg the traffic levels should be conveyed visually to the user in a real-time manner as they emerge in the simulation. 
+3 Reg so, traffic flow would be, simulate traffic flow action would consist of, start the simulation 
+3 Reg and, it would display it. 
+3 Reg start the simulation and then it would display it in real-time 
+3 Reg display it in a window? 
+1 Reg some sort of ui 
+3 Reg frame for the user. 
+3 Reg and once it displays, this is maybe additional requirement, pause, stop and play options. 
+3 Reg as in a player functionality 
+3 Reg let’s say media player functionality. 
+3 ClaimPrem and maybe this is really extra, exporting option probably would be usable for software, but we can- this is quite simple to model that’s why i’m just kind of thinking what else we could. 
+3 Prem because they do ask- 
+2 Reg but why do you want to put in a media player function if you already have a possible media player on your- 
+3 Reg that’s for the simulation 
+2 Reg i know but, why do you 
+3 Reg oh, you would use- 
+2 Reg have exporting a - 
+2 Reg i know but if you export an image or a movie of the simulation  
+3 Reg yes but from the point of view of- 
+2 Reg you say, media player available on your computer to do this. 
+3 ClaimPrem i get what you mean, but, i agree with you, but, from my point of view that’s not really viable in terms of the software that they’re trying to build because if you want somebody to learn-see all the interactions, they will want to play it instantly. 
+3 Prem they will try to model things and then play, i want to see it. 
+3 Prem that’s one thing and as the second thing is, that’s a requirement of the system 
+3 Prem it has to be presented in real-time to the user. 
+3 Prem to simulate traffic flow on the map, so we need some sort of player. 
+3 ClaimPrem the export option i think would come in handy in real world because- 
+3 Prem it could be an assignment or exercise you wanna do, so yeah. 
+3 ClaimPrem so i would go with this one because we can specify it literally- 
+3 Prem gives two more options, which is media player functionality and exporting function. 
+3 Claim so once you simulate this. 
+3 Claim the current state of the intersection traffic lights should also be depicted visually and updated when they change, it’s up to you how to represent this information to the student using your program. 
+3 Reg for example, you may choose to depict individual cars or to use a more abstract representation. 
+1 Reg i like individual cars 
+1 Reg just visualize all the cars 
+3 Reg yes, i agree but- 
+3 Claim the current state of the intersection traffic lights should also be depicted visually and updated when they change 
+3 Reg that’s- ok but that’s part of the simulation itself, that’s- i mean. 
+3 Reg so traffic light behaviour, sequences, timing schemes, maybe here we would have update the colours on the- 
+2 Reg just use colours in, 
+3 Reg just update colours on lights. 
+3 Reg so that would be after choosing the sequence or timing scheme. 
+3 Reg display on a gui for the user, exporting function, and we- update colours on light, exporting function 
+3 Reg and we pick the individual cars representation. 
+2 Reg i have no idea. 
+1 Reg because it gives you more accurate information? 
+3 Claim i think so, yeah. 
+3 Reg well i don’t know, what would be the higher abstraction of the- 
+3 Reg as an option? 
+1 Reg i can’t think of anything that’s better than individual cars in software packages like this. 
+3 Reg ok number four then. 
+3 Reg students should be able to change the traffic density that enter the map on a given road. 
+3 Claim that would be before the simulation in my opinion. 
+3 Prem because you would model the road, you would specify about three hundred cars, and then before- 
+3 Prem you would press start you could specify, ok, the average speed of the cars is thirty point whatever, the density of cars coming into each of the intersections is 1.5 
+3 Prem and, i don’t know, some other parameters that might be- maybe even the sequence of the lights, that might- 
+1 Claim doesn’t this just fall under this step, selecting a road pattern? 
+1 Claim just an extra step where you can also choose the density of the traffic on a given road. 
+1 Prem because they mention here, it should be possible to create a busy road or a seldom used one and any variation. 
+1 Claim just create an extra step 
+3 Reg that would be specify density 
+3 Reg and maybe two options, as in enter map and enter intersection. 
+3 Reg if that makes sense, but we don’t have to take that into account, it doesn’t matter 
+3 Claim for example, it should be possible to create a busy road, seldom used one, or any variation in between. 
+3 Reg ok so that’s covered. 
+1 Reg any variation in between, so we have to give more options then  
+3 ClaimPrem but it also says, how exactly this is declared by the user and depicted by the system is up to you, so we’ve kind of covered this 
+1 Prem because they want any variation in between and now you’ve just mentioned two options, haven’t you? 
+3 Claim they should be able to change the traffic density that enters the map on a given road 
+3 Claim for example, it should be possible, between a busy road or a seldom used one, or any variation in between. 
+3 Prem that means that it should be either going from empty to completely busy, so that’s just the density and the number of cars. 
+1 Reg sure, but i- what kind of option do we give. 
+3 Reg specify the road characteristics? 
+1 Reg just like a number? 
+3 Claim i guess that’s the easiest. 
+3 Prem how else would you specify, i don’t know, how would you specify if this was a simulation. 
+3 Claim i think you would start, how many cars will enter this road. 
+3 Claim and you would say 30 and you would see how much that is and you would go back and you would specify, i don’t know, 50, because it wasn’t enough. 
+1 Reg so we just give them- just gonna enter an integer, the amount of- 
+3 Claim i would go for a number of cars, the density of the cars and average speed maybe. 
+3 Reg something- but that can also be done with the help of those mathematical functions as in, i don’t know, average speed on the highway, average speed in a- what do you call it- suburban area or whatever. 
+3 Claim but i think that’s just input that we could give when they create a map or before the start of the simulation. 
+3 ClaimPrem i would go with simulation in my case, because it’s easier. 
+3 Prem because otherwise you have to go back and define the map and- 
+1 Reg yeah, so i - 
+3 Reg so you start a simulation, you would- ok, before you display it you would have these two. 
+3 Reg so specify the road characteristics, no, maybe just this one. 
+3 Reg so you specify the traffic characteristics basically, that would- so traffic characteristics. 
+3 Reg and that would be the density, speed, and what else did we say. 
+1 Reg density, speed and number of cars. 
+1 Reg number of cars, it’s the same  
+3 Reg what if we specify the number of cars per intersection maybe. 
+3 Reg i mean as in percentages. 
+3 Reg for example if you have three hundred cars, and you have ten intersections, if three hundred cars will go from one end, imagine this is a straight road 
+3 Reg and they will go through three hundred and if you have the option to specify, i don’t know, distribute them equally onto six intersections. 
+3 Reg you would have a better visualization maybe? 
+3 Reg i don’t know, i’m just talking shit. 
+1 Reg i don’t know either. 
+1 Reg i don’t know, we’ve got to visualize 
+3 Reg alright, just, can be- 
+1 Reg it’s really specific, details 
+3 Reg so, density, speed and, is there anything else. 
+3 Reg maybe type of cars 
+3 ClaimPrem type of cars, because you could have trucks, you could have personal cars. 
+3 ClaimPrem that would be good because- 
+3 Claim so you basically include, like a random number of – if you have equal- then we could them- the reasoning of the mathematical inclusion. 
+1 Reg does it calculate the size of cars or maybe 
+3 Reg no more, for example, you say, oh i want three hundred cars and then it gives you a list. 
+3 Reg i want trucks, i want personal cars and i want bikes 
+3 Reg distribute them equally, so i would have hundred cars, hundred trucks and hundred more bike- motorcycles. 
+2 Reg do you want to specify weight in a different truck 
+2 Reg if you have that truck over there, or that truck over there 
+3 Claim it is, but maybe that could be also taken care of by a list of providing all the different types of- like trucks 
+1 Claim  yeah, i think it’s best to specify on, not specify on a motorcycle or car or truck, but on rate. 
+3 Claim but then you have- you need to know the length and- 
+2 Claim and you need the seize for traffic digestion 
+3 Reg it is, it definitely is but do you expect the students to know what’s the length of a truck or what is the weight of the truck 
+1 Reg well we can enter that into the system. 
+1 Reg the system knows, like an average length of a car or truck 
+3 Prem exactly, but that would mean that in the end when you present it to the user he would still have just the list. 
+3 Prem he would not have what is in the back, saying that if he selects a truck the system will know that the truck carries ten tons. 
+3 Claim so the user doesn’t need to know about that 
+1 Claim if- maybe it’s easy to 
+1 Claim specify what kind of traffic type, or a car and a different process of specify a traffic entity. 
+1 Reg how big is your car, or how heavy is your car, that’s- 
+1 Reg let’s make- that process is easier to include then another process of defining what is a car and how big is the car and how big is the truck. 
+1 Reg that’s not really a big 
+3 Reg no it’s not, but it’s not on the side of the system. 
+3 ClaimPrem that won’t be the logic behind it because, logically speaking, if you have to select something you’re not gonna care about how much that selection actually weighs or something, you just need the selection. 
+3 Claim so if the students are presented with ten options of all the possible cars 
+1 ClaimPrem no, because if you have a traffic light and the timing on the traffic lights from green to red 
+1 Prem it’s really short, and that intersection if 50 kilometers per hour 
+1 Prem and you have a large truck and a heavy truck 
+3 Claim obviously we have a system we need to model 
+1 Reg intersection is why 
+3 Reg yeah, no no. 
+3 ClaimPrem i definitely agree with you on this- from usage perspective, doing the activity, they don’t care about the weight, they just care about selection. 
+3 Prem but when it comes to the system, that would need to be modelled, that- of course. 
+3 Prem but those are basically physics, those are, i mean- 
+3 Prem those are gravitational laws and stuff that have to be applied to different types of 
+1 Claim then you should specify truck, big truck. 
+3 Claim vehicles specification, i think that tells enough, and maybe we can explain it as in, it’s either a list or an option needed, it’s a big truck, small truck, it’s personal vehicle, i think that satisfies it. 
+3 Reg maybe also restriction, we can just write- can you maybe just take a note of this. 
+3 Claim that’s the vehicle spec, vehicle spec should adhere to like, gravitational laws, the laws of mass and shit like that- oh sorry. 
+3 Reg the things like that, that makes them- i just hope they don’t get angry with my language. 
+1 Reg they need to anonymize you, they don’t know that you did this 
+3 Reg well, they kind of know our group, yeah, they kind of do 
+2 Reg you can say fuck 
+3 Reg broadly the tool should be easy to use and should encourage students to explore multiple alternative approaches. 
+3 Reg  so this also supports our theory of different vehicles, different- 
+1 Reg types of roads, the speed of the- 
+1 Reg stuff like that ok 
+3 Reg well, to be honest, options. 
+3 Reg and a few lists 
+2 Reg if you have options, that’s not easy 
+3 Reg but, if they have a vehicle 
+1 Reg if you just want to see a road visualization simulation 
+1 Reg and you have to choose three 
+3 Reg no it’s not the fact that you need to choose between hundred types of trucks, you’ve got ten different vehicles, some speed, and you can still, for example, press ok without choosing any and it just goes to default. 
+3 Claim that might also be a restriction that we, kind of come up with is the fact that the user should not be limited to specifying all the characteristics of the simulation. 
+3 Claim the simulation should have a default option. 
+3 Reg which is, for example, if they don’t want to select their- there’s a- 
+3 Reg just want to see the traffic flow, and in the beginning  
+1 Reg yeah, important intersection and one speed 
+3 Claim but i think that you should write that down as well. 
+1 Reg simulation options, user can specify 
+3 ClaimPrem so it is possible, but it’s not a must because that restricts the user. 
+3 Prem and if, for example, they forget to click something and they get an error, you fucked up this, they will be inclined not to- 
+3 Reg well- he’s so enthusiastic about it 
+2 Reg that’s right, so it’s the ease of use of the system 
+3 Reg broadly the tool, ok blablabla, students should be able to observe any problems with their map, timing schemes, alter it and see the results of their changes on the traffic patterns 
+3 Reg this is also important- the simulation  
+1 Reg if you add some activities on- and you loop it, then that’s the requirement here done. 
+3 Reg but my concern is that, when you have, for example, you specify a change timing, and you do the visualization. 
+3 Reg visualization runs, it doesn’t matter what you specify. 
+3 ClaimPrem and everything can crack, for example, although we’ve specified it’s not allowed, but in some cases it might because of some strange, i don’t know, combination of vehicles or whatever. 
+3 ClaimPrem and they should be able to see potential problems on this visualization, so there could be like a window, for potential problems, and it could just be intersection, six, i don’t know, the timing is incorrect. 
+3 Reg it’s like a warning 
+1 Reg when you modeller 
+1 Reg if you make a process and you want to execute it, you get a dropdown menu when- well this is wrong and what you have to change. 
+3 Reg exactly something like that. 
+3 Claim and maybe also, although we set the traffic light behaviour in the previous step, which is creating the map itself, the visualization should, i guess, support the option of going backwards and altering it. 
+3 Prem because, maybe not within the visualization because that would just be the player, but maybe before specifying like, when do you specify the characteristics of the car? 
+3 Reg like the weight and stuff? 
+3 Claim there could be an option to reset the behaviour of lights, or just maybe a link to the map and they can alter it. 
+3 Claim if they didn’t select the good one or something. 
+3 Reg you don’t follow me do you 
+1 Reg no no, the last part i didn’t 
+3 Reg when, for example, you go step 1, you create a map, you select all the behaviours, you basically update the colours of the lights, then you go to visualization. 
+3 Reg and you realize that your combination for some reason doesn’t- 
+1 Reg all the traffic stops at the intersection 
+3 ClaimPrem and your intersection lights are not working, so from here you need to have a clear option, the user- 
+3 Claim to change this without going back to this step. 
+1 Claim well you would need the system to have, like, to have a basic understand of which of the options causes this- 
+1 Reg this traffic stop, at this intersection- 
+2 Reg but that’s for functionality, you have to have a more algorithm that’s- can be created 
+3 Claim yes, but it should still somehow need to how-  
+3 ClaimPrem yeah, so they can change it basically because that’s gonna be the- would be the main usages. 
+3 Reg create something, simulate it and then go back and change it. 
+3 Reg change it and visualize it 
+1 Reg then you have all the options of editing, creating or setting up a light or car or intersection. 
+1 Claim that should all be graphical, in a graphical interface. 
+1 Prem so you can edit it directly when it’s wrong. 
+3 Reg basically yeah, so this would all, all of this, i guess, would be in a graphical user interface as well 
+2 Claim in every activity, that’s on the paper, there should always be a link or trajection to a process that’s always checking if it’s correctly or not 
+3 Reg no, maybe, ok. 
+3 Reg we can have a validator now 
+1 Reg that might- validator- do you want a validator that’s validating at the end of view- i’m not with- creating an intersection, can you validate? 
+1 Reg or do you want to validate that- validate after each step you’re doing. 
+1 Reg so creating an intersection, changing the speed and the timing on the traffic lights 
+3 ClaimPrem i would say validate needs to be present at all times because, for example, if we have a lot of inputs for like, the mass and speed 
+3 Prem people will apeshit and they will for example say, i’ll have a motorcycle which ways one gram and goes- 
+3 Prem and then you have a problem solve validator would be good. 
+3 ClaimPrem also this would help with all the constraints that we have, with like, the different intersections- you could immediately check if the intersection was a proper cross, or was it a t, was it this, was it different pattern, was it something else. 
+3 Claim so, a validator, i guess, on every single step. 
+3 Prem i think that’s- and we can model this. 
+3 Reg we don’t have to model what it actually validates but it’s- we can explain it 
+2 Reg is there, for example, do you have a database on a game like need for speed. 
+2 Reg there are in the database- in the car database there are the setup of all cars and how much they weigh, how big they are- 
+2 Reg isn’t there any database of where you can link it to this software. 
+2 Reg and that’s the validator of cars 
+3 Claim that is- yes but still, i would go with validator as being an external entity- 
+3 ClaimPrem a very good because- 
+3 ClaimPrem yeah, but also for example, here we have the system, and this- and we would connect this to the database as you said, that’s a very good idea actually. 
+3 Prem because there’s a lot of data on the vehicles 
+3 Claim so this would be vehicle- 
+1 Claim basic physics laws, could also be external 
+3 Reg math yeah, maybe a- 
+1 Reg math and physics laws 
+3 Reg and also we would validate it, that would be the validator, which would be externally. 
+1 Reg you mean that cars stop at a stop sign? 
+3 ClaimPrem there’s no stop signs, so we don’t need- 
+2 ClaimPrem i would have just traffic lights, you have to stop at a red sign or the maximum- 
+3 Claim the validator could have that data as well, or no? 
+2 Reg validator, you can have a validator rule engine that checks the laws on maximum speed 
+3 Claim but you still need to get the laws into the system before you can validate them. 
+3 Claim so validator would be external, that would mean, external, but it wouldn’t have all the old data. 
+3 Reg it would just get the data from different external entities- 
+3 Reg and process that data 
+1 Reg validator functionality is internal 
+3 Claim we don’t need- no we don’t need to really- yes 
+1 Reg that just validator 
+3 ClaimPrem ok, so that wouldn’t come into context view then, because it’s internal. 
+3 Prem it’s part of the system 
+1 Reg well the information would be gathered externally 
+3 Reg but that would be done by the- 
+1 Reg that’s still a part of the context view 
+3 Reg how do you model it because then you can only model it as a- 
+1 Reg yeah, but that’s fine 
+1 Reg just to the ts 
+2 Reg to, outside the uci 
+2 Reg validator is external here 
+3 Reg no no, it’s internal. 
+3 Reg validator would be internal as part of the simulation 
+2 Reg ok, yeah, you can model the validator 
+3 Reg so you do here for example 
+2 Reg that’s to the ts yeah. 
+2 Reg but the data of the validator comes outside the uci 
+2 Reg but the validator itself is inside the ts, isn’t it? 
+3 Claim exactly, that’s my point. 
+3 Reg validator is part of the ts, the ts gets all the data- 
+3 Reg function here would be the validator, which process all the data and- 
+1 Claim right, but you would still need to model, like, the external information that’s going to the ts 
+3 Reg the math and physics 
+3 Reg ok maybe traffic law 
+1 Reg basic traffic law information, that car stops at a red car sign 
+1 Reg you know, stuff like that 
+1 Reg that the maximum speed of that road 
+3 Reg we call it a cpp 
+2 Reg do you have traffic laws in slovenia 
+3 Reg no we drive on communist laws 
+1 Reg basically, as long as you’re driving you’re good 
+2 Reg if you have a five year plan, it’s good 
+3 Reg if you have a life insurance, then you’re all good 
+2 Reg let’s work through this last part and then we can start modelling 
+3 Reg then we can have a break 
+2 Reg and then we can have a break and- 
+3 Reg we can have a break. 
+3 Reg we take fifteen, no i’m kidding, we take two minutes only. 
+3 Reg alter and see the results of the change in traffic, that would be done by the validator. 
+3 Reg the problem is not meant to be an exact scientific simulation, but aims to simply illustrate the basic effects of traffic signal timing has on traffic. 
+3 Reg if you wish you may assume that you will be able to reuse the existing software package. 
+3 Reg ok so that’s- we don’t need 
+3 Reg you may add additional features and support. 
