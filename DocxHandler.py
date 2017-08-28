@@ -201,45 +201,5 @@ def handleFile(filename):
     if tuplebool == True:
         return tuplelist
 
-def createOutputTable(tuplelist, header):
-    tabledoc= Document()
-    width = len(tuplelist[0])
-    height=len(tuplelist)+1
-    table = tabledoc.add_table(rows=height, cols=width)
-    headercells=table.rows[0].cells
-    c=0
-    while c<len(header) and c<width:
-        headercells[c].text=header[c]
-        c+=1
-    c2=1
-    table.columns[0].width=200
-    while c2<len(table.rows):
-        cells = table.rows[c2].cells
-        tup = tuplelist[c2-1]
-        c3=0
-        while c3<len(tup) and c3<width:
-            cells[c3].text=str(tup[c3])
-            c3+=1
-        c2+=1
-    tabledoc.add_page_break()
-    table.style = tabledoc.styles['Table Grid']
-    tabledoc.save('Table_output.docx')
-
-def createExcel(tuplelist, header):
-    c=0
-    book = xlwt.Workbook(encoding="utf-8")
-    sheet1 = book.add_sheet("Output")
-    while c<len(header):
-        sheet1.write(0, c, header[c])
-        c+=1
-    c=1
-    while c<len(tuplelist):
-        c2=0
-        tup=tuplelist[c]
-        while c2<len(tup):
-            sheet1.write(c, c2, str(tup[c2]))
-            c2+=1             
-        c+=1
-    book.save('output.xls')
 if __name__ == "__main__":
     print(handleFile(sys.argv[1]))  
